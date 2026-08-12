@@ -6,7 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,42 +19,45 @@ import { CardModel, CardSet, Game } from '../core/models/models';
   standalone: true,
   imports: [
     CommonModule, FormsModule, RouterLink, MatCardModule, MatFormFieldModule, MatInputModule,
-    MatSelectModule, MatCheckboxModule, MatChipsModule, MatButtonModule, MatIconModule,
+    MatSelectModule, MatSlideToggleModule, MatChipsModule, MatButtonModule, MatIconModule,
   ],
   template: `
     <h1>{{ i18n.t('catalog.title') }}</h1>
     <p class="muted">{{ total() }} {{ i18n.t('catalog.subtitle') }}</p>
 
-    <mat-card class="filters" appearance="outlined">
-      <mat-form-field appearance="outline" class="search">
+    <div class="filters">
+      <mat-form-field appearance="outline" class="search" subscriptSizing="dynamic">
         <mat-icon matPrefix>search</mat-icon>
-        <mat-label>{{ i18n.t('catalog.search') }}</mat-label>
-        <input matInput [(ngModel)]="q" (ngModelChange)="debouncedSearch()" />
+        <input matInput [placeholder]="i18n.t('catalog.search')" [(ngModel)]="q" (ngModelChange)="debouncedSearch()" />
+        @if (q) { <button matSuffix mat-icon-button (click)="q=''; search()"><mat-icon>close</mat-icon></button> }
       </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>{{ i18n.t('catalog.allGames') }}</mat-label>
-        <mat-select [(ngModel)]="gameId" (ngModelChange)="onGameChange()">
-          <mat-option value="">{{ i18n.t('catalog.allGames') }}</mat-option>
-          @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>{{ i18n.t('catalog.allSets') }}</mat-label>
-        <mat-select [(ngModel)]="setId" (ngModelChange)="search()">
-          <mat-option value="">{{ i18n.t('catalog.allSets') }}</mat-option>
-          @for (s of sets(); track s.id) { <mat-option [value]="s.id">{{ s.name }}</mat-option> }
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>{{ i18n.t('catalog.type') }}</mat-label>
-        <input matInput [(ngModel)]="type" (ngModelChange)="debouncedSearch()" />
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>{{ i18n.t('catalog.rarity') }}</mat-label>
-        <input matInput [(ngModel)]="rarity" (ngModelChange)="debouncedSearch()" />
-      </mat-form-field>
-      <mat-checkbox [(ngModel)]="inStock" (ngModelChange)="search()">{{ i18n.t('catalog.inStock') }}</mat-checkbox>
-    </mat-card>
+
+      <div class="chips">
+        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+          <mat-label>{{ i18n.t('catalog.allGames') }}</mat-label>
+          <mat-select [(ngModel)]="gameId" (ngModelChange)="onGameChange()">
+            <mat-option value="">{{ i18n.t('catalog.allGames') }}</mat-option>
+            @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+          <mat-label>{{ i18n.t('catalog.allSets') }}</mat-label>
+          <mat-select [(ngModel)]="setId" (ngModelChange)="search()">
+            <mat-option value="">{{ i18n.t('catalog.allSets') }}</mat-option>
+            @for (s of sets(); track s.id) { <mat-option [value]="s.id">{{ s.name }}</mat-option> }
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+          <mat-label>{{ i18n.t('catalog.type') }}</mat-label>
+          <input matInput [(ngModel)]="type" (ngModelChange)="debouncedSearch()" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+          <mat-label>{{ i18n.t('catalog.rarity') }}</mat-label>
+          <input matInput [(ngModel)]="rarity" (ngModelChange)="debouncedSearch()" />
+        </mat-form-field>
+        <mat-slide-toggle [(ngModel)]="inStock" (ngModelChange)="search()">{{ i18n.t('catalog.inStock') }}</mat-slide-toggle>
+      </div>
+    </div>
 
     @if (loading()) {
       <p class="muted">{{ i18n.t('catalog.loading') }}</p>
@@ -102,9 +105,16 @@ import { CardModel, CardSet, Game } from '../core/models/models';
   styles: [
     `
       h1 { margin-bottom: 2px; }
-      .filters { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto; gap: 12px; padding: 16px; margin: 18px 0 22px; align-items: center; }
-      .filters mat-form-field { --mat-form-field-container-vertical-padding: 6px; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 18px; }
+      .filters { margin: 18px 0 24px; display: flex; flex-direction: column; gap: 14px; }
+      .filters .search { width: 100%; max-width: 520px; }
+      .chips { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+      .chips mat-form-field { width: 180px; }
+      .chips mat-slide-toggle { margin-left: 4px; }
+      .grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
+      @media (max-width: 1300px) { .grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+      @media (max-width: 1080px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+      @media (max-width: 820px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+      @media (max-width: 560px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
       .card { padding: 0; overflow: hidden; cursor: pointer; transition: transform 0.12s; }
       .card:hover { transform: translateY(-4px); }
       .img { position: relative; aspect-ratio: 63/88; background: var(--bg-soft); display: flex; align-items: center; justify-content: center; }

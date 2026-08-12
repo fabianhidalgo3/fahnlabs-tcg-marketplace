@@ -1,4 +1,4 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, effect, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -28,45 +28,45 @@ import { CurrencyService } from './core/services/currency.service';
       <mat-sidenav
         class="side"
         [mode]="isMobile() ? 'over' : 'side'"
-        [opened]="!isMobile()"
-        #drawer
+        [opened]="sidenavOpen()"
+        (openedChange)="sidenavOpen.set($event)"
       >
-        <a routerLink="/catalogo" class="brand" (click)="closeIfMobile(drawer)">
+        <a routerLink="/catalogo" class="brand" (click)="onNav()">
           🃏 <span>TCG</span>Market
         </a>
         <mat-nav-list>
           <h3 matSubheader>{{ i18n.isES() ? 'Tienda' : 'Store' }}</h3>
-          <a mat-list-item routerLink="/catalogo" routerLinkActive="on" (click)="closeIfMobile(drawer)">
+          <a mat-list-item routerLink="/catalogo" routerLinkActive="on" (click)="onNav()">
             <mat-icon matListItemIcon>grid_view</mat-icon>
             <span matListItemTitle>{{ i18n.t('nav.catalog') }}</span>
           </a>
-          <a mat-list-item routerLink="/sets" routerLinkActive="on" (click)="closeIfMobile(drawer)">
+          <a mat-list-item routerLink="/sets" routerLinkActive="on" (click)="onNav()">
             <mat-icon matListItemIcon>folder</mat-icon>
             <span matListItemTitle>{{ i18n.t('nav.sets') }}</span>
           </a>
-          <a mat-list-item routerLink="/carrito" routerLinkActive="on" (click)="closeIfMobile(drawer)">
+          <a mat-list-item routerLink="/carrito" routerLinkActive="on" (click)="onNav()">
             <mat-icon matListItemIcon [matBadge]="cart.count() || null" matBadgeSize="small" matBadgeColor="accent">shopping_cart</mat-icon>
             <span matListItemTitle>{{ i18n.t('nav.cart') }}</span>
           </a>
 
           @if (auth.isLoggedIn()) {
             <h3 matSubheader>{{ i18n.isES() ? 'Mi cuenta' : 'My account' }}</h3>
-            <a mat-list-item routerLink="/coleccion" routerLinkActive="on" (click)="closeIfMobile(drawer)">
+            <a mat-list-item routerLink="/coleccion" routerLinkActive="on" (click)="onNav()">
               <mat-icon matListItemIcon>collections_bookmark</mat-icon>
               <span matListItemTitle>{{ i18n.t('nav.collection') }}</span>
             </a>
-            <a mat-list-item routerLink="/almacenamiento" routerLinkActive="on" (click)="closeIfMobile(drawer)">
+            <a mat-list-item routerLink="/almacenamiento" routerLinkActive="on" (click)="onNav()">
               <mat-icon matListItemIcon>inventory_2</mat-icon>
               <span matListItemTitle>{{ i18n.isES() ? 'Almacenamiento' : 'Storage' }}</span>
             </a>
-            <a mat-list-item routerLink="/ordenes" routerLinkActive="on" (click)="closeIfMobile(drawer)">
+            <a mat-list-item routerLink="/ordenes" routerLinkActive="on" (click)="onNav()">
               <mat-icon matListItemIcon>receipt_long</mat-icon>
               <span matListItemTitle>{{ i18n.t('nav.orders') }}</span>
             </a>
           }
           @if (auth.isAdmin()) {
             <h3 matSubheader>Admin</h3>
-            <a mat-list-item routerLink="/admin" routerLinkActive="on" (click)="closeIfMobile(drawer)">
+            <a mat-list-item routerLink="/admin" routerLinkActive="on" (click)="onNav()">
               <mat-icon matListItemIcon>admin_panel_settings</mat-icon>
               <span matListItemTitle>{{ i18n.t('nav.admin') }}</span>
             </a>
@@ -76,9 +76,7 @@ import { CurrencyService } from './core/services/currency.service';
 
       <mat-sidenav-content>
         <mat-toolbar class="topbar">
-          @if (isMobile()) {
-            <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
-          }
+          <button mat-icon-button (click)="sidenavOpen.set(!sidenavOpen())" aria-label="menu"><mat-icon>menu</mat-icon></button>
           <span class="spacer"></span>
 
           <div class="tools">
@@ -142,8 +140,14 @@ export class AppComponent {
     this.bp.observe([Breakpoints.XSmall, Breakpoints.Small]).pipe(map((r) => r.matches)),
     { initialValue: false },
   );
+  sidenavOpen = signal(true);
 
-  closeIfMobile(drawer: { close: () => void }) {
-    if (this.isMobile()) drawer.close();
+  constructor() {
+    // Al cambiar de tamaño: en móvil el sidebar arranca cerrado, en escritorio abierto.
+    effect(() => this.sidenavOpen.set(!this.isMobile()));
+  }
+
+  onNav() {
+    if (this.isMobile()) this.sidenavOpen.set(false);
   }
 }
