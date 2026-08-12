@@ -1,0 +1,588 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "cel25",
+    "name": "Celebrations",
+    "series": "Sword & Shield",
+    "totalCards": 25,
+    "releaseDate": "2021-10-08",
+    "symbolUrl": "https://images.pokemontcg.io/cel25/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/25",
+      "name": "Ho-Oh",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/1_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.32,
+        "Reverse Holo": 0.51
+      }
+    },
+    {
+      "number": "002/25",
+      "name": "Reshiram",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/2_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.24,
+        "Reverse Holo": 0.38
+      }
+    },
+    {
+      "number": "003/25",
+      "name": "Kyogre",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/3_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.34,
+        "Reverse Holo": 0.54
+      }
+    },
+    {
+      "number": "004/25",
+      "name": "Palkia",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/4_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.3,
+        "Reverse Holo": 0.48
+      }
+    },
+    {
+      "number": "005/25",
+      "name": "Pikachu",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/5_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 5.72,
+        "Reverse Holo": 9.15
+      }
+    },
+    {
+      "number": "006/25",
+      "name": "Flying Pikachu V",
+      "rarity": "Rare Holo V",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/6_hires.png",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic V",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 4.56
+      }
+    },
+    {
+      "number": "007/25",
+      "name": "Flying Pikachu VMAX",
+      "rarity": "Rare Holo VMAX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/7_hires.png",
+      "attributes": {
+        "hp": 310,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "VMAX",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 8.21
+      }
+    },
+    {
+      "number": "008/25",
+      "name": "Surfing Pikachu V",
+      "rarity": "Rare Holo V",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/8_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic V",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 4.82
+      }
+    },
+    {
+      "number": "009/25",
+      "name": "Surfing Pikachu VMAX",
+      "rarity": "Rare Holo VMAX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/9_hires.png",
+      "attributes": {
+        "hp": 310,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "VMAX",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 8.28
+      }
+    },
+    {
+      "number": "010/25",
+      "name": "Zekrom",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/10_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.29,
+        "Reverse Holo": 0.46
+      }
+    },
+    {
+      "number": "011/25",
+      "name": "Mew",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/11_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 3.75,
+        "Reverse Holo": 6.0
+      }
+    },
+    {
+      "number": "012/25",
+      "name": "Xerneas",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/12_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.27,
+        "Reverse Holo": 0.43
+      }
+    },
+    {
+      "number": "013/25",
+      "name": "Cosmog",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/13_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.33,
+        "Reverse Holo": 0.53
+      }
+    },
+    {
+      "number": "014/25",
+      "name": "Cosmoem",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/14_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Darkness",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.28,
+        "Reverse Holo": 0.45
+      }
+    },
+    {
+      "number": "015/25",
+      "name": "Lunala",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/15_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.38,
+        "Reverse Holo": 0.61
+      }
+    },
+    {
+      "number": "016/25",
+      "name": "Zacian V",
+      "rarity": "Rare Holo V",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/16_hires.png",
+      "attributes": {
+        "hp": 220,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic V",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.7
+      }
+    },
+    {
+      "number": "017/25",
+      "name": "Groudon",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/17_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.35,
+        "Reverse Holo": 0.56
+      }
+    },
+    {
+      "number": "018/25",
+      "name": "Zamazenta V",
+      "rarity": "Rare Holo V",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/18_hires.png",
+      "attributes": {
+        "hp": 220,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic V",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.73
+      }
+    },
+    {
+      "number": "019/25",
+      "name": "Yveltal",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/19_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.28,
+        "Reverse Holo": 0.45
+      }
+    },
+    {
+      "number": "020/25",
+      "name": "Dialga",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/20_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.29,
+        "Reverse Holo": 0.46
+      }
+    },
+    {
+      "number": "021/25",
+      "name": "Solgaleo",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/21_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.32,
+        "Reverse Holo": 0.51
+      }
+    },
+    {
+      "number": "022/25",
+      "name": "Lugia",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/22_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.82,
+        "Reverse Holo": 1.31
+      }
+    },
+    {
+      "number": "023/25",
+      "name": "Professor's Research (Professor Oak)",
+      "rarity": "Rare Holo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/cel25/23_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.32,
+        "Reverse Holo": 0.51
+      }
+    },
+    {
+      "number": "024/25",
+      "name": "Professor's Research (Professor Oak)",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/cel25/24_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.99
+      }
+    },
+    {
+      "number": "025/25",
+      "name": "Mew",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/cel25/25_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 62.4,
+        "Reverse Holo": 99.84
+      }
+    }
+  ]
+}

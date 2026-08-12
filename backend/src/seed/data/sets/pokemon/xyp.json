@@ -1,0 +1,5047 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "xyp",
+    "name": "XY Black Star Promos",
+    "series": "XY",
+    "totalCards": 211,
+    "releaseDate": "2013-10-12",
+    "symbolUrl": "https://images.pokemontcg.io/xyp/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "XY01/211",
+      "name": "Chespin",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY01_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 4.99,
+        "Reverse Holo": 7.98
+      }
+    },
+    {
+      "number": "XY02/211",
+      "name": "Fennekin",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY02_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 8.01,
+        "Reverse Holo": 12.82
+      }
+    },
+    {
+      "number": "XY03/211",
+      "name": "Froakie",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY03_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.27,
+        "Reverse Holo": 18.03
+      }
+    },
+    {
+      "number": "XY04/211",
+      "name": "Sylveon",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY04_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 47.53,
+        "Reverse Holo": 76.05
+      }
+    },
+    {
+      "number": "XY05/211",
+      "name": "Xerneas",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY05_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 10.28,
+        "Reverse Holo": 16.45
+      }
+    },
+    {
+      "number": "XY06/211",
+      "name": "Yveltal",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY06_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.52,
+        "Reverse Holo": 31.23
+      }
+    },
+    {
+      "number": "XY07/211",
+      "name": "Xerneas-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY07_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 7.72,
+        "Reverse Holo": 12.35
+      }
+    },
+    {
+      "number": "XY08/211",
+      "name": "Yveltal-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY08_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 10.83,
+        "Reverse Holo": 17.33
+      }
+    },
+    {
+      "number": "XY09/211",
+      "name": "Garchomp-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY09_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.32,
+        "Reverse Holo": 26.11
+      }
+    },
+    {
+      "number": "XY10/211",
+      "name": "Dragalge",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY10_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 13.52,
+        "Reverse Holo": 21.63
+      }
+    },
+    {
+      "number": "XY100/211",
+      "name": "Mewtwo",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY100_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 25.01,
+        "Reverse Holo": 40.02
+      }
+    },
+    {
+      "number": "XY101/211",
+      "name": "Mewtwo",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY101_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 34.67,
+        "Reverse Holo": 55.47
+      }
+    },
+    {
+      "number": "XY102/211",
+      "name": "Aurorus-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY102_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Metal",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 22.32,
+        "Reverse Holo": 35.71
+      }
+    },
+    {
+      "number": "XY103/211",
+      "name": "Mawile-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY103_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.13,
+        "Reverse Holo": 17.81
+      }
+    },
+    {
+      "number": "XY104/211",
+      "name": "M Mawile-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY104_hires.png",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 30.65,
+        "Reverse Holo": 49.04
+      }
+    },
+    {
+      "number": "XY105/211",
+      "name": "Mawile Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY105_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 4.71,
+        "Reverse Holo": 7.54
+      }
+    },
+    {
+      "number": "XY106/211",
+      "name": "Gyarados-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY106_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 24.32,
+        "Reverse Holo": 38.91
+      }
+    },
+    {
+      "number": "XY107/211",
+      "name": "Mewtwo-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY107_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 13.79,
+        "Reverse Holo": 22.06
+      }
+    },
+    {
+      "number": "XY108/211",
+      "name": "Machamp-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY108_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.82,
+        "Reverse Holo": 6.11
+      }
+    },
+    {
+      "number": "XY109/211",
+      "name": "Gyarados",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY109_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 58.57,
+        "Reverse Holo": 93.71
+      }
+    },
+    {
+      "number": "XY11/211",
+      "name": "Skiddo",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY11_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.77,
+        "Reverse Holo": 2.83
+      }
+    },
+    {
+      "number": "XY110/211",
+      "name": "Mew",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY110_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 137.25,
+        "Reverse Holo": 219.6
+      }
+    },
+    {
+      "number": "XY111/211",
+      "name": "Celebi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY111_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 48.45,
+        "Reverse Holo": 77.52
+      }
+    },
+    {
+      "number": "XY112/211",
+      "name": "Jirachi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY112_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 76.8,
+        "Reverse Holo": 122.88
+      }
+    },
+    {
+      "number": "XY113/211",
+      "name": "Manaphy",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY113_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 46.35,
+        "Reverse Holo": 74.16
+      }
+    },
+    {
+      "number": "XY114/211",
+      "name": "Darkrai",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY114_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 91.55,
+        "Reverse Holo": 146.48
+      }
+    },
+    {
+      "number": "XY115/211",
+      "name": "Shaymin",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY115_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 67.6,
+        "Reverse Holo": 108.16
+      }
+    },
+    {
+      "number": "XY116/211",
+      "name": "Arceus",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY116_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 58.3,
+        "Reverse Holo": 93.28
+      }
+    },
+    {
+      "number": "XY117/211",
+      "name": "Victini",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY117_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 61.9,
+        "Reverse Holo": 99.04
+      }
+    },
+    {
+      "number": "XY118/211",
+      "name": "Keldeo",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY118_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 29.06,
+        "Reverse Holo": 46.5
+      }
+    },
+    {
+      "number": "XY119/211",
+      "name": "Genesect",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY119_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 17.94,
+        "Reverse Holo": 28.7
+      }
+    },
+    {
+      "number": "XY12/211",
+      "name": "Honedge",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY12_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.23,
+        "Reverse Holo": 5.17
+      }
+    },
+    {
+      "number": "XY120/211",
+      "name": "Meloetta",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY120_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 24.05,
+        "Reverse Holo": 38.48
+      }
+    },
+    {
+      "number": "XY121/211",
+      "name": "Charizard-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY121_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 205.98,
+        "Reverse Holo": 329.57
+      }
+    },
+    {
+      "number": "XY122/211",
+      "name": "Blastoise-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY122_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 288.41,
+        "Reverse Holo": 461.46
+      }
+    },
+    {
+      "number": "XY123/211",
+      "name": "Venusaur-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY123_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 232.7,
+        "Reverse Holo": 372.32
+      }
+    },
+    {
+      "number": "XY124/211",
+      "name": "Pikachu-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY124_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 432.69,
+        "Reverse Holo": 692.3
+      }
+    },
+    {
+      "number": "XY125/211",
+      "name": "Mewtwo-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY125_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 131.41,
+        "Reverse Holo": 210.26
+      }
+    },
+    {
+      "number": "XY126/211",
+      "name": "Mew-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY126_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 211.45,
+        "Reverse Holo": 338.32
+      }
+    },
+    {
+      "number": "XY127/211",
+      "name": "Moltres",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY127_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 55.15,
+        "Reverse Holo": 88.24
+      }
+    },
+    {
+      "number": "XY128/211",
+      "name": "White Kyurem",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY128_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 21.06,
+        "Reverse Holo": 33.7
+      }
+    },
+    {
+      "number": "XY129/211",
+      "name": "Zygarde",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY129_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 14.0,
+        "Reverse Holo": 22.4
+      }
+    },
+    {
+      "number": "XY13/211",
+      "name": "Machamp",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY13_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.54,
+        "Reverse Holo": 31.26
+      }
+    },
+    {
+      "number": "XY130/211",
+      "name": "Tyranitar",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY130_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fighting",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 39.83,
+        "Reverse Holo": 63.73
+      }
+    },
+    {
+      "number": "XY131/211",
+      "name": "Pansear",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY131_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.19,
+        "Reverse Holo": 1.9
+      }
+    },
+    {
+      "number": "XY132/211",
+      "name": "Gastly",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY132_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 20.82,
+        "Reverse Holo": 33.31
+      }
+    },
+    {
+      "number": "XY133/211",
+      "name": "Ash-Greninja-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY133_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 114.76,
+        "Reverse Holo": 183.62
+      }
+    },
+    {
+      "number": "XY134/211",
+      "name": "Empoleon BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY134_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Water"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.2,
+        "Reverse Holo": 30.72
+      }
+    },
+    {
+      "number": "XY135/211",
+      "name": "Beheeyem BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY135_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.57,
+        "Reverse Holo": 18.51
+      }
+    },
+    {
+      "number": "XY136/211",
+      "name": "Noctowl BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY136_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 15.43,
+        "Reverse Holo": 24.69
+      }
+    },
+    {
+      "number": "XY137/211",
+      "name": "Vivillon",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY137_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.63,
+        "Reverse Holo": 4.21
+      }
+    },
+    {
+      "number": "XY138/211",
+      "name": "Froakie",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY138_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 4.98,
+        "Reverse Holo": 7.97
+      }
+    },
+    {
+      "number": "XY139/211",
+      "name": "Floette",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY139_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.54,
+        "Reverse Holo": 5.66
+      }
+    },
+    {
+      "number": "XY14/211",
+      "name": "Trevenant",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY14_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Darkness",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.75,
+        "Reverse Holo": 1.2
+      }
+    },
+    {
+      "number": "XY140/211",
+      "name": "Lucario",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY140_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 13.78,
+        "Reverse Holo": 22.05
+      }
+    },
+    {
+      "number": "XY141/211",
+      "name": "Rayquaza",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY141_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 41.56,
+        "Reverse Holo": 66.5
+      }
+    },
+    {
+      "number": "XY142/211",
+      "name": "Azelf",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY142_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 8.73,
+        "Reverse Holo": 13.97
+      }
+    },
+    {
+      "number": "XY143/211",
+      "name": "Magikarp",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY143_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 85.86,
+        "Reverse Holo": 137.38
+      }
+    },
+    {
+      "number": "XY144/211",
+      "name": "Yanmega",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY144_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 10.9,
+        "Reverse Holo": 17.44
+      }
+    },
+    {
+      "number": "XY145/211",
+      "name": "Volcanion",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY145_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 15.61,
+        "Reverse Holo": 24.98
+      }
+    },
+    {
+      "number": "XY146/211",
+      "name": "Clawitzer",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY146_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.15,
+        "Reverse Holo": 25.84
+      }
+    },
+    {
+      "number": "XY147/211",
+      "name": "Hoopa",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY147_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 23.45,
+        "Reverse Holo": 37.52
+      }
+    },
+    {
+      "number": "XY148/211",
+      "name": "Shaymin-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY148_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 69.94,
+        "Reverse Holo": 111.9
+      }
+    },
+    {
+      "number": "XY149/211",
+      "name": "Xerneas-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY149_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.13,
+        "Reverse Holo": 25.81
+      }
+    },
+    {
+      "number": "XY15/211",
+      "name": "Slurpuff",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY15_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.61,
+        "Reverse Holo": 4.18
+      }
+    },
+    {
+      "number": "XY150/211",
+      "name": "Yveltal-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY150_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 13.47,
+        "Reverse Holo": 21.55
+      }
+    },
+    {
+      "number": "XY150a/211",
+      "name": "Yveltal-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY150a_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY151/211",
+      "name": "Zygarde-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY151_hires.png",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 6.48,
+        "Reverse Holo": 10.37
+      }
+    },
+    {
+      "number": "XY152/211",
+      "name": "Zygarde",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY152_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.52,
+        "Reverse Holo": 4.03
+      }
+    },
+    {
+      "number": "XY153/211",
+      "name": "Ho-Oh",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY153_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.36,
+        "Reverse Holo": 18.18
+      }
+    },
+    {
+      "number": "XY154/211",
+      "name": "Ho-Oh BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY154_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Fire"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 38.45,
+        "Reverse Holo": 61.52
+      }
+    },
+    {
+      "number": "XY155/211",
+      "name": "Wobbuffet BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY155_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.25,
+        "Reverse Holo": 30.8
+      }
+    },
+    {
+      "number": "XY156/211",
+      "name": "Lugia",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY156_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 48.69,
+        "Reverse Holo": 77.9
+      }
+    },
+    {
+      "number": "XY157/211",
+      "name": "Beedrill-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY157_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.38,
+        "Reverse Holo": 8.61
+      }
+    },
+    {
+      "number": "XY158/211",
+      "name": "M Beedrill-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY158_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Grass"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Fire"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 26.67,
+        "Reverse Holo": 42.67
+      }
+    },
+    {
+      "number": "XY159/211",
+      "name": "Beedrill Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY159_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.59,
+        "Reverse Holo": 2.54
+      }
+    },
+    {
+      "number": "XY16/211",
+      "name": "Gogoat",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY16_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 6.21,
+        "Reverse Holo": 9.94
+      }
+    },
+    {
+      "number": "XY160/211",
+      "name": "Black Kyurem",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY160_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.59,
+        "Reverse Holo": 4.14
+      }
+    },
+    {
+      "number": "XY161/211",
+      "name": "Braixen",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY161_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.04,
+        "Reverse Holo": 1.66
+      }
+    },
+    {
+      "number": "XY162/211",
+      "name": "Greninja",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY162_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 18.26,
+        "Reverse Holo": 29.22
+      }
+    },
+    {
+      "number": "XY163/211",
+      "name": "Weezing",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY163_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.98,
+        "Reverse Holo": 3.17
+      }
+    },
+    {
+      "number": "XY164/211",
+      "name": "Volcanion",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY164_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.24,
+        "Reverse Holo": 1.98
+      }
+    },
+    {
+      "number": "XY165/211",
+      "name": "Magearna",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY165_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.28,
+        "Reverse Holo": 5.25
+      }
+    },
+    {
+      "number": "XY166/211",
+      "name": "M Gengar-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY166_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 266.62,
+        "Reverse Holo": 426.59
+      }
+    },
+    {
+      "number": "XY167/211",
+      "name": "Garchomp-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY167_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 31.82,
+        "Reverse Holo": 50.91
+      }
+    },
+    {
+      "number": "XY168/211",
+      "name": "M Garchomp-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY168_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Fairy"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 113.87,
+        "Reverse Holo": 182.19
+      }
+    },
+    {
+      "number": "XY169/211",
+      "name": "Garchomp Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY169_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 6.0,
+        "Reverse Holo": 9.6
+      }
+    },
+    {
+      "number": "XY17/211",
+      "name": "Charizard-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY17_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 34.91,
+        "Reverse Holo": 55.86
+      }
+    },
+    {
+      "number": "XY170/211",
+      "name": "Salamence-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY170_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 14.95,
+        "Reverse Holo": 23.92
+      }
+    },
+    {
+      "number": "XY171/211",
+      "name": "M Salamence-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY171_hires.png",
+      "attributes": {
+        "hp": 230,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 68.81,
+        "Reverse Holo": 110.1
+      }
+    },
+    {
+      "number": "XY172/211",
+      "name": "Salamence Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY172_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 8.68,
+        "Reverse Holo": 13.89
+      }
+    },
+    {
+      "number": "XY173/211",
+      "name": "Volcanion-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY173_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Fire",
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.37,
+        "Reverse Holo": 5.39
+      }
+    },
+    {
+      "number": "XY174/211",
+      "name": "Pikachu-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY174_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 27.47,
+        "Reverse Holo": 43.95
+      }
+    },
+    {
+      "number": "XY175/211",
+      "name": "Magearna-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY175_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.49,
+        "Reverse Holo": 3.98
+      }
+    },
+    {
+      "number": "XY176/211",
+      "name": "Champions Festival",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY176_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY177/211",
+      "name": "Karen",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY177_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.71,
+        "Reverse Holo": 20.34
+      }
+    },
+    {
+      "number": "XY177a/211",
+      "name": "Karen",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY177a_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY178/211",
+      "name": "Absol",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY178_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 42.45,
+        "Reverse Holo": 67.92
+      }
+    },
+    {
+      "number": "XY179/211",
+      "name": "Snorlax",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY179_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 25.45,
+        "Reverse Holo": 40.72
+      }
+    },
+    {
+      "number": "XY18/211",
+      "name": "Chesnaught-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY18_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.36,
+        "Reverse Holo": 8.58
+      }
+    },
+    {
+      "number": "XY180/211",
+      "name": "Arcanine BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY180_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Fire"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 27.66,
+        "Reverse Holo": 44.26
+      }
+    },
+    {
+      "number": "XY181/211",
+      "name": "Crobat BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY181_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 13.36,
+        "Reverse Holo": 21.38
+      }
+    },
+    {
+      "number": "XY182/211",
+      "name": "Mandibuzz BREAK",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY182_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "BREAK"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.53,
+        "Reverse Holo": 8.85
+      }
+    },
+    {
+      "number": "XY183/211",
+      "name": "Mewtwo-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY183_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 14.74,
+        "Reverse Holo": 23.58
+      }
+    },
+    {
+      "number": "XY184/211",
+      "name": "Giratina",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY184_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 18.05,
+        "Reverse Holo": 28.88
+      }
+    },
+    {
+      "number": "XY185/211",
+      "name": "Volcanion",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY185_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.15,
+        "Reverse Holo": 17.84
+      }
+    },
+    {
+      "number": "XY186/211",
+      "name": "Magearna",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY186_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 30.35,
+        "Reverse Holo": 48.56
+      }
+    },
+    {
+      "number": "XY187/211",
+      "name": "Celebi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY187_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 25.53,
+        "Reverse Holo": 40.85
+      }
+    },
+    {
+      "number": "XY188/211",
+      "name": "Shaymin",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY188_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.17,
+        "Reverse Holo": 19.47
+      }
+    },
+    {
+      "number": "XY189/211",
+      "name": "Victini",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY189_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 7.81,
+        "Reverse Holo": 12.5
+      }
+    },
+    {
+      "number": "XY19/211",
+      "name": "Delphox-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY19_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 7.92,
+        "Reverse Holo": 12.67
+      }
+    },
+    {
+      "number": "XY190/211",
+      "name": "Manaphy",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY190_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 6.86,
+        "Reverse Holo": 10.98
+      }
+    },
+    {
+      "number": "XY191/211",
+      "name": "Keldeo",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY191_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.69,
+        "Reverse Holo": 5.9
+      }
+    },
+    {
+      "number": "XY192/211",
+      "name": "Mew",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY192_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 103.05,
+        "Reverse Holo": 164.88
+      }
+    },
+    {
+      "number": "XY193/211",
+      "name": "Meloetta",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY193_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 6.95,
+        "Reverse Holo": 11.12
+      }
+    },
+    {
+      "number": "XY194/211",
+      "name": "Darkrai",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY194_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 28.24,
+        "Reverse Holo": 45.18
+      }
+    },
+    {
+      "number": "XY195/211",
+      "name": "Jirachi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY195_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.4,
+        "Reverse Holo": 26.24
+      }
+    },
+    {
+      "number": "XY196/211",
+      "name": "Genesect",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY196_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.73,
+        "Reverse Holo": 4.37
+      }
+    },
+    {
+      "number": "XY197/211",
+      "name": "Arceus",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY197_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.85,
+        "Reverse Holo": 26.96
+      }
+    },
+    {
+      "number": "XY198/211",
+      "name": "M Camerupt-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY198_hires.png",
+      "attributes": {
+        "hp": 230,
+        "types": [
+          "Fire"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Water",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 8.3,
+        "Reverse Holo": 13.28
+      }
+    },
+    {
+      "number": "XY198a/211",
+      "name": "M Camerupt-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY198a_hires.png",
+      "attributes": {
+        "hp": 230,
+        "types": [
+          "Fire"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Water",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY199/211",
+      "name": "Camerupt Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY199_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.38,
+        "Reverse Holo": 2.21
+      }
+    },
+    {
+      "number": "XY20/211",
+      "name": "Greninja-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY20_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 31.37,
+        "Reverse Holo": 50.19
+      }
+    },
+    {
+      "number": "XY200/211",
+      "name": "M Sharpedo-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY200_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 24.62,
+        "Reverse Holo": 39.39
+      }
+    },
+    {
+      "number": "XY200a/211",
+      "name": "M Sharpedo-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY200a_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY201/211",
+      "name": "Sharpedo Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY201_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.88,
+        "Reverse Holo": 4.61
+      }
+    },
+    {
+      "number": "XY202/211",
+      "name": "Pikachu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY202_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY203/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY203_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 20.53,
+        "Reverse Holo": 32.85
+      }
+    },
+    {
+      "number": "XY204/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY204_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 56.54,
+        "Reverse Holo": 90.46
+      }
+    },
+    {
+      "number": "XY205/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY205_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.81,
+        "Reverse Holo": 26.9
+      }
+    },
+    {
+      "number": "XY206/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY206_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 26.86,
+        "Reverse Holo": 42.98
+      }
+    },
+    {
+      "number": "XY207/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY207_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 17.14,
+        "Reverse Holo": 27.42
+      }
+    },
+    {
+      "number": "XY208/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY208_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 37.69,
+        "Reverse Holo": 60.3
+      }
+    },
+    {
+      "number": "XY209/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY209_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 15.61,
+        "Reverse Holo": 24.98
+      }
+    },
+    {
+      "number": "XY21/211",
+      "name": "Bronzong",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY21_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 13.53,
+        "Reverse Holo": 21.65
+      }
+    },
+    {
+      "number": "XY210/211",
+      "name": "Gym Badge",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY210_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 31.81,
+        "Reverse Holo": 50.9
+      }
+    },
+    {
+      "number": "XY211/211",
+      "name": "Lucario Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY211_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 6.58,
+        "Reverse Holo": 10.53
+      }
+    },
+    {
+      "number": "XY22/211",
+      "name": "Darkrai",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY22_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 14.31,
+        "Reverse Holo": 22.9
+      }
+    },
+    {
+      "number": "XY23/211",
+      "name": "Shiftry",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY23_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.75,
+        "Reverse Holo": 1.2
+      }
+    },
+    {
+      "number": "XY24/211",
+      "name": "Greninja",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY24_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 95.0,
+        "Reverse Holo": 152.0
+      }
+    },
+    {
+      "number": "XY25/211",
+      "name": "Krookodile-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY25_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fighting",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.74,
+        "Reverse Holo": 20.38
+      }
+    },
+    {
+      "number": "XY26/211",
+      "name": "Pyroar",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY26_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.1,
+        "Reverse Holo": 1.76
+      }
+    },
+    {
+      "number": "XY27/211",
+      "name": "Champions Festival",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY27_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY28/211",
+      "name": "Venusaur-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY28_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 4.86,
+        "Reverse Holo": 7.78
+      }
+    },
+    {
+      "number": "XY29/211",
+      "name": "Charizard-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY29_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 21.44,
+        "Reverse Holo": 34.3
+      }
+    },
+    {
+      "number": "XY30/211",
+      "name": "Blastoise-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY30_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.11,
+        "Reverse Holo": 17.78
+      }
+    },
+    {
+      "number": "XY31/211",
+      "name": "Xerneas",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY31_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.89,
+        "Reverse Holo": 6.22
+      }
+    },
+    {
+      "number": "XY32/211",
+      "name": "Yveltal",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY32_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.48,
+        "Reverse Holo": 8.77
+      }
+    },
+    {
+      "number": "XY33/211",
+      "name": "Trevor",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY33_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.92,
+        "Reverse Holo": 3.07
+      }
+    },
+    {
+      "number": "XY34/211",
+      "name": "Metagross-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY34_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 28.89,
+        "Reverse Holo": 46.22
+      }
+    },
+    {
+      "number": "XY35/211",
+      "name": "M Metagross-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY35_hires.png",
+      "attributes": {
+        "hp": 220,
+        "types": [
+          "Metal"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 67.48,
+        "Reverse Holo": 107.97
+      }
+    },
+    {
+      "number": "XY36/211",
+      "name": "Treecko",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY36_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.73,
+        "Reverse Holo": 5.97
+      }
+    },
+    {
+      "number": "XY37/211",
+      "name": "Torchic",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY37_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 4.74,
+        "Reverse Holo": 7.58
+      }
+    },
+    {
+      "number": "XY38/211",
+      "name": "Mudkip",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY38_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 8.06,
+        "Reverse Holo": 12.9
+      }
+    },
+    {
+      "number": "XY39/211",
+      "name": "Kingdra",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY39_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 37.09,
+        "Reverse Holo": 59.34
+      }
+    },
+    {
+      "number": "XY40/211",
+      "name": "Ditto",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY40_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 93.78,
+        "Reverse Holo": 150.05
+      }
+    },
+    {
+      "number": "XY41/211",
+      "name": "Kyogre-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY41_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.34,
+        "Reverse Holo": 19.74
+      }
+    },
+    {
+      "number": "XY42/211",
+      "name": "Groudon-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY42_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 15.18,
+        "Reverse Holo": 24.29
+      }
+    },
+    {
+      "number": "XY43/211",
+      "name": "Diancie-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY43_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 10.33,
+        "Reverse Holo": 16.53
+      }
+    },
+    {
+      "number": "XY44/211",
+      "name": "M Diancie-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY44_hires.png",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 30.28,
+        "Reverse Holo": 48.45
+      }
+    },
+    {
+      "number": "XY45/211",
+      "name": "Gallade-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY45_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.32,
+        "Reverse Holo": 5.31
+      }
+    },
+    {
+      "number": "XY46/211",
+      "name": "Altaria",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY46_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 29.85,
+        "Reverse Holo": 47.76
+      }
+    },
+    {
+      "number": "XY47/211",
+      "name": "Heliolisk",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY47_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.86,
+        "Reverse Holo": 4.58
+      }
+    },
+    {
+      "number": "XY48/211",
+      "name": "Meowstic",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY48_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 7.52,
+        "Reverse Holo": 12.03
+      }
+    },
+    {
+      "number": "XY49/211",
+      "name": "Regirock",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY49_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 7.59,
+        "Reverse Holo": 12.14
+      }
+    },
+    {
+      "number": "XY50/211",
+      "name": "Pangoro",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY50_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.26,
+        "Reverse Holo": 3.62
+      }
+    },
+    {
+      "number": "XY51/211",
+      "name": "Kyogre",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY51_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 18.93,
+        "Reverse Holo": 30.29
+      }
+    },
+    {
+      "number": "XY52/211",
+      "name": "Groudon",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY52_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 20.82,
+        "Reverse Holo": 33.31
+      }
+    },
+    {
+      "number": "XY53/211",
+      "name": "Sceptile-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY53_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 9.28,
+        "Reverse Holo": 14.85
+      }
+    },
+    {
+      "number": "XY54/211",
+      "name": "Blaziken-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY54_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 9.01,
+        "Reverse Holo": 14.42
+      }
+    },
+    {
+      "number": "XY55/211",
+      "name": "Swampert-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY55_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.01,
+        "Reverse Holo": 17.62
+      }
+    },
+    {
+      "number": "XY56/211",
+      "name": "Blissey",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY56_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.0,
+        "Reverse Holo": 8.0
+      }
+    },
+    {
+      "number": "XY57/211",
+      "name": "Fearow",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY57_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 68.32,
+        "Reverse Holo": 109.31
+      }
+    },
+    {
+      "number": "XY58/211",
+      "name": "Malamar",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY58_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.25,
+        "Reverse Holo": 8.4
+      }
+    },
+    {
+      "number": "XY59/211",
+      "name": "Salamence",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY59_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 45.19,
+        "Reverse Holo": 72.3
+      }
+    },
+    {
+      "number": "XY60/211",
+      "name": "Gyarados",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY60_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 423.88,
+        "Reverse Holo": 678.21
+      }
+    },
+    {
+      "number": "XY61/211",
+      "name": "Flygon-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY61_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.17,
+        "Reverse Holo": 19.47
+      }
+    },
+    {
+      "number": "XY62/211",
+      "name": "Absol-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY62_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.86,
+        "Reverse Holo": 20.58
+      }
+    },
+    {
+      "number": "XY63/211",
+      "name": "M Absol-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY63_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 28.64,
+        "Reverse Holo": 45.82
+      }
+    },
+    {
+      "number": "XY64/211",
+      "name": "Rayquaza",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY64_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 47.9,
+        "Reverse Holo": 76.64
+      }
+    },
+    {
+      "number": "XY65/211",
+      "name": "Latios",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY65_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 14.8,
+        "Reverse Holo": 23.68
+      }
+    },
+    {
+      "number": "XY66/211",
+      "name": "Rayquaza-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY66_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 59.55,
+        "Reverse Holo": 95.28
+      }
+    },
+    {
+      "number": "XY67/211",
+      "name": "Jirachi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY67_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 20.65,
+        "Reverse Holo": 33.04
+      }
+    },
+    {
+      "number": "XY67a/211",
+      "name": "Jirachi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY67a_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "XY68/211",
+      "name": "Chesnaught",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY68_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 7.98,
+        "Reverse Holo": 12.77
+      }
+    },
+    {
+      "number": "XY69/211",
+      "name": "Rayquaza-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY69_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 174.85,
+        "Reverse Holo": 279.76
+      }
+    },
+    {
+      "number": "XY70/211",
+      "name": "Tyrantrum-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY70_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 40.18,
+        "Reverse Holo": 64.29
+      }
+    },
+    {
+      "number": "XY71/211",
+      "name": "Hoopa-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY71_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.44,
+        "Reverse Holo": 5.5
+      }
+    },
+    {
+      "number": "XY72/211",
+      "name": "Latios-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY72_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 15.98,
+        "Reverse Holo": 25.57
+      }
+    },
+    {
+      "number": "XY73/211",
+      "name": "Rayquaza-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY73_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fairy",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 40.78,
+        "Reverse Holo": 65.25
+      }
+    },
+    {
+      "number": "XY74/211",
+      "name": "Reshiram",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY74_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 71.95,
+        "Reverse Holo": 115.12
+      }
+    },
+    {
+      "number": "XY75/211",
+      "name": "Palkia",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY75_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 65.87,
+        "Reverse Holo": 105.39
+      }
+    },
+    {
+      "number": "XY76/211",
+      "name": "Zekrom",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY76_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 105.33,
+        "Reverse Holo": 168.53
+      }
+    },
+    {
+      "number": "XY77/211",
+      "name": "Dialga",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY77_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 53.28,
+        "Reverse Holo": 85.25
+      }
+    },
+    {
+      "number": "XY78/211",
+      "name": "Latias",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY78_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 86.84,
+        "Reverse Holo": 138.94
+      }
+    },
+    {
+      "number": "XY79/211",
+      "name": "Latios",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY79_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 118.06,
+        "Reverse Holo": 188.9
+      }
+    },
+    {
+      "number": "XY80/211",
+      "name": "Black Kyurem",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY80_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 49.36,
+        "Reverse Holo": 78.98
+      }
+    },
+    {
+      "number": "XY81/211",
+      "name": "White Kyurem",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY81_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 47.86,
+        "Reverse Holo": 76.58
+      }
+    },
+    {
+      "number": "XY82/211",
+      "name": "Regigigas",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY82_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 46.05,
+        "Reverse Holo": 73.68
+      }
+    },
+    {
+      "number": "XY83/211",
+      "name": "Arceus",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY83_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 72.33,
+        "Reverse Holo": 115.73
+      }
+    },
+    {
+      "number": "XY84/211",
+      "name": "Pikachu-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY84_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 69.76,
+        "Reverse Holo": 111.62
+      }
+    },
+    {
+      "number": "XY85/211",
+      "name": "Hoopa-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY85_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.17,
+        "Reverse Holo": 30.67
+      }
+    },
+    {
+      "number": "XY86/211",
+      "name": "M Blaziken-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY86_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Fire"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 86.78,
+        "Reverse Holo": 138.85
+      }
+    },
+    {
+      "number": "XY87/211",
+      "name": "M Swampert-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY87_hires.png",
+      "attributes": {
+        "hp": 220,
+        "types": [
+          "Water"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 69.96,
+        "Reverse Holo": 111.94
+      }
+    },
+    {
+      "number": "XY88/211",
+      "name": "Chespin",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY88_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 6.84,
+        "Reverse Holo": 10.94
+      }
+    },
+    {
+      "number": "XY89/211",
+      "name": "Pikachu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY89_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 23.12,
+        "Reverse Holo": 36.99
+      }
+    },
+    {
+      "number": "XY90/211",
+      "name": "Hoopa",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY90_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.7,
+        "Reverse Holo": 5.92
+      }
+    },
+    {
+      "number": "XY91/211",
+      "name": "Champions Festival",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY91_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 299.99,
+        "Reverse Holo": 479.98
+      }
+    },
+    {
+      "number": "XY92/211",
+      "name": "Sableye",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY92_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 31.2,
+        "Reverse Holo": 49.92
+      }
+    },
+    {
+      "number": "XY93/211",
+      "name": "Celebi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY93_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 22.19,
+        "Reverse Holo": 35.5
+      }
+    },
+    {
+      "number": "XY94/211",
+      "name": "Trevenant",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY94_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Darkness",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 10.93,
+        "Reverse Holo": 17.49
+      }
+    },
+    {
+      "number": "XY95/211",
+      "name": "Pikachu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY95_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 178.32,
+        "Reverse Holo": 285.31
+      }
+    },
+    {
+      "number": "XY96/211",
+      "name": "Umbreon",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY96_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 112.79,
+        "Reverse Holo": 180.46
+      }
+    },
+    {
+      "number": "XY97/211",
+      "name": "Aerodactyl-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY97_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.48,
+        "Reverse Holo": 8.77
+      }
+    },
+    {
+      "number": "XY98/211",
+      "name": "M Aerodactyl-EX",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY98_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "MEGA EX",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 23.28,
+        "Reverse Holo": 37.25
+      }
+    },
+    {
+      "number": "XY99/211",
+      "name": "Aerodactyl Spirit Link",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY99_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.93,
+        "Reverse Holo": 3.09
+      }
+    }
+  ]
+}

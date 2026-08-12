@@ -1,0 +1,3940 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "sm5",
+    "name": "Ultra Prism",
+    "series": "Sun & Moon",
+    "totalCards": 156,
+    "releaseDate": "2018-02-02",
+    "symbolUrl": "https://images.pokemontcg.io/sm5/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/156",
+      "name": "Exeggcute",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/1_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.06,
+        "Reverse Holo": 0.37
+      }
+    },
+    {
+      "number": "002/156",
+      "name": "Yanma",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/2_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.09,
+        "Reverse Holo": 0.31
+      }
+    },
+    {
+      "number": "003/156",
+      "name": "Yanmega",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/3_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.32
+      }
+    },
+    {
+      "number": "004/156",
+      "name": "Roselia",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/4_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.16,
+        "Reverse Holo": 0.43
+      }
+    },
+    {
+      "number": "005/156",
+      "name": "Roserade",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/5_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.26,
+        "Reverse Holo": 0.55
+      }
+    },
+    {
+      "number": "006/156",
+      "name": "Turtwig",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/6_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.04,
+        "Reverse Holo": 3.57
+      }
+    },
+    {
+      "number": "007/156",
+      "name": "Turtwig",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/7_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.26,
+        "Reverse Holo": 0.57
+      }
+    },
+    {
+      "number": "008/156",
+      "name": "Grotle",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/8_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.06,
+        "Reverse Holo": 0.7
+      }
+    },
+    {
+      "number": "009/156",
+      "name": "Torterra",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/9_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.7,
+        "Reverse Holo": 3.43
+      }
+    },
+    {
+      "number": "010/156",
+      "name": "Cherubi",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/10_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.8,
+        "Reverse Holo": 14.05
+      }
+    },
+    {
+      "number": "011/156",
+      "name": "Cherrim",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/11_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.41,
+        "Reverse Holo": 0.67
+      }
+    },
+    {
+      "number": "012/156",
+      "name": "Carnivine",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/12_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.07,
+        "Reverse Holo": 0.33
+      }
+    },
+    {
+      "number": "013/156",
+      "name": "Leafeon-GX",
+      "rarity": "Rare Holo GX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/13_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1 GX",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 9.18
+      }
+    },
+    {
+      "number": "014/156",
+      "name": "Mow Rotom",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/14_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.48,
+        "Reverse Holo": 0.76
+      }
+    },
+    {
+      "number": "015/156",
+      "name": "Shaymin",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/15_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 4.83,
+        "Reverse Holo": 6.06
+      }
+    },
+    {
+      "number": "016/156",
+      "name": "Dewpider",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/16_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.06,
+        "Reverse Holo": 0.34
+      }
+    },
+    {
+      "number": "017/156",
+      "name": "Araquanid",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/17_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.24,
+        "Reverse Holo": 0.33
+      }
+    },
+    {
+      "number": "018/156",
+      "name": "Magmar",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/18_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.06,
+        "Reverse Holo": 0.41
+      }
+    },
+    {
+      "number": "019/156",
+      "name": "Magmortar",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/19_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.58,
+        "Reverse Holo": 0.72
+      }
+    },
+    {
+      "number": "020/156",
+      "name": "Chimchar",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/20_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.31,
+        "Reverse Holo": 0.5
+      }
+    },
+    {
+      "number": "021/156",
+      "name": "Chimchar",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/21_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.08,
+        "Reverse Holo": 0.51
+      }
+    },
+    {
+      "number": "022/156",
+      "name": "Monferno",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/22_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.14,
+        "Reverse Holo": 0.49
+      }
+    },
+    {
+      "number": "023/156",
+      "name": "Infernape",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/23_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.06,
+        "Reverse Holo": 1.88
+      }
+    },
+    {
+      "number": "024/156",
+      "name": "Heat Rotom",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/24_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.43,
+        "Reverse Holo": 0.85
+      }
+    },
+    {
+      "number": "025/156",
+      "name": "Salandit",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/25_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.03,
+        "Reverse Holo": 0.5
+      }
+    },
+    {
+      "number": "026/156",
+      "name": "Salazzle",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/26_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.26,
+        "Reverse Holo": 0.66
+      }
+    },
+    {
+      "number": "027/156",
+      "name": "Turtonator",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/27_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.29
+      }
+    },
+    {
+      "number": "028/156",
+      "name": "Alolan Sandshrew",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/28_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.57
+      }
+    },
+    {
+      "number": "029/156",
+      "name": "Alolan Sandslash",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/29_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.54,
+        "Reverse Holo": 0.85
+      }
+    },
+    {
+      "number": "030/156",
+      "name": "Alolan Vulpix",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/30_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 4.86,
+        "Reverse Holo": 31.86
+      }
+    },
+    {
+      "number": "031/156",
+      "name": "Piplup",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/31_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.43,
+        "Reverse Holo": 1.52
+      }
+    },
+    {
+      "number": "032/156",
+      "name": "Piplup",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/32_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.89,
+        "Reverse Holo": 6.18
+      }
+    },
+    {
+      "number": "033/156",
+      "name": "Prinplup",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/33_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.19,
+        "Reverse Holo": 0.32
+      }
+    },
+    {
+      "number": "034/156",
+      "name": "Empoleon",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/34_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.42,
+        "Reverse Holo": 1.04
+      }
+    },
+    {
+      "number": "035/156",
+      "name": "Buizel",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/35_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.14,
+        "Reverse Holo": 0.34
+      }
+    },
+    {
+      "number": "036/156",
+      "name": "Floatzel",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/36_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.06,
+        "Reverse Holo": 0.46
+      }
+    },
+    {
+      "number": "037/156",
+      "name": "Snover",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/37_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.03,
+        "Reverse Holo": 0.37
+      }
+    },
+    {
+      "number": "038/156",
+      "name": "Abomasnow",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/38_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Metal",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.28,
+        "Reverse Holo": 0.27
+      }
+    },
+    {
+      "number": "039/156",
+      "name": "Glaceon-GX",
+      "rarity": "Rare Holo GX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/39_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1 GX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 11.27
+      }
+    },
+    {
+      "number": "040/156",
+      "name": "Wash Rotom",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/40_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.65,
+        "Reverse Holo": 0.86
+      }
+    },
+    {
+      "number": "041/156",
+      "name": "Frost Rotom",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/41_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.48,
+        "Reverse Holo": 3.9
+      }
+    },
+    {
+      "number": "042/156",
+      "name": "Manaphy",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/42_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.23,
+        "Reverse Holo": 0.54
+      }
+    },
+    {
+      "number": "043/156",
+      "name": "Electabuzz",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/43_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.04,
+        "Reverse Holo": 0.39
+      }
+    },
+    {
+      "number": "044/156",
+      "name": "Electivire",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/44_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.37,
+        "Reverse Holo": 0.71
+      }
+    },
+    {
+      "number": "045/156",
+      "name": "Shinx",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/45_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.35,
+        "Reverse Holo": 0.7
+      }
+    },
+    {
+      "number": "046/156",
+      "name": "Shinx",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/46_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.28,
+        "Reverse Holo": 0.53
+      }
+    },
+    {
+      "number": "047/156",
+      "name": "Luxio",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/47_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.11,
+        "Reverse Holo": 0.63
+      }
+    },
+    {
+      "number": "048/156",
+      "name": "Luxray",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/48_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fighting"
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.3,
+        "Reverse Holo": 1.9
+      }
+    },
+    {
+      "number": "049/156",
+      "name": "Pachirisu",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/49_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.09,
+        "Reverse Holo": 0.73
+      }
+    },
+    {
+      "number": "050/156",
+      "name": "Rotom",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/50_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.1,
+        "Reverse Holo": 0.5
+      }
+    },
+    {
+      "number": "051/156",
+      "name": "Drifloon",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/51_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.76,
+        "Reverse Holo": 17.48
+      }
+    },
+    {
+      "number": "052/156",
+      "name": "Drifblim",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/52_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.38
+      }
+    },
+    {
+      "number": "053/156",
+      "name": "Spiritomb",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/53_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.08,
+        "Reverse Holo": 0.41
+      }
+    },
+    {
+      "number": "054/156",
+      "name": "Skorupi",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/54_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.13,
+        "Reverse Holo": 0.44
+      }
+    },
+    {
+      "number": "055/156",
+      "name": "Drapion",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/55_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.21,
+        "Reverse Holo": 0.45
+      }
+    },
+    {
+      "number": "056/156",
+      "name": "Croagunk",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/56_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.36
+      }
+    },
+    {
+      "number": "057/156",
+      "name": "Toxicroak",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/57_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.08,
+        "Reverse Holo": 0.55
+      }
+    },
+    {
+      "number": "058/156",
+      "name": "Giratina ◇",
+      "rarity": "Rare Prism Star",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/58_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic Prism Star",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 22.27
+      }
+    },
+    {
+      "number": "059/156",
+      "name": "Cresselia",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/59_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.01,
+        "Reverse Holo": 1.15
+      }
+    },
+    {
+      "number": "060/156",
+      "name": "Cosmog",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/60_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.07,
+        "Reverse Holo": 0.49
+      }
+    },
+    {
+      "number": "061/156",
+      "name": "Cosmoem",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/61_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.58
+      }
+    },
+    {
+      "number": "062/156",
+      "name": "Lunala ◇",
+      "rarity": "Rare Prism Star",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/62_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic Prism Star",
+        "weakness": "Darkness",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 6.36
+      }
+    },
+    {
+      "number": "063/156",
+      "name": "Dawn Wings Necrozma-GX",
+      "rarity": "Rare Holo GX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/63_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 5.34
+      }
+    },
+    {
+      "number": "064/156",
+      "name": "Cranidos",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/64_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.2,
+        "Reverse Holo": 0.95
+      }
+    },
+    {
+      "number": "065/156",
+      "name": "Rampardos",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/65_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 3.06,
+        "Reverse Holo": 1.81
+      }
+    },
+    {
+      "number": "066/156",
+      "name": "Riolu",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/66_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.26,
+        "Reverse Holo": 0.8
+      }
+    },
+    {
+      "number": "067/156",
+      "name": "Lucario",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/67_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 5.41,
+        "Reverse Holo": 3.78
+      }
+    },
+    {
+      "number": "068/156",
+      "name": "Hippopotas",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/68_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.49
+      }
+    },
+    {
+      "number": "069/156",
+      "name": "Hippowdon",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/69_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.17,
+        "Reverse Holo": 0.25
+      }
+    },
+    {
+      "number": "070/156",
+      "name": "Passimian",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/70_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.42
+      }
+    },
+    {
+      "number": "071/156",
+      "name": "Murkrow",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/71_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.06,
+        "Reverse Holo": 0.38
+      }
+    },
+    {
+      "number": "072/156",
+      "name": "Honchkrow",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/72_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.11,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "073/156",
+      "name": "Sneasel",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/73_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.1,
+        "Reverse Holo": 0.92
+      }
+    },
+    {
+      "number": "074/156",
+      "name": "Weavile",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/74_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 3.73,
+        "Reverse Holo": 4.99
+      }
+    },
+    {
+      "number": "075/156",
+      "name": "Stunky",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/75_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.07,
+        "Reverse Holo": 0.34
+      }
+    },
+    {
+      "number": "076/156",
+      "name": "Skuntank",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/76_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.08,
+        "Reverse Holo": 0.43
+      }
+    },
+    {
+      "number": "077/156",
+      "name": "Darkrai ◇",
+      "rarity": "Rare Prism Star",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/77_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic Prism Star",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 19.25
+      }
+    },
+    {
+      "number": "078/156",
+      "name": "Alolan Diglett",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/78_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.14,
+        "Reverse Holo": 0.55
+      }
+    },
+    {
+      "number": "079/156",
+      "name": "Alolan Dugtrio",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/79_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.24,
+        "Reverse Holo": 0.59
+      }
+    },
+    {
+      "number": "080/156",
+      "name": "Magnemite",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/80_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.11,
+        "Reverse Holo": 0.62
+      }
+    },
+    {
+      "number": "081/156",
+      "name": "Magnemite",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/81_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.07,
+        "Reverse Holo": 0.61
+      }
+    },
+    {
+      "number": "082/156",
+      "name": "Magneton",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/82_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.14,
+        "Reverse Holo": 0.53
+      }
+    },
+    {
+      "number": "083/156",
+      "name": "Magnezone",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/83_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.55,
+        "Reverse Holo": 0.74
+      }
+    },
+    {
+      "number": "084/156",
+      "name": "Shieldon",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/84_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.51
+      }
+    },
+    {
+      "number": "085/156",
+      "name": "Bastiodon",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/85_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.84,
+        "Reverse Holo": 0.95
+      }
+    },
+    {
+      "number": "086/156",
+      "name": "Bronzor",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/86_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.02,
+        "Reverse Holo": 0.28
+      }
+    },
+    {
+      "number": "087/156",
+      "name": "Bronzong",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/87_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.04,
+        "Reverse Holo": 0.32
+      }
+    },
+    {
+      "number": "088/156",
+      "name": "Heatran",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/88_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.37,
+        "Reverse Holo": 0.44
+      }
+    },
+    {
+      "number": "089/156",
+      "name": "Solgaleo ◇",
+      "rarity": "Rare Prism Star",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/89_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic Prism Star",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 5.29
+      }
+    },
+    {
+      "number": "090/156",
+      "name": "Dusk Mane Necrozma-GX",
+      "rarity": "Rare Holo GX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/90_hires.png",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 5.07
+      }
+    },
+    {
+      "number": "091/156",
+      "name": "Magearna",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/91_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.22,
+        "Reverse Holo": 0.64
+      }
+    },
+    {
+      "number": "092/156",
+      "name": "Morelull",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/92_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.2,
+        "Reverse Holo": 0.63
+      }
+    },
+    {
+      "number": "093/156",
+      "name": "Shiinotic",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/93_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.75,
+        "Reverse Holo": 1.44
+      }
+    },
+    {
+      "number": "094/156",
+      "name": "Tapu Lele",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/94_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fairy"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.77,
+        "Reverse Holo": 1.69
+      }
+    },
+    {
+      "number": "095/156",
+      "name": "Alolan Exeggutor",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/95_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.51,
+        "Reverse Holo": 0.79
+      }
+    },
+    {
+      "number": "096/156",
+      "name": "Gible",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/96_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.12,
+        "Reverse Holo": 0.74
+      }
+    },
+    {
+      "number": "097/156",
+      "name": "Gible",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/97_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.09,
+        "Reverse Holo": 0.41
+      }
+    },
+    {
+      "number": "098/156",
+      "name": "Gabite",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/98_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fairy",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.22,
+        "Reverse Holo": 0.53
+      }
+    },
+    {
+      "number": "099/156",
+      "name": "Garchomp",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/99_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fairy"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.61,
+        "Reverse Holo": 3.68
+      }
+    },
+    {
+      "number": "100/156",
+      "name": "Dialga-GX",
+      "rarity": "Rare Holo GX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/100_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic GX",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 12.09
+      }
+    },
+    {
+      "number": "101/156",
+      "name": "Palkia-GX",
+      "rarity": "Rare Holo GX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/101_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic GX",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 6.24
+      }
+    },
+    {
+      "number": "102/156",
+      "name": "Lickitung",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/102_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.2,
+        "Reverse Holo": 0.6
+      }
+    },
+    {
+      "number": "103/156",
+      "name": "Lickilicky",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/103_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.45,
+        "Reverse Holo": 0.65
+      }
+    },
+    {
+      "number": "104/156",
+      "name": "Eevee",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/104_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 1.06,
+        "Reverse Holo": 6.73
+      }
+    },
+    {
+      "number": "105/156",
+      "name": "Eevee",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/105_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 2.05,
+        "Reverse Holo": 15.48
+      }
+    },
+    {
+      "number": "106/156",
+      "name": "Buneary",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/106_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.15,
+        "Reverse Holo": 0.49
+      }
+    },
+    {
+      "number": "107/156",
+      "name": "Lopunny",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/107_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.4,
+        "Reverse Holo": 1.1
+      }
+    },
+    {
+      "number": "108/156",
+      "name": "Glameow",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/108_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.46,
+        "Reverse Holo": 9.41
+      }
+    },
+    {
+      "number": "109/156",
+      "name": "Purugly",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/109_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.44,
+        "Reverse Holo": 0.78
+      }
+    },
+    {
+      "number": "110/156",
+      "name": "Fan Rotom",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/110_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.5,
+        "Reverse Holo": 0.92
+      }
+    },
+    {
+      "number": "111/156",
+      "name": "Shaymin",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/111_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.41,
+        "Reverse Holo": 0.65
+      }
+    },
+    {
+      "number": "112/156",
+      "name": "Yungoos",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/112_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.43
+      }
+    },
+    {
+      "number": "113/156",
+      "name": "Gumshoos",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/113_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.09,
+        "Reverse Holo": 0.44
+      }
+    },
+    {
+      "number": "114/156",
+      "name": "Oranguru",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/114_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.07,
+        "Reverse Holo": 0.71
+      }
+    },
+    {
+      "number": "115/156",
+      "name": "Type: Null",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/115_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.37,
+        "Reverse Holo": 1.11
+      }
+    },
+    {
+      "number": "116/156",
+      "name": "Silvally-GX",
+      "rarity": "Rare Holo GX",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/116_hires.png",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1 GX",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 4.14
+      }
+    },
+    {
+      "number": "117/156",
+      "name": "Drampa",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/117_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.48,
+        "Reverse Holo": 0.7
+      }
+    },
+    {
+      "number": "118/156",
+      "name": "Ancient Crystal",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/118_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.21,
+        "Reverse Holo": 0.3
+      }
+    },
+    {
+      "number": "119/156",
+      "name": "Cynthia",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/119_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.59,
+        "Reverse Holo": 3.1
+      }
+    },
+    {
+      "number": "119a/156",
+      "name": "Cynthia",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/119a_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "120/156",
+      "name": "Cyrus ◇",
+      "rarity": "Rare Prism Star",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/120_hires.png",
+      "attributes": {
+        "stage": "Supporter Prism Star"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.42
+      }
+    },
+    {
+      "number": "121/156",
+      "name": "Electric Memory",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/121_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.1,
+        "Reverse Holo": 0.14
+      }
+    },
+    {
+      "number": "122/156",
+      "name": "Escape Board",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/122_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.12,
+        "Reverse Holo": 0.55
+      }
+    },
+    {
+      "number": "122a/156",
+      "name": "Escape Board",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/122a_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "123/156",
+      "name": "Fire Memory",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/123_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.13,
+        "Reverse Holo": 0.34
+      }
+    },
+    {
+      "number": "124/156",
+      "name": "Gardenia",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/124_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.29,
+        "Reverse Holo": 0.51
+      }
+    },
+    {
+      "number": "125/156",
+      "name": "Lillie",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/125_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.32,
+        "Reverse Holo": 4.48
+      }
+    },
+    {
+      "number": "125a/156",
+      "name": "Lillie",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/125a_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "126/156",
+      "name": "Looker",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/126_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.06,
+        "Reverse Holo": 0.3
+      }
+    },
+    {
+      "number": "127/156",
+      "name": "Looker Whistle",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/127_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.05,
+        "Reverse Holo": 0.3
+      }
+    },
+    {
+      "number": "128/156",
+      "name": "Mars",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/128_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.31,
+        "Reverse Holo": 0.73
+      }
+    },
+    {
+      "number": "129/156",
+      "name": "Missing Clover",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/129_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.14,
+        "Reverse Holo": 0.3
+      }
+    },
+    {
+      "number": "130/156",
+      "name": "Mt. Coronet",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/130_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.42,
+        "Reverse Holo": 0.33
+      }
+    },
+    {
+      "number": "131/156",
+      "name": "Order Pad",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/131_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.26,
+        "Reverse Holo": 0.44
+      }
+    },
+    {
+      "number": "132/156",
+      "name": "Pal Pad",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/132_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.27,
+        "Reverse Holo": 1.92
+      }
+    },
+    {
+      "number": "133/156",
+      "name": "Pokémon Fan Club",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/133_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.22,
+        "Reverse Holo": 0.37
+      }
+    },
+    {
+      "number": "134/156",
+      "name": "Unidentified Fossil",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/134_hires.png",
+      "attributes": {
+        "hp": 60,
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.2,
+        "Reverse Holo": 0.41
+      }
+    },
+    {
+      "number": "135/156",
+      "name": "Volkner",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/135_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.49,
+        "Reverse Holo": 0.83
+      }
+    },
+    {
+      "number": "135a/156",
+      "name": "Volkner",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/135a_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "136/156",
+      "name": "Super Boost Energy ◇",
+      "rarity": "Rare Prism Star",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/sm5/136_hires.png",
+      "attributes": {
+        "stage": "Special Prism Star"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.7
+      }
+    },
+    {
+      "number": "137/156",
+      "name": "Unit Energy GrassFireWater",
+      "rarity": "Uncommon",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/sm5/137_hires.png",
+      "attributes": {
+        "stage": "Special"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.5,
+        "Reverse Holo": 1.07
+      }
+    },
+    {
+      "number": "138/156",
+      "name": "Unit Energy LightningPsychicMetal",
+      "rarity": "Uncommon",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/sm5/138_hires.png",
+      "attributes": {
+        "stage": "Special"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.65,
+        "Reverse Holo": 1.28
+      }
+    },
+    {
+      "number": "139/156",
+      "name": "Leafeon-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/139_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1 GX",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 44.52
+      }
+    },
+    {
+      "number": "140/156",
+      "name": "Pheromosa-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/140_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 20.77
+      }
+    },
+    {
+      "number": "141/156",
+      "name": "Glaceon-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/141_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1 GX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 45.86
+      }
+    },
+    {
+      "number": "142/156",
+      "name": "Xurkitree-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/142_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 14.73
+      }
+    },
+    {
+      "number": "143/156",
+      "name": "Dawn Wings Necrozma-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/143_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 15.55
+      }
+    },
+    {
+      "number": "144/156",
+      "name": "Celesteela-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/144_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Lightning",
+        "retreat": 4
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 10.13
+      }
+    },
+    {
+      "number": "145/156",
+      "name": "Dusk Mane Necrozma-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/145_hires.png",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 21.65
+      }
+    },
+    {
+      "number": "146/156",
+      "name": "Dialga-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/146_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic GX",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 20.5
+      }
+    },
+    {
+      "number": "147/156",
+      "name": "Palkia-GX",
+      "rarity": "Rare Ultra",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/147_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic GX",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 24.26
+      }
+    },
+    {
+      "number": "148/156",
+      "name": "Cynthia",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/148_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 240.79
+      }
+    },
+    {
+      "number": "149/156",
+      "name": "Gardenia",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/149_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 52.83
+      }
+    },
+    {
+      "number": "150/156",
+      "name": "Lana",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/150_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 46.04
+      }
+    },
+    {
+      "number": "151/156",
+      "name": "Lillie",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/151_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 462.63
+      }
+    },
+    {
+      "number": "152/156",
+      "name": "Looker",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/152_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 16.3
+      }
+    },
+    {
+      "number": "153/156",
+      "name": "Lusamine",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/153_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 161.6
+      }
+    },
+    {
+      "number": "153a/156",
+      "name": "Lusamine",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/153a_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "154/156",
+      "name": "Mars",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/154_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 57.87
+      }
+    },
+    {
+      "number": "155/156",
+      "name": "Pokémon Fan Club",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/155_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 43.45
+      }
+    },
+    {
+      "number": "156/156",
+      "name": "Volkner",
+      "rarity": "Rare Ultra",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/156_hires.png",
+      "attributes": {
+        "stage": "Supporter"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 33.38
+      }
+    },
+    {
+      "number": "157/156",
+      "name": "Leafeon-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/157_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1 GX",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 90.09
+      }
+    },
+    {
+      "number": "158/156",
+      "name": "Pheromosa-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/158_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 19.48
+      }
+    },
+    {
+      "number": "159/156",
+      "name": "Glaceon-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/159_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1 GX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 82.61
+      }
+    },
+    {
+      "number": "160/156",
+      "name": "Xurkitree-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/160_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 34.83
+      }
+    },
+    {
+      "number": "161/156",
+      "name": "Dawn Wings Necrozma-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/161_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 26.71
+      }
+    },
+    {
+      "number": "162/156",
+      "name": "Celesteela-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/162_hires.png",
+      "attributes": {
+        "hp": 200,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Lightning",
+        "retreat": 4
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 28.4
+      }
+    },
+    {
+      "number": "163/156",
+      "name": "Dusk Mane Necrozma-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/163_hires.png",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic GX Ultra Beast",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 24.99
+      }
+    },
+    {
+      "number": "164/156",
+      "name": "Dialga-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/164_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic GX",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 45.16
+      }
+    },
+    {
+      "number": "165/156",
+      "name": "Palkia-GX",
+      "rarity": "Rare Rainbow",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/165_hires.png",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic GX",
+        "weakness": "Fairy",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 51.21
+      }
+    },
+    {
+      "number": "166/156",
+      "name": "Crushing Hammer",
+      "rarity": "Rare Secret",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/166_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 57.75
+      }
+    },
+    {
+      "number": "167/156",
+      "name": "Escape Board",
+      "rarity": "Rare Secret",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/167_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 7.32
+      }
+    },
+    {
+      "number": "168/156",
+      "name": "Missing Clover",
+      "rarity": "Rare Secret",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/168_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 9.95
+      }
+    },
+    {
+      "number": "169/156",
+      "name": "Peeking Red Card",
+      "rarity": "Rare Secret",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/sm5/169_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 5.41
+      }
+    },
+    {
+      "number": "170/156",
+      "name": "Unit Energy GrassFireWater",
+      "rarity": "Rare Secret",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/sm5/170_hires.png",
+      "attributes": {
+        "stage": "Special"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 19.62
+      }
+    },
+    {
+      "number": "171/156",
+      "name": "Unit Energy LightningPsychicMetal",
+      "rarity": "Rare Secret",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/sm5/171_hires.png",
+      "attributes": {
+        "stage": "Special"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 14.54
+      }
+    },
+    {
+      "number": "172/156",
+      "name": "Lunala-GX",
+      "rarity": "Rare Secret",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/172_hires.png",
+      "attributes": {
+        "hp": 250,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 2 GX",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 62.32
+      }
+    },
+    {
+      "number": "173/156",
+      "name": "Solgaleo-GX",
+      "rarity": "Rare Secret",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/sm5/173_hires.png",
+      "attributes": {
+        "hp": 250,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 2 GX",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 55.85
+      }
+    }
+  ]
+}

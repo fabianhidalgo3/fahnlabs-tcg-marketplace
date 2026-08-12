@@ -1,0 +1,408 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "si1",
+    "name": "Southern Islands",
+    "series": "Other",
+    "totalCards": 18,
+    "releaseDate": "2001-07-31",
+    "symbolUrl": "https://images.pokemontcg.io/si1/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/18",
+      "name": "Mew",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/1_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "002/18",
+      "name": "Pidgeot",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/2_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 42.67
+      }
+    },
+    {
+      "number": "003/18",
+      "name": "Onix",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/3_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 53.07
+      }
+    },
+    {
+      "number": "004/18",
+      "name": "Togepi",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/4_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "005/18",
+      "name": "Ivysaur",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/5_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 62.11
+      }
+    },
+    {
+      "number": "006/18",
+      "name": "Raticate",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/6_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 33.34
+      }
+    },
+    {
+      "number": "007/18",
+      "name": "Ledyba",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/7_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "008/18",
+      "name": "Jigglypuff",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/8_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 64.74
+      }
+    },
+    {
+      "number": "009/18",
+      "name": "Butterfree",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/9_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 43.56
+      }
+    },
+    {
+      "number": "010/18",
+      "name": "Tentacruel",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/10_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 49.54
+      }
+    },
+    {
+      "number": "011/18",
+      "name": "Marill",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/11_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "012/18",
+      "name": "Lapras",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/12_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 65.06
+      }
+    },
+    {
+      "number": "013/18",
+      "name": "Exeggutor",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/13_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 37.13
+      }
+    },
+    {
+      "number": "014/18",
+      "name": "Slowking",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/14_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "015/18",
+      "name": "Wartortle",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/15_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 71.1
+      }
+    },
+    {
+      "number": "016/18",
+      "name": "Lickitung",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/16_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 39.23
+      }
+    },
+    {
+      "number": "017/18",
+      "name": "Vileplume",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/17_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "018/18",
+      "name": "Primeape",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/si1/18_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 34.93
+      }
+    }
+  ]
+}

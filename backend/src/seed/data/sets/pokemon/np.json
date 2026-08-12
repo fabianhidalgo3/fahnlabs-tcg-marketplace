@@ -1,0 +1,952 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "np",
+    "name": "Nintendo Black Star Promos",
+    "series": "NP",
+    "totalCards": 40,
+    "releaseDate": "2003-10-01",
+    "symbolUrl": "https://images.pokemontcg.io/np/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/40",
+      "name": "Kyogre ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/1_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 41.93,
+        "Reverse Holo": 67.09
+      }
+    },
+    {
+      "number": "002/40",
+      "name": "Groudon ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/2_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 31.31,
+        "Reverse Holo": 50.1
+      }
+    },
+    {
+      "number": "003/40",
+      "name": "Treecko",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/3_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 72.05
+      }
+    },
+    {
+      "number": "004/40",
+      "name": "Grovyle",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/4_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 94.75,
+        "Reverse Holo": 151.6
+      }
+    },
+    {
+      "number": "005/40",
+      "name": "Mudkip",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/5_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "006/40",
+      "name": "Torchic",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/6_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "007/40",
+      "name": "Treecko",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/7_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 374.95,
+        "Reverse Holo": 599.92
+      }
+    },
+    {
+      "number": "008/40",
+      "name": "Torchic",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/8_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 32.58
+      }
+    },
+    {
+      "number": "009/40",
+      "name": "Combusken",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/9_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 107.5,
+        "Reverse Holo": 172.0
+      }
+    },
+    {
+      "number": "010/40",
+      "name": "Mudkip",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/10_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 86.16
+      }
+    },
+    {
+      "number": "011/40",
+      "name": "Marshtomp",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/11_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 85.14,
+        "Reverse Holo": 136.22
+      }
+    },
+    {
+      "number": "012/40",
+      "name": "Pikachu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/12_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 132.27,
+        "Reverse Holo": 211.63
+      }
+    },
+    {
+      "number": "013/40",
+      "name": "Meowth",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/13_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 42.53,
+        "Reverse Holo": 68.05
+      }
+    },
+    {
+      "number": "014/40",
+      "name": "Latias",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/14_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 26.85,
+        "Reverse Holo": 42.96
+      }
+    },
+    {
+      "number": "015/40",
+      "name": "Latios",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/15_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 27.39,
+        "Reverse Holo": 43.82
+      }
+    },
+    {
+      "number": "016/40",
+      "name": "Treecko",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/16_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 27.23,
+        "Reverse Holo": 43.57
+      }
+    },
+    {
+      "number": "017/40",
+      "name": "Torchic",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/17_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 18.94,
+        "Reverse Holo": 30.3
+      }
+    },
+    {
+      "number": "018/40",
+      "name": "Mudkip",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/18_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 22.04,
+        "Reverse Holo": 35.26
+      }
+    },
+    {
+      "number": "019/40",
+      "name": "Whismur",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/19_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 9.24,
+        "Reverse Holo": 14.78
+      }
+    },
+    {
+      "number": "020/40",
+      "name": "Ludicolo",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/20_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 18.63,
+        "Reverse Holo": 29.81
+      }
+    },
+    {
+      "number": "021/40",
+      "name": "Jirachi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/21_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 47.86,
+        "Reverse Holo": 76.58
+      }
+    },
+    {
+      "number": "022/40",
+      "name": "Beldum",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/22_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.53,
+        "Reverse Holo": 8.85
+      }
+    },
+    {
+      "number": "023/40",
+      "name": "Metang",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/23_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 295.24,
+        "Reverse Holo": 472.38
+      }
+    },
+    {
+      "number": "024/40",
+      "name": "Chimecho",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/24_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 9.95,
+        "Reverse Holo": 15.92
+      }
+    },
+    {
+      "number": "025/40",
+      "name": "Flygon",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/25_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Colorless",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 37.06,
+        "Reverse Holo": 59.3
+      }
+    },
+    {
+      "number": "026/40",
+      "name": "Tropical Wind",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/np/26_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 210.75,
+        "Reverse Holo": 337.2
+      }
+    },
+    {
+      "number": "027/40",
+      "name": "Tropical Tidal Wave",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/np/27_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "028/40",
+      "name": "Championship Arena",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/np/28_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "029/40",
+      "name": "Celebi",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/29_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 66.79,
+        "Reverse Holo": 106.86
+      }
+    },
+    {
+      "number": "030/40",
+      "name": "Suicune",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/30_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 37.67,
+        "Reverse Holo": 60.27
+      }
+    },
+    {
+      "number": "031/40",
+      "name": "Moltres ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/31_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 116.0,
+        "Reverse Holo": 185.6
+      }
+    },
+    {
+      "number": "032/40",
+      "name": "Articuno ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/32_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 191.04,
+        "Reverse Holo": 305.66
+      }
+    },
+    {
+      "number": "033/40",
+      "name": "Zapdos ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/33_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 134.99,
+        "Reverse Holo": 215.98
+      }
+    },
+    {
+      "number": "034/40",
+      "name": "Typhlosion",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/34_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 44.46,
+        "Reverse Holo": 71.14
+      }
+    },
+    {
+      "number": "035/40",
+      "name": "Pikachu δ",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/35_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 249.66,
+        "Reverse Holo": 399.46
+      }
+    },
+    {
+      "number": "036/40",
+      "name": "Tropical Tidal Wave",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/np/36_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "037/40",
+      "name": "Kyogre ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/37_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 94.12,
+        "Reverse Holo": 150.59
+      }
+    },
+    {
+      "number": "038/40",
+      "name": "Groudon ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/38_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 160.0,
+        "Reverse Holo": 256.0
+      }
+    },
+    {
+      "number": "039/40",
+      "name": "Rayquaza ex",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/39_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic EX",
+        "weakness": "Colorless",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 517.27,
+        "Reverse Holo": 827.63
+      }
+    },
+    {
+      "number": "040/40",
+      "name": "Mew",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/np/40_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 113.04,
+        "Reverse Holo": 180.86
+      }
+    }
+  ]
+}

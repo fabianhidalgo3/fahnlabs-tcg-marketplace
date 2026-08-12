@@ -1,0 +1,136 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "fut20",
+    "name": "Pokémon Futsal Collection",
+    "series": "Other",
+    "totalCards": 5,
+    "releaseDate": "2020-09-11",
+    "symbolUrl": "https://images.pokemontcg.io/fut20/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/5",
+      "name": "Pikachu on the Ball",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/fut20/1_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 86.29,
+        "Reverse Holo": 138.06
+      }
+    },
+    {
+      "number": "002/5",
+      "name": "Eevee on the Ball",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/fut20/2_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 52.38,
+        "Reverse Holo": 83.81
+      }
+    },
+    {
+      "number": "003/5",
+      "name": "Grookey on the Ball",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/fut20/3_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 36.07,
+        "Reverse Holo": 57.71
+      }
+    },
+    {
+      "number": "004/5",
+      "name": "Scorbunny on the Ball",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/fut20/4_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 37.08,
+        "Reverse Holo": 59.33
+      }
+    },
+    {
+      "number": "005/5",
+      "name": "Sobble on the Ball",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/fut20/5_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 55.31,
+        "Reverse Holo": 88.5
+      }
+    }
+  ]
+}

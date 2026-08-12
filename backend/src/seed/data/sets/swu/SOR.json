@@ -1,0 +1,48 @@
+{
+  "game": { "code": "swu", "name": "Star Wars Unlimited" },
+  "set": {
+    "code": "SOR",
+    "name": "Spark of Rebellion",
+    "series": "Star Wars Unlimited",
+    "totalCards": 4,
+    "releaseDate": "2024-03-08"
+  },
+  "cards": [
+    {
+      "number": "SOR-005",
+      "name": "Luke Skywalker",
+      "rarity": "Legendary",
+      "cardType": "Leader",
+      "attributes": { "aspects": ["Vigilance", "Heroism"], "cost": 6, "power": 4, "hp": 7 },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 12 }
+    },
+    {
+      "number": "SOR-010",
+      "name": "Darth Vader",
+      "rarity": "Legendary",
+      "cardType": "Leader",
+      "attributes": { "aspects": ["Aggression", "Villainy"], "cost": 7, "power": 5, "hp": 8 },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 20 }
+    },
+    {
+      "number": "SOR-193",
+      "name": "Millennium Falcon",
+      "rarity": "Rare",
+      "cardType": "Unit",
+      "attributes": { "aspects": ["Cunning"], "cost": 6, "power": 4, "hp": 8, "arena": "Space", "traits": ["Vehicle"] },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 9.5 }
+    },
+    {
+      "number": "SOR-238",
+      "name": "Vanquish",
+      "rarity": "Common",
+      "cardType": "Event",
+      "attributes": { "aspects": ["Aggression"], "cost": 4 },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 1 }
+    }
+  ]
+}

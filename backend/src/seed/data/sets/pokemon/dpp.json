@@ -1,0 +1,1323 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "dpp",
+    "name": "DP Black Star Promos",
+    "series": "Diamond & Pearl",
+    "totalCards": 56,
+    "releaseDate": "2007-05-01",
+    "symbolUrl": "https://images.pokemontcg.io/dpp/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "DP01/56",
+      "name": "Turtwig",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP01_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 29.77,
+        "Reverse Holo": 47.63
+      }
+    },
+    {
+      "number": "DP02/56",
+      "name": "Chimchar",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP02_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 23.9,
+        "Reverse Holo": 38.24
+      }
+    },
+    {
+      "number": "DP03/56",
+      "name": "Piplup",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP03_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 27.49,
+        "Reverse Holo": 43.98
+      }
+    },
+    {
+      "number": "DP04/56",
+      "name": "Pachirisu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP04_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 23.0,
+        "Reverse Holo": 36.8
+      }
+    },
+    {
+      "number": "DP05/56",
+      "name": "Tropical Wind",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP05_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 575.0,
+        "Reverse Holo": 920.0
+      }
+    },
+    {
+      "number": "DP06/56",
+      "name": "Buneary",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP06_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 9.23,
+        "Reverse Holo": 14.77
+      }
+    },
+    {
+      "number": "DP07/56",
+      "name": "Cranidos",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP07_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 15.51,
+        "Reverse Holo": 24.82
+      }
+    },
+    {
+      "number": "DP08/56",
+      "name": "Shieldon",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP08_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.72,
+        "Reverse Holo": 26.75
+      }
+    },
+    {
+      "number": "DP09/56",
+      "name": "Torterra LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP09_hires.png",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 61.56,
+        "Reverse Holo": 98.5
+      }
+    },
+    {
+      "number": "DP10/56",
+      "name": "Infernape LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP10_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Water"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 94.61,
+        "Reverse Holo": 151.38
+      }
+    },
+    {
+      "number": "DP11/56",
+      "name": "Empoleon LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP11_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Water"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 84.16,
+        "Reverse Holo": 134.66
+      }
+    },
+    {
+      "number": "DP12/56",
+      "name": "Lucario LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP12_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 137.86,
+        "Reverse Holo": 220.58
+      }
+    },
+    {
+      "number": "DP13/56",
+      "name": "Buizel",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP13_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 18.03,
+        "Reverse Holo": 28.85
+      }
+    },
+    {
+      "number": "DP14/56",
+      "name": "Chatot",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP14_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.9,
+        "Reverse Holo": 31.84
+      }
+    },
+    {
+      "number": "DP15/56",
+      "name": "Shinx",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP15_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 63.33,
+        "Reverse Holo": 101.33
+      }
+    },
+    {
+      "number": "DP16/56",
+      "name": "Pikachu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP16_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 119.95,
+        "Reverse Holo": 191.92
+      }
+    },
+    {
+      "number": "DP17/56",
+      "name": "Dialga LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP17_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 97.84,
+        "Reverse Holo": 156.54
+      }
+    },
+    {
+      "number": "DP18/56",
+      "name": "Palkia LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP18_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Water"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Lightning",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 64.99,
+        "Reverse Holo": 103.98
+      }
+    },
+    {
+      "number": "DP19/56",
+      "name": "Darkrai LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP19_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 94.36,
+        "Reverse Holo": 150.98
+      }
+    },
+    {
+      "number": "DP20/56",
+      "name": "Magmortar",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP20_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.39,
+        "Reverse Holo": 26.22
+      }
+    },
+    {
+      "number": "DP21/56",
+      "name": "Raichu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP21_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 32.34,
+        "Reverse Holo": 51.74
+      }
+    },
+    {
+      "number": "DP22/56",
+      "name": "Mime Jr.",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP22_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 13.87,
+        "Reverse Holo": 22.19
+      }
+    },
+    {
+      "number": "DP23/56",
+      "name": "Glameow",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP23_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 15.49,
+        "Reverse Holo": 24.78
+      }
+    },
+    {
+      "number": "DP24/56",
+      "name": "Darkrai",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP24_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 32.66,
+        "Reverse Holo": 52.26
+      }
+    },
+    {
+      "number": "DP25/56",
+      "name": "Tropical Wind",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP25_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "DP26/56",
+      "name": "Dialga",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP26_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.52,
+        "Reverse Holo": 31.23
+      }
+    },
+    {
+      "number": "DP27/56",
+      "name": "Palkia",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP27_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.98,
+        "Reverse Holo": 27.17
+      }
+    },
+    {
+      "number": "DP28/56",
+      "name": "Mewtwo LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP28_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 110.0,
+        "Reverse Holo": 176.0
+      }
+    },
+    {
+      "number": "DP29/56",
+      "name": "Rhyperior LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP29_hires.png",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Water",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 46.78,
+        "Reverse Holo": 74.85
+      }
+    },
+    {
+      "number": "DP30/56",
+      "name": "Regigigas LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP30_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Fighting",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 44.43,
+        "Reverse Holo": 71.09
+      }
+    },
+    {
+      "number": "DP31/56",
+      "name": "Heatran LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP31_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Water",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 35.19,
+        "Reverse Holo": 56.3
+      }
+    },
+    {
+      "number": "DP32/56",
+      "name": "Magnezone",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP32_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 3.47,
+        "Reverse Holo": 5.55
+      }
+    },
+    {
+      "number": "DP33/56",
+      "name": "Dusknoir",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP33_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Darkness",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 4.9,
+        "Reverse Holo": 7.84
+      }
+    },
+    {
+      "number": "DP34/56",
+      "name": "Drifblim",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP34_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Darkness"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.97,
+        "Reverse Holo": 20.75
+      }
+    },
+    {
+      "number": "DP35/56",
+      "name": "Porygon-Z",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP35_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 8.14,
+        "Reverse Holo": 13.02
+      }
+    },
+    {
+      "number": "DP36/56",
+      "name": "Gliscor",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP36_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.07,
+        "Reverse Holo": 8.11
+      }
+    },
+    {
+      "number": "DP37/56",
+      "name": "Dialga LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP37_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 48.66,
+        "Reverse Holo": 77.86
+      }
+    },
+    {
+      "number": "DP38/56",
+      "name": "Giratina LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP38_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Darkness",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 180.9,
+        "Reverse Holo": 289.44
+      }
+    },
+    {
+      "number": "DP39/56",
+      "name": "Shaymin LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP39_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Level-Up",
+        "weakness": "Fire"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 46.64,
+        "Reverse Holo": 74.62
+      }
+    },
+    {
+      "number": "DP40/56",
+      "name": "Regigigas",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP40_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 4
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.3,
+        "Reverse Holo": 30.88
+      }
+    },
+    {
+      "number": "DP41/56",
+      "name": "Toxicroak G",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP41_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic SP",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 66.89,
+        "Reverse Holo": 107.02
+      }
+    },
+    {
+      "number": "DP42/56",
+      "name": "Carnivine G",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP42_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic SP",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 14.2,
+        "Reverse Holo": 22.72
+      }
+    },
+    {
+      "number": "DP43/56",
+      "name": "Probopass G",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP43_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic SP",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 7.79,
+        "Reverse Holo": 12.46
+      }
+    },
+    {
+      "number": "DP44/56",
+      "name": "Magnezone",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP44_hires.png",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 8.35,
+        "Reverse Holo": 13.36
+      }
+    },
+    {
+      "number": "DP45/56",
+      "name": "Charizard G LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP45_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Level-Up SP",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 297.68,
+        "Reverse Holo": 476.29
+      }
+    },
+    {
+      "number": "DP46/56",
+      "name": "Garchomp C LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP46_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Level-Up SP",
+        "weakness": "Colorless"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 75.05,
+        "Reverse Holo": 120.08
+      }
+    },
+    {
+      "number": "DP47/56",
+      "name": "Rayquaza C LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP47_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Level-Up SP",
+        "weakness": "Colorless",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 453.33,
+        "Reverse Holo": 725.33
+      }
+    },
+    {
+      "number": "DP48/56",
+      "name": "Tropical Wind",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP48_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 249.0,
+        "Reverse Holo": 398.4
+      }
+    },
+    {
+      "number": "DP49/56",
+      "name": "Dialga",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP49_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.06,
+        "Reverse Holo": 25.7
+      }
+    },
+    {
+      "number": "DP50/56",
+      "name": "Arceus",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP50_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 34.89,
+        "Reverse Holo": 55.82
+      }
+    },
+    {
+      "number": "DP51/56",
+      "name": "Cresselia",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP51_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 14.96,
+        "Reverse Holo": 23.94
+      }
+    },
+    {
+      "number": "DP52/56",
+      "name": "Darkrai",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP52_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 40.87,
+        "Reverse Holo": 65.39
+      }
+    },
+    {
+      "number": "DP53/56",
+      "name": "Arceus LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP53_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Level-Up",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 40.67,
+        "Reverse Holo": 65.07
+      }
+    },
+    {
+      "number": "DP54/56",
+      "name": "Beginning Door",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP54_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "DP55/56",
+      "name": "Ultimate Zone",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP55_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "DP56/56",
+      "name": "Arceus LV.X",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/dpp/DP56_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Level-Up",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 71.66,
+        "Reverse Holo": 114.66
+      }
+    }
+  ]
+}

@@ -1,0 +1,2225 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "neo1",
+    "name": "Neo Genesis",
+    "series": "Neo",
+    "totalCards": 111,
+    "releaseDate": "2000-12-16",
+    "symbolUrl": "https://images.pokemontcg.io/neo1/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/111",
+      "name": "Ampharos",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/1_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "002/111",
+      "name": "Azumarill",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/2_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "003/111",
+      "name": "Bellossom",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/3_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "004/111",
+      "name": "Feraligatr",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/4_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "005/111",
+      "name": "Feraligatr",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/5_hires.png",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "006/111",
+      "name": "Heracross",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/6_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "007/111",
+      "name": "Jumpluff",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/7_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "008/111",
+      "name": "Kingdra",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/8_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 2",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "009/111",
+      "name": "Lugia",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/9_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "010/111",
+      "name": "Meganium",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/10_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "011/111",
+      "name": "Meganium",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/11_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "012/111",
+      "name": "Pichu",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/12_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Baby"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "013/111",
+      "name": "Skarmory",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/13_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "014/111",
+      "name": "Slowking",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/14_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "015/111",
+      "name": "Steelix",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/15_hires.png",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 4
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "016/111",
+      "name": "Togetic",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/16_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "017/111",
+      "name": "Typhlosion",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/17_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "018/111",
+      "name": "Typhlosion",
+      "rarity": "Rare Holo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/18_hires.png",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "019/111",
+      "name": "Metal Energy",
+      "rarity": "Rare Holo",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/19_hires.png",
+      "attributes": {
+        "stage": "Special"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.25
+      }
+    },
+    {
+      "number": "020/111",
+      "name": "Cleffa",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/20_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Baby"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "021/111",
+      "name": "Donphan",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/21_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "022/111",
+      "name": "Elekid",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/22_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Baby"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "023/111",
+      "name": "Magby",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/23_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Baby"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "024/111",
+      "name": "Murkrow",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/24_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "025/111",
+      "name": "Sneasel",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/25_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "026/111",
+      "name": "Aipom",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/26_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "027/111",
+      "name": "Ariados",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/27_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "028/111",
+      "name": "Bayleef",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/28_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "029/111",
+      "name": "Bayleef",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/29_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "030/111",
+      "name": "Clefairy",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/30_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "031/111",
+      "name": "Croconaw",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/31_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "032/111",
+      "name": "Croconaw",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/32_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "033/111",
+      "name": "Electabuzz",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/33_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "034/111",
+      "name": "Flaaffy",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/34_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "035/111",
+      "name": "Furret",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/35_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "036/111",
+      "name": "Gloom",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/36_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "037/111",
+      "name": "Granbull",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/37_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "038/111",
+      "name": "Lanturn",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/38_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "039/111",
+      "name": "Ledian",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/39_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "040/111",
+      "name": "Magmar",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/40_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "041/111",
+      "name": "Miltank",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/41_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "042/111",
+      "name": "Noctowl",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/42_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "043/111",
+      "name": "Phanpy",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/43_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "044/111",
+      "name": "Piloswine",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/44_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "045/111",
+      "name": "Quagsire",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/45_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "046/111",
+      "name": "Quilava",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/46_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "047/111",
+      "name": "Quilava",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/47_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "048/111",
+      "name": "Seadra",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/48_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "049/111",
+      "name": "Skiploom",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/49_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "050/111",
+      "name": "Sunflora",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/50_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "051/111",
+      "name": "Togepi",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/51_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "052/111",
+      "name": "Xatu",
+      "rarity": "Uncommon",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/52_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "053/111",
+      "name": "Chikorita",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/53_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "054/111",
+      "name": "Chikorita",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/54_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "055/111",
+      "name": "Chinchou",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/55_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "056/111",
+      "name": "Cyndaquil",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/56_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "057/111",
+      "name": "Cyndaquil",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/57_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "058/111",
+      "name": "Girafarig",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/58_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "059/111",
+      "name": "Gligar",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/59_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "060/111",
+      "name": "Hoothoot",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/60_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "061/111",
+      "name": "Hoppip",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/61_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "062/111",
+      "name": "Horsea",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/62_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "063/111",
+      "name": "Ledyba",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/63_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "064/111",
+      "name": "Mantine",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/64_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "065/111",
+      "name": "Mareep",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/65_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "066/111",
+      "name": "Marill",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/66_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "067/111",
+      "name": "Natu",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/67_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "068/111",
+      "name": "Oddish",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/68_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "069/111",
+      "name": "Onix",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/69_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "070/111",
+      "name": "Pikachu",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/70_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "071/111",
+      "name": "Sentret",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/71_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "072/111",
+      "name": "Shuckle",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/72_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "073/111",
+      "name": "Slowpoke",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/73_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "074/111",
+      "name": "Snubbull",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/74_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "075/111",
+      "name": "Spinarak",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/75_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "076/111",
+      "name": "Stantler",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/76_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "077/111",
+      "name": "Sudowoodo",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/77_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "078/111",
+      "name": "Sunkern",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/78_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "079/111",
+      "name": "Swinub",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/79_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "080/111",
+      "name": "Totodile",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/80_hires.png",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "081/111",
+      "name": "Totodile",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/81_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "082/111",
+      "name": "Wooper",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/neo1/82_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "083/111",
+      "name": "Arcade Game",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/83_hires.png",
+      "attributes": {
+        "stage": "Goldenrod Game Corner"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "084/111",
+      "name": "Ecogym",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/84_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "085/111",
+      "name": "Energy Charge",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/85_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "086/111",
+      "name": "Focus Band",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/86_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "087/111",
+      "name": "Mary",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/87_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "088/111",
+      "name": "PokéGear",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/88_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "089/111",
+      "name": "Super Energy Retrieval",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/89_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "090/111",
+      "name": "Time Capsule",
+      "rarity": "Rare",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/90_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "091/111",
+      "name": "Bill's Teleporter",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/91_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "092/111",
+      "name": "Card-Flip Game",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/92_hires.png",
+      "attributes": {
+        "stage": "Goldenrod Game Corner"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "093/111",
+      "name": "Gold Berry",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/93_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "094/111",
+      "name": "Miracle Berry",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/94_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "095/111",
+      "name": "New Pokédex",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/95_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "096/111",
+      "name": "Professor Elm",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/96_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "097/111",
+      "name": "Sprout Tower",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/97_hires.png",
+      "attributes": {
+        "stage": "Stadium"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "098/111",
+      "name": "Super Scoop Up",
+      "rarity": "Uncommon",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/98_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "099/111",
+      "name": "Berry",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/99_hires.png",
+      "attributes": {
+        "stage": "Pokémon Tool"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "100/111",
+      "name": "Double Gust",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/100_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "101/111",
+      "name": "Moo-Moo Milk",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/101_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "102/111",
+      "name": "Pokémon March",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/102_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "103/111",
+      "name": "Super Rod",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/neo1/103_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "104/111",
+      "name": "Darkness Energy",
+      "rarity": "Rare",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/104_hires.png",
+      "attributes": {
+        "stage": "Special"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "105/111",
+      "name": "Recycle Energy",
+      "rarity": "Rare",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/105_hires.png",
+      "attributes": {
+        "stage": "Special"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "106/111",
+      "name": "Fighting Energy",
+      "rarity": "Common",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/106_hires.png",
+      "attributes": {
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "107/111",
+      "name": "Fire Energy",
+      "rarity": "Common",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/107_hires.png",
+      "attributes": {
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "108/111",
+      "name": "Grass Energy",
+      "rarity": "Common",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/108_hires.png",
+      "attributes": {
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "109/111",
+      "name": "Lightning Energy",
+      "rarity": "Common",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/109_hires.png",
+      "attributes": {
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "110/111",
+      "name": "Psychic Energy",
+      "rarity": "Common",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/110_hires.png",
+      "attributes": {
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "111/111",
+      "name": "Water Energy",
+      "rarity": "Common",
+      "cardType": "Energy",
+      "imageUrl": "https://images.pokemontcg.io/neo1/111_hires.png",
+      "attributes": {
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    }
+  ]
+}

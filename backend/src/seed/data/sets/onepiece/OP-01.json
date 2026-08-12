@@ -1,0 +1,48 @@
+{
+  "game": { "code": "onepiece", "name": "One Piece Card Game" },
+  "set": {
+    "code": "OP-01",
+    "name": "Romance Dawn",
+    "series": "One Piece",
+    "totalCards": 4,
+    "releaseDate": "2022-12-02"
+  },
+  "cards": [
+    {
+      "number": "OP01-001",
+      "name": "Monkey D. Luffy",
+      "rarity": "Leader",
+      "cardType": "Leader",
+      "attributes": { "color": ["Red", "Green"], "life": 5, "power": 5000, "attribute": "Strike" },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 3 }
+    },
+    {
+      "number": "OP01-025",
+      "name": "Roronoa Zoro",
+      "rarity": "Super Rare",
+      "cardType": "Character",
+      "attributes": { "color": ["Red"], "cost": 3, "power": 5000, "counter": 1000, "attribute": "Slash" },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 45 }
+    },
+    {
+      "number": "OP01-047",
+      "name": "Trafalgar Law",
+      "rarity": "Super Rare",
+      "cardType": "Character",
+      "attributes": { "color": ["Green"], "cost": 5, "power": 6000, "counter": 1000, "attribute": "Slash" },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 30 }
+    },
+    {
+      "number": "OP01-035",
+      "name": "Gum-Gum Red Roc",
+      "rarity": "Rare",
+      "cardType": "Event",
+      "attributes": { "color": ["Red"], "cost": 4 },
+      "variants": ["Normal"],
+      "variantValues": { "Normal": 2 }
+    }
+  ]
+}

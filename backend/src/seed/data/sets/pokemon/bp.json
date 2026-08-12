@@ -1,0 +1,224 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "bp",
+    "name": "Best of Game",
+    "series": "Other",
+    "totalCards": 9,
+    "releaseDate": "2002-12-01",
+    "symbolUrl": "https://images.pokemontcg.io/bp/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/9",
+      "name": "Electabuzz",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/1_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 33.88
+      }
+    },
+    {
+      "number": "002/9",
+      "name": "Hitmonchan",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/2_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 39.52
+      }
+    },
+    {
+      "number": "003/9",
+      "name": "Professor Elm",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/bp/3_hires.png",
+      "attributes": {},
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 29.97
+      }
+    },
+    {
+      "number": "004/9",
+      "name": "Rocket's Scizor",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/4_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 36.97,
+        "Reverse Holo": 59.15
+      }
+    },
+    {
+      "number": "005/9",
+      "name": "Rocket's Sneasel",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/5_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 19.9,
+        "Reverse Holo": 31.84
+      }
+    },
+    {
+      "number": "006/9",
+      "name": "Dark Ivysaur",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/6_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 44.67,
+        "Reverse Holo": 71.47
+      }
+    },
+    {
+      "number": "007/9",
+      "name": "Dark Venusaur",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/7_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 131.22,
+        "Reverse Holo": 209.95
+      }
+    },
+    {
+      "number": "008/9",
+      "name": "Rocket's Mewtwo",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/8_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 1450.0
+      }
+    },
+    {
+      "number": "009/9",
+      "name": "Rocket's Hitmonchan",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/bp/9_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 220.0
+      }
+    }
+  ]
+}

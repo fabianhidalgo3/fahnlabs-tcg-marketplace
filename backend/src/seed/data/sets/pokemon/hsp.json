@@ -1,0 +1,606 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "hsp",
+    "name": "HGSS Black Star Promos",
+    "series": "HeartGold & SoulSilver",
+    "totalCards": 25,
+    "releaseDate": "2010-02-10",
+    "symbolUrl": "https://images.pokemontcg.io/hsp/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "HGSS01/25",
+      "name": "Ho-Oh",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS01_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 47.03,
+        "Reverse Holo": 75.25
+      }
+    },
+    {
+      "number": "HGSS02/25",
+      "name": "Lugia",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS02_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 117.65,
+        "Reverse Holo": 188.24
+      }
+    },
+    {
+      "number": "HGSS03/25",
+      "name": "Pikachu",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS03_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 36.94,
+        "Reverse Holo": 59.1
+      }
+    },
+    {
+      "number": "HGSS04/25",
+      "name": "Wobbuffet",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS04_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 11.5,
+        "Reverse Holo": 18.4
+      }
+    },
+    {
+      "number": "HGSS05/25",
+      "name": "Hoothoot",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS05_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 5.75,
+        "Reverse Holo": 9.2
+      }
+    },
+    {
+      "number": "HGSS06/25",
+      "name": "Noctowl",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS06_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 12.32,
+        "Reverse Holo": 19.71
+      }
+    },
+    {
+      "number": "HGSS07/25",
+      "name": "Feraligatr",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS07_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Water"
+        ],
+        "stage": "Stage 2 Prime",
+        "weakness": "Grass",
+        "retreat": 3
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 72.61,
+        "Reverse Holo": 116.18
+      }
+    },
+    {
+      "number": "HGSS08/25",
+      "name": "Meganium",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS08_hires.png",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage 2 Prime",
+        "weakness": "Fire",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 47.39,
+        "Reverse Holo": 75.82
+      }
+    },
+    {
+      "number": "HGSS09/25",
+      "name": "Typhlosion",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS09_hires.png",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage 2 Prime",
+        "weakness": "Water",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 55.06,
+        "Reverse Holo": 88.1
+      }
+    },
+    {
+      "number": "HGSS10/25",
+      "name": "Latias",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS10_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Colorless",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 46.71,
+        "Reverse Holo": 74.74
+      }
+    },
+    {
+      "number": "HGSS11/25",
+      "name": "Latios",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS11_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Colorless",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 33.29,
+        "Reverse Holo": 53.26
+      }
+    },
+    {
+      "number": "HGSS12/25",
+      "name": "Cleffa",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS12_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 21.88,
+        "Reverse Holo": 35.01
+      }
+    },
+    {
+      "number": "HGSS13/25",
+      "name": "Smoochum",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS13_hires.png",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 35.33,
+        "Reverse Holo": 56.53
+      }
+    },
+    {
+      "number": "HGSS14/25",
+      "name": "Lapras",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS14_hires.png",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 32.75,
+        "Reverse Holo": 52.4
+      }
+    },
+    {
+      "number": "HGSS15/25",
+      "name": "Shuckle",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS15_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 47.94,
+        "Reverse Holo": 76.7
+      }
+    },
+    {
+      "number": "HGSS16/25",
+      "name": "Plusle",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS16_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 28.93,
+        "Reverse Holo": 46.29
+      }
+    },
+    {
+      "number": "HGSS17/25",
+      "name": "Minun",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS17_hires.png",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 36.98,
+        "Reverse Holo": 59.17
+      }
+    },
+    {
+      "number": "HGSS18/25",
+      "name": "Tropical Tidal Wave",
+      "rarity": "Promo",
+      "cardType": "Trainer",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS18_hires.png",
+      "attributes": {
+        "stage": "Item"
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 0.25,
+        "Reverse Holo": 0.4
+      }
+    },
+    {
+      "number": "HGSS19/25",
+      "name": "Raikou",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS19_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 49.32,
+        "Reverse Holo": 78.91
+      }
+    },
+    {
+      "number": "HGSS20/25",
+      "name": "Entei",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS20_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 72.59,
+        "Reverse Holo": 116.14
+      }
+    },
+    {
+      "number": "HGSS21/25",
+      "name": "Suicune",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS21_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 60.5,
+        "Reverse Holo": 96.8
+      }
+    },
+    {
+      "number": "HGSS22/25",
+      "name": "Porygon",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS22_hires.png",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 17.64,
+        "Reverse Holo": 28.22
+      }
+    },
+    {
+      "number": "HGSS23/25",
+      "name": "Porygon2",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS23_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage 1",
+        "weakness": "Fighting",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 16.03,
+        "Reverse Holo": 25.65
+      }
+    },
+    {
+      "number": "HGSS24/25",
+      "name": "Hitmonchan",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS24_hires.png",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 1
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 20.29,
+        "Reverse Holo": 32.46
+      }
+    },
+    {
+      "number": "HGSS25/25",
+      "name": "Hitmonlee",
+      "rarity": "Promo",
+      "cardType": "Pokémon",
+      "imageUrl": "https://images.pokemontcg.io/hsp/HGSS25_hires.png",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2
+      },
+      "variants": [
+        "Normal",
+        "Reverse Holo"
+      ],
+      "variantValues": {
+        "Normal": 18.91,
+        "Reverse Holo": 30.26
+      }
+    }
+  ]
+}
