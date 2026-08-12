@@ -38,12 +38,16 @@ export class CardsService {
       filter._id = { $in: withStock };
     }
 
+    // Dentro de un set, ordenar por número de coleccionista (1,2,3…);
+    // en el catálogo general, por nombre.
+    const sort: Record<string, 1 | -1> = query.setId ? { number: 1 } : { name: 1 };
+
     const total = await this.cards.countDocuments(filter).exec();
     const cards = await this.cards
       .find(filter)
       .populate('game')
       .populate('set')
-      .sort({ name: 1 })
+      .sort(sort)
       .skip((page - 1) * limit)
       .limit(limit)
       .exec();
