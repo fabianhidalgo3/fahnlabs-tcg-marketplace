@@ -51,8 +51,8 @@ import { CurrencyService } from '../core/services/currency.service';
           <div class="sumline total"><span>{{ i18n.t('cart.total') }}</span><span>{{ cur.format(cart.total()) }}</span></div>
 
           @if (auth.isLoggedIn()) {
-            <mat-form-field appearance="outline"><mat-label>{{ i18n.t('cart.shipName') }}</mat-label><input matInput [(ngModel)]="shippingName" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>{{ i18n.t('cart.shipAddr') }}</mat-label><textarea matInput rows="3" [(ngModel)]="shippingAddress"></textarea></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ i18n.t('cart.shipName') }}</mat-label><input matInput [(ngModel)]="shippingName" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ i18n.t('cart.shipAddr') }}</mat-label><textarea matInput rows="3" [(ngModel)]="shippingAddress"></textarea></mat-form-field>
             @if (error()) { <p class="err">{{ error() }}</p> }
             <button mat-flat-button class="block" [disabled]="submitting()" (click)="checkout()">
               {{ submitting() ? i18n.t('cart.processing') : i18n.t('cart.confirm') }}

@@ -17,11 +17,11 @@ import { I18nService } from '../core/services/i18n.service';
       <mat-card class="auth" appearance="outlined">
         <h1>{{ i18n.t('auth.login') }}</h1>
         <p class="muted demo">Demo: <b>admin&#64;tcg.local</b> / admin123 · <b>cliente&#64;tcg.local</b> / cliente123</p>
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="fill">
           <mat-label>{{ i18n.t('auth.email') }}</mat-label>
           <input matInput type="email" [(ngModel)]="email" />
         </mat-form-field>
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="fill">
           <mat-label>{{ i18n.t('auth.password') }}</mat-label>
           <input matInput type="password" [(ngModel)]="password" (keyup.enter)="submit()" />
         </mat-form-field>

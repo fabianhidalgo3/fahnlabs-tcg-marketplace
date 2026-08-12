@@ -26,11 +26,11 @@ const TYPES: { value: StorageKind; label: string; icon: string }[] = [
     <p class="muted">{{ i18n.t('storage.subtitle') }}</p>
 
     <mat-card class="new" appearance="outlined">
-      <mat-form-field appearance="outline" class="grow">
+      <mat-form-field appearance="fill" class="grow">
         <mat-label>{{ i18n.t('storage.name') }}</mat-label>
         <input matInput [(ngModel)]="name" />
       </mat-form-field>
-      <mat-form-field appearance="outline">
+      <mat-form-field appearance="fill">
         <mat-label>{{ i18n.isES() ? 'Tipo' : 'Type' }}</mat-label>
         <mat-select [(ngModel)]="type">
           @for (t of types; track t.value) { <mat-option [value]="t.value">{{ t.label }}</mat-option> }

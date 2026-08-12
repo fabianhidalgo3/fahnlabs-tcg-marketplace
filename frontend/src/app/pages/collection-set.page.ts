@@ -97,7 +97,7 @@ interface PendingChange { cardModelId: string; variant: string; language: CardLa
                 <div class="linetotal muted">{{ owned(slot.v) }} × = <b>{{ cur.format(slot.v.value * owned(slot.v)) }}</b></div>
               }
               @if (owned(slot.v) > 0) {
-                <mat-form-field appearance="outline" class="store" subscriptSizing="dynamic">
+                <mat-form-field appearance="fill" class="store" subscriptSizing="dynamic">
                   <mat-select [ngModel]="storageId(slot.v)" (ngModelChange)="assignStorage(slot.card.id, slot.v, $event)"
                     [placeholder]="i18n.isES() ? 'Sin ubicación' : 'No location'">
                     <mat-option [value]="''">{{ i18n.isES() ? 'Sin ubicación' : 'No location' }}</mat-option>
@@ -151,7 +151,7 @@ interface PendingChange { cardModelId: string; variant: string; language: CardLa
               <th mat-header-cell *matHeaderCellDef>{{ i18n.isES() ? 'Ubicación' : 'Location' }}</th>
               <td mat-cell *matCellDef="let s">
                 @if (owned(s.v) > 0) {
-                  <mat-form-field appearance="outline" class="store" subscriptSizing="dynamic">
+                  <mat-form-field appearance="fill" class="store" subscriptSizing="dynamic">
                     <mat-select [ngModel]="storageId(s.v)" (ngModelChange)="assignStorage(s.card.id, s.v, $event)">
                       <mat-option [value]="''">{{ i18n.isES() ? 'Sin ubicación' : 'None' }}</mat-option>
                       @for (loc of storages(); track loc.id) { <mat-option [value]="loc.id">{{ loc.name }}</mat-option> }

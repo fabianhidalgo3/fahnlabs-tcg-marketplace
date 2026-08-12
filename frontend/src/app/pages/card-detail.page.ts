@@ -100,16 +100,16 @@ const CONDITION_LABEL: Record<string, string> = {
                 </div>
               }
               <div class="eform">
-                <mat-form-field appearance="outline">
+                <mat-form-field appearance="fill">
                   <mat-label>{{ i18n.isES() ? 'Condición' : 'Condition' }}</mat-label>
                   <mat-select [(ngModel)]="form.condition">
                     @for (c2 of conditions; track c2) { <mat-option [value]="c2">{{ c2 }}</mat-option> }
                   </mat-select>
                 </mat-form-field>
-                <mat-form-field appearance="outline"><mat-label>{{ i18n.t('admin.language') }}</mat-label><input matInput [(ngModel)]="form.language" /></mat-form-field>
+                <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.language') }}</mat-label><input matInput [(ngModel)]="form.language" /></mat-form-field>
                 <mat-checkbox [(ngModel)]="form.isFoil">Foil</mat-checkbox>
-                <mat-form-field appearance="outline"><mat-label>{{ i18n.t('admin.price') }}</mat-label><input matInput type="number" [(ngModel)]="form.price" /></mat-form-field>
-                <mat-form-field appearance="outline"><mat-label>{{ i18n.t('admin.qty') }}</mat-label><input matInput type="number" [(ngModel)]="form.quantity" /></mat-form-field>
+                <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.price') }}</mat-label><input matInput type="number" [(ngModel)]="form.price" /></mat-form-field>
+                <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.qty') }}</mat-label><input matInput type="number" [(ngModel)]="form.quantity" /></mat-form-field>
                 <button mat-flat-button (click)="addUnit()"><mat-icon>add</mat-icon>{{ i18n.t('admin.add') }}</button>
               </div>
               @if (editError()) { <p class="err">{{ editError() }}</p> }

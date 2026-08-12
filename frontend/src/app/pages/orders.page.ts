@@ -39,7 +39,7 @@ const STATUSES: OrderStatus[] = ['pending', 'paid', 'shipped', 'delivered', 'can
               </div>
               <div class="right">
                 @if (auth.isAdmin() && adminView()) {
-                  <mat-form-field appearance="outline" class="st" subscriptSizing="dynamic">
+                  <mat-form-field appearance="fill" class="st" subscriptSizing="dynamic">
                     <mat-select [ngModel]="o.status" (ngModelChange)="changeStatus(o, $event)">
                       @for (s of statuses; track s) { <mat-option [value]="s">{{ s }}</mat-option> }
                     </mat-select>

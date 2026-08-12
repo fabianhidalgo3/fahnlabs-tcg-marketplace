@@ -15,7 +15,7 @@ export const appConfig: ApplicationConfig = {
     // Formularios minimalistas: outline por defecto y sin el hueco reservado bajo cada campo.
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
-      useValue: { appearance: 'outline', subscriptSizing: 'dynamic' },
+      useValue: { appearance: 'fill', subscriptSizing: 'dynamic' },
     },
   ],
 };

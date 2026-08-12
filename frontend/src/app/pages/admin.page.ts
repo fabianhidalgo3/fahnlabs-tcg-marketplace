@@ -34,9 +34,9 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
       <!-- JUEGOS -->
       <mat-tab [label]="es ? 'Juegos' : 'Games'">
         <mat-card class="form" appearance="outlined">
-          <mat-form-field appearance="outline"><mat-label>code</mat-label><input matInput [(ngModel)]="gForm.code" /></mat-form-field>
-          <mat-form-field appearance="outline"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="gForm.name" /></mat-form-field>
-          <mat-form-field appearance="outline"><mat-label>iconUrl</mat-label><input matInput [(ngModel)]="gForm.iconUrl" /></mat-form-field>
+          <mat-form-field appearance="fill"><mat-label>code</mat-label><input matInput [(ngModel)]="gForm.code" /></mat-form-field>
+          <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="gForm.name" /></mat-form-field>
+          <mat-form-field appearance="fill"><mat-label>iconUrl</mat-label><input matInput [(ngModel)]="gForm.iconUrl" /></mat-form-field>
           <button mat-flat-button [disabled]="!gForm.code || !gForm.name" (click)="createGame()"><mat-icon>add</mat-icon>{{ es ? 'Crear' : 'Create' }}</button>
         </mat-card>
         <div class="list">
@@ -51,7 +51,7 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
 
       <!-- SETS -->
       <mat-tab label="Sets">
-        <mat-form-field appearance="outline" class="picker">
+        <mat-form-field appearance="fill" class="picker">
           <mat-label>{{ es ? 'Juego' : 'Game' }}</mat-label>
           <mat-select [(ngModel)]="setGameId" (ngModelChange)="loadSets()">
             @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
@@ -59,11 +59,11 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
         </mat-form-field>
         @if (setGameId) {
           <mat-card class="form" appearance="outlined">
-            <mat-form-field appearance="outline"><mat-label>code</mat-label><input matInput [(ngModel)]="sForm.code" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="sForm.name" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>{{ es ? 'Serie' : 'Series' }}</mat-label><input matInput [(ngModel)]="sForm.series" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>{{ es ? 'Nº cartas' : 'Total' }}</mat-label><input matInput type="number" [(ngModel)]="sForm.totalCards" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>{{ es ? 'Lanzamiento' : 'Release' }}</mat-label><input matInput type="date" [(ngModel)]="sForm.releaseDate" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>code</mat-label><input matInput [(ngModel)]="sForm.code" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="sForm.name" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Serie' : 'Series' }}</mat-label><input matInput [(ngModel)]="sForm.series" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nº cartas' : 'Total' }}</mat-label><input matInput type="number" [(ngModel)]="sForm.totalCards" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Lanzamiento' : 'Release' }}</mat-label><input matInput type="date" [(ngModel)]="sForm.releaseDate" /></mat-form-field>
             <button mat-flat-button [disabled]="!sForm.code || !sForm.name" (click)="createSet()"><mat-icon>add</mat-icon>{{ es ? 'Crear' : 'Create' }}</button>
           </mat-card>
           <div class="list">
@@ -80,13 +80,13 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
       <!-- CARTAS -->
       <mat-tab [label]="es ? 'Cartas' : 'Cards'">
         <div class="pickers">
-          <mat-form-field appearance="outline">
+          <mat-form-field appearance="fill">
             <mat-label>{{ es ? 'Juego' : 'Game' }}</mat-label>
             <mat-select [(ngModel)]="cardGameId" (ngModelChange)="onCardGame()">
               @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
             </mat-select>
           </mat-form-field>
-          <mat-form-field appearance="outline">
+          <mat-form-field appearance="fill">
             <mat-label>Set</mat-label>
             <mat-select [(ngModel)]="cardSetId" (ngModelChange)="loadCards()">
               @for (s of cardSets(); track s.id) { <mat-option [value]="s.id">{{ s.name }}</mat-option> }
@@ -95,12 +95,12 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
         </div>
         @if (cardSetId) {
           <mat-card class="form" appearance="outlined">
-            <mat-form-field appearance="outline"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="cForm.name" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>Nº</mat-label><input matInput [(ngModel)]="cForm.number" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>{{ es ? 'Rareza' : 'Rarity' }}</mat-label><input matInput [(ngModel)]="cForm.rarity" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>cardType</mat-label><input matInput [(ngModel)]="cForm.cardType" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>imageUrl</mat-label><input matInput [(ngModel)]="cForm.imageUrl" /></mat-form-field>
-            <mat-form-field appearance="outline"><mat-label>{{ es ? 'Variantes' : 'Variants' }}</mat-label><input matInput [(ngModel)]="cForm.variantsCsv" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="cForm.name" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>Nº</mat-label><input matInput [(ngModel)]="cForm.number" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Rareza' : 'Rarity' }}</mat-label><input matInput [(ngModel)]="cForm.rarity" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>cardType</mat-label><input matInput [(ngModel)]="cForm.cardType" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>imageUrl</mat-label><input matInput [(ngModel)]="cForm.imageUrl" /></mat-form-field>
+            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Variantes' : 'Variants' }}</mat-label><input matInput [(ngModel)]="cForm.variantsCsv" /></mat-form-field>
             <button mat-flat-button [disabled]="!cForm.name || !cForm.number" (click)="createCard()"><mat-icon>add</mat-icon>{{ es ? 'Crear' : 'Create' }}</button>
           </mat-card>
           <div class="list">
@@ -116,7 +116,7 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
 
       <!-- INVENTARIO -->
       <mat-tab [label]="es ? 'Inventario' : 'Inventory'">
-        <mat-form-field appearance="outline" class="picker">
+        <mat-form-field appearance="fill" class="picker">
           <mat-icon matPrefix>search</mat-icon>
           <mat-label>{{ i18n.t('admin.search') }}</mat-label>
           <input matInput [(ngModel)]="q" (ngModelChange)="search()" />
@@ -149,13 +149,13 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
               } @empty { <p class="muted">{{ i18n.t('admin.noInv') }}</p> }
             </div>
             <div class="form nopad">
-              <mat-form-field appearance="outline"><mat-label>{{ es ? 'Condición' : 'Condition' }}</mat-label>
+              <mat-form-field appearance="fill"><mat-label>{{ es ? 'Condición' : 'Condition' }}</mat-label>
                 <mat-select [(ngModel)]="invForm.condition">@for (cd of conditions; track cd) { <mat-option [value]="cd">{{ cd }}</mat-option> }</mat-select>
               </mat-form-field>
-              <mat-form-field appearance="outline"><mat-label>{{ i18n.t('admin.language') }}</mat-label><input matInput [(ngModel)]="invForm.language" /></mat-form-field>
+              <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.language') }}</mat-label><input matInput [(ngModel)]="invForm.language" /></mat-form-field>
               <mat-checkbox [(ngModel)]="invForm.isFoil">Foil</mat-checkbox>
-              <mat-form-field appearance="outline"><mat-label>{{ i18n.t('admin.price') }}</mat-label><input matInput type="number" [(ngModel)]="invForm.price" /></mat-form-field>
-              <mat-form-field appearance="outline"><mat-label>{{ i18n.t('admin.qty') }}</mat-label><input matInput type="number" [(ngModel)]="invForm.quantity" /></mat-form-field>
+              <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.price') }}</mat-label><input matInput type="number" [(ngModel)]="invForm.price" /></mat-form-field>
+              <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.qty') }}</mat-label><input matInput type="number" [(ngModel)]="invForm.quantity" /></mat-form-field>
               <button mat-flat-button (click)="createInv(c)"><mat-icon>add</mat-icon>{{ i18n.t('admin.add') }}</button>
             </div>
           </mat-card>

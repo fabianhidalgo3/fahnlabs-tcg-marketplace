@@ -19,7 +19,7 @@ import { CardSet, Game } from '../core/models/models';
         <h1>{{ i18n.t('sets.title') }}</h1>
         <p class="muted">{{ i18n.t('sets.subtitle') }}</p>
       </div>
-      <mat-form-field appearance="outline" class="game">
+      <mat-form-field appearance="fill" class="game">
         <mat-label>{{ i18n.t('catalog.allGames') }}</mat-label>
         <mat-select [(ngModel)]="gameId" (ngModelChange)="load()">
           <mat-option value="">{{ i18n.t('catalog.allGames') }}</mat-option>

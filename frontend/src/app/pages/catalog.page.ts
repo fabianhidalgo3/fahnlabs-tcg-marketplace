@@ -26,32 +26,32 @@ import { CardModel, CardSet, Game } from '../core/models/models';
     <p class="muted">{{ total() }} {{ i18n.t('catalog.subtitle') }}</p>
 
     <div class="filters">
-      <mat-form-field appearance="outline" class="search" subscriptSizing="dynamic">
+      <mat-form-field appearance="fill" class="search" subscriptSizing="dynamic">
         <mat-icon matPrefix>search</mat-icon>
         <input matInput [placeholder]="i18n.t('catalog.search')" [(ngModel)]="q" (ngModelChange)="debouncedSearch()" />
         @if (q) { <button matSuffix mat-icon-button (click)="q=''; search()"><mat-icon>close</mat-icon></button> }
       </mat-form-field>
 
       <div class="chips">
-        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+        <mat-form-field appearance="fill" subscriptSizing="dynamic">
           <mat-label>{{ i18n.t('catalog.allGames') }}</mat-label>
           <mat-select [(ngModel)]="gameId" (ngModelChange)="onGameChange()">
             <mat-option value="">{{ i18n.t('catalog.allGames') }}</mat-option>
             @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
           </mat-select>
         </mat-form-field>
-        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+        <mat-form-field appearance="fill" subscriptSizing="dynamic">
           <mat-label>{{ i18n.t('catalog.allSets') }}</mat-label>
           <mat-select [(ngModel)]="setId" (ngModelChange)="search()">
             <mat-option value="">{{ i18n.t('catalog.allSets') }}</mat-option>
             @for (s of sets(); track s.id) { <mat-option [value]="s.id">{{ s.name }}</mat-option> }
           </mat-select>
         </mat-form-field>
-        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+        <mat-form-field appearance="fill" subscriptSizing="dynamic">
           <mat-label>{{ i18n.t('catalog.type') }}</mat-label>
           <input matInput [(ngModel)]="type" (ngModelChange)="debouncedSearch()" />
         </mat-form-field>
-        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+        <mat-form-field appearance="fill" subscriptSizing="dynamic">
           <mat-label>{{ i18n.t('catalog.rarity') }}</mat-label>
           <input matInput [(ngModel)]="rarity" (ngModelChange)="debouncedSearch()" />
         </mat-form-field>
