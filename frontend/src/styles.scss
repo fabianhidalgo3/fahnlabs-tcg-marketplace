@@ -16,6 +16,35 @@ html {
 :root { color-scheme: light; }
 :root[data-theme='dark'] { color-scheme: dark; }
 
+/* Neutraliza las superficies (Material tiñe los neutros con el primario → café).
+   Dejamos gris/blanco limpio y el naranja SOLO como acento. */
+:root {
+  --mat-sys-primary: #e8590c;
+  --mat-sys-on-primary: #ffffff;
+  --mat-sys-surface: #ffffff;
+  --mat-sys-background: #ffffff;
+  --mat-sys-surface-container-low: #f7f7f9;
+  --mat-sys-surface-container: #f1f1f4;
+  --mat-sys-surface-container-high: #ebebef;
+  --mat-sys-surface-container-highest: #e5e5ea;
+  --mat-sys-on-surface: #1b1b1f;
+  --mat-sys-on-surface-variant: #5c5c66;
+  --mat-sys-outline-variant: #dadadf;
+}
+:root[data-theme='dark'] {
+  --mat-sys-primary: #fb923c;
+  --mat-sys-on-primary: #3a1a00;
+  --mat-sys-surface: #121318;
+  --mat-sys-background: #121318;
+  --mat-sys-surface-container-low: #1a1b21;
+  --mat-sys-surface-container: #202128;
+  --mat-sys-surface-container-high: #26272f;
+  --mat-sys-surface-container-highest: #2d2e36;
+  --mat-sys-on-surface: #e7e7ec;
+  --mat-sys-on-surface-variant: #a9a9b4;
+  --mat-sys-outline-variant: #3a3b43;
+}
+
 /* Tokens de la app mapeados a las system-variables de Material (--mat-sys-*),
    así toda la UI comparte la paleta Material y el dark se sincroniza solo. */
 :root {
