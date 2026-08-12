@@ -129,3 +129,21 @@ button {
 .right { text-align: right; }
 
 h1, h2, h3 { margin: 0 0 8px; }
+
+/* Inputs "fill" minimalistas: fondo muy sutil (no gris pesado), esquinas suaves */
+:root {
+  --mdc-filled-text-field-container-color: color-mix(in srgb, var(--text) 4%, transparent);
+  --mdc-filled-text-field-focus-active-indicator-color: var(--primary);
+  --mdc-filled-text-field-caret-color: var(--primary);
+}
+.mat-mdc-form-field .mdc-text-field--filled {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.mat-mdc-form-field .mdc-text-field--filled:hover {
+  background-color: color-mix(in srgb, var(--text) 7%, transparent);
+}
+/* quita el subrayado grueso en reposo, deja solo una hairline */
+.mat-mdc-form-field .mdc-line-ripple::before {
+  border-bottom-color: var(--border);
+}
