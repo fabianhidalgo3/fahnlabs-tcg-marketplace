@@ -45,6 +45,12 @@ export const routes: Routes = [
       import('./pages/storage.page').then((m) => m.StoragePage),
   },
   {
+    path: 'almacenamiento/:id',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/album-detail.page').then((m) => m.AlbumDetailPage),
+  },
+  {
     path: 'ordenes',
     canActivate: [authGuard],
     loadComponent: () =>

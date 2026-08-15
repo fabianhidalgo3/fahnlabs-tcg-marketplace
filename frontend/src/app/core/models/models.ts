@@ -137,6 +137,30 @@ export interface StorageLocation {
   color: string;
   notes?: string;
   cardCount?: number;
+  set?: { id: string; name: string; code: string; totalCards: number } | null;
+}
+
+export interface StoredCard {
+  cardId: string;
+  name: string;
+  number: string;
+  imageUrl?: string;
+  rarity?: string;
+  setId: string;
+  variant: string;
+  language: 'EN' | 'ES';
+  quantity: number;
+  value: number;
+  lineValue: number;
+  inLinkedSet: boolean;
+}
+
+export interface StorageDetail extends StorageLocation {
+  cards: StoredCard[];
+  fromSet: StoredCard[];
+  extras: StoredCard[];
+  setProgress: { totalSlots: number; inAlbumSlots: number; missing: number; percent: number } | null;
+  totalValue: number;
 }
 
 export interface StorageRef {

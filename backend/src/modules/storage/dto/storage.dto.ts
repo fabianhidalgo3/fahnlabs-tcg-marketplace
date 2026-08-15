@@ -6,6 +6,7 @@ export class CreateStorageDto {
   @IsEnum(StorageType) type: StorageType;
   @IsOptional() @IsHexColor() color?: string;
   @IsOptional() @IsString() notes?: string;
+  @IsOptional() @IsString() setId?: string | null;
 }
 
 export class UpdateStorageDto {
@@ -13,4 +14,5 @@ export class UpdateStorageDto {
   @IsOptional() @IsEnum(StorageType) type?: StorageType;
   @IsOptional() @IsHexColor() color?: string;
   @IsOptional() @IsString() notes?: string;
+  @IsOptional() @IsString() setId?: string | null;
 }

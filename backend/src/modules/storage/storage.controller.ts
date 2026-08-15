@@ -23,6 +23,11 @@ export class StorageController {
     return this.storage.findAll(user.id);
   }
 
+  @Get(':id')
+  findOne(@CurrentUser() user: AuthUser, @Param('id') id: string) {
+    return this.storage.findOne(user.id, id);
+  }
+
   @Post()
   create(@CurrentUser() user: AuthUser, @Body() dto: CreateStorageDto) {
     return this.storage.create(user.id, dto);

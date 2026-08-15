@@ -8,6 +8,7 @@ import {
   CollectionEntry,
   CollectionEntrySchema,
 } from '../../entities/collection-entry.entity';
+import { CardModel, CardModelSchema } from '../../entities/card-model.entity';
 import { StorageService } from './storage.service';
 import { StorageController } from './storage.controller';
 
@@ -16,6 +17,7 @@ import { StorageController } from './storage.controller';
     MongooseModule.forFeature([
       { name: StorageLocation.name, schema: StorageLocationSchema },
       { name: CollectionEntry.name, schema: CollectionEntrySchema },
+      { name: CardModel.name, schema: CardModelSchema },
     ]),
   ],
   controllers: [StorageController],

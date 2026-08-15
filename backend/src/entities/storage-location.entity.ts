@@ -2,6 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument, Types } from 'mongoose';
 import { baseSchemaOptions } from '../common/schema.util';
 import { User } from './user.entity';
+import { CardSet } from './card-set.entity';
 
 export enum StorageType {
   ALBUM = 'album',
@@ -31,6 +32,10 @@ export class StorageLocation {
 
   @Prop()
   notes?: string;
+
+  /** Set opcional al que está dedicado este álbum (para ver su progreso). */
+  @Prop({ type: Types.ObjectId, ref: CardSet.name, default: null })
+  set?: Types.ObjectId | null;
 }
 
 export type StorageLocationDocument = HydratedDocument<StorageLocation>;

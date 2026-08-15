@@ -33,10 +33,12 @@ import { CurrencyService } from './core/services/currency.service';
             <a routerLink="/sets" routerLinkActive="on" class="nav-item" (click)="onNav()">
               <span class="mi">folder</span><span class="lbl">{{ i18n.t('nav.sets') }}</span>
             </a>
-            <a routerLink="/carrito" routerLinkActive="on" class="nav-item" (click)="onNav()">
-              <span class="mi">shopping_cart</span><span class="lbl">{{ i18n.t('nav.cart') }}</span>
-              @if (cart.count()) { <span class="navbadge">{{ cart.count() }}</span> }
-            </a>
+            @if (!auth.isAdmin()) {
+              <a routerLink="/carrito" routerLinkActive="on" class="nav-item" (click)="onNav()">
+                <span class="mi">shopping_cart</span><span class="lbl">{{ i18n.t('nav.cart') }}</span>
+                @if (cart.count()) { <span class="navbadge">{{ cart.count() }}</span> }
+              </a>
+            }
 
             @if (auth.isLoggedIn()) {
               <h3 class="subheader">{{ i18n.isES() ? 'Mi cuenta' : 'My account' }}</h3>
@@ -133,7 +135,7 @@ import { CurrencyService } from './core/services/currency.service';
       .tools { display: inline-flex; align-items: center; gap: 4px; margin-right: 6px; }
       .user { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); margin-right: 6px; }
       .user .mi { font-size: 20px; }
-      .content { padding: 26px 24px 60px; max-width: 1260px; width: 100%; }
+      .content { padding: 26px clamp(16px, 3vw, 40px) 60px; max-width: 1600px; width: 100%; margin: 0 auto; }
 
       /* Móvil: la barra lateral se convierte en panel deslizante */
       .shell.mobile .side {
