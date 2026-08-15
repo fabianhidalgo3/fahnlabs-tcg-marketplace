@@ -152,61 +152,96 @@ export class CollectionService {
     };
   }
 
-  /** Lista de sets con el progreso de la colección del usuario. */
+  /**
+   * Lista de sets con el progreso de la colección del usuario.
+   * Optimizado: en vez de cargar todas las cartas (20k+) en memoria, se agregan
+   * los totales por set en Mongo (dos aggregations que devuelven ~1 fila por set).
+   */
   async getMySets(userId: string): Promise<any> {
-    const [sets, cards, owned] = await Promise.all([
+    const uid = new Types.ObjectId(userId);
+
+    const [sets, totals, owned] = await Promise.all([
       this.sets.find().sort({ releaseDate: -1, name: 1 }).exec(),
-      this.cards.find().exec(),
-      this.entries.find({ user: new Types.ObjectId(userId) }).exec(),
+      // Totales por set: nº de slots (Σ variantes) y valor del set (Σ variantValues).
+      this.cards.aggregate<{ _id: Types.ObjectId; totalSlots: number; setValue: number }>([
+        {
+          $group: {
+            _id: '$set',
+            totalSlots: { $sum: { $size: { $ifNull: ['$variants', []] } } },
+            setValue: {
+              $sum: {
+                $sum: {
+                  $map: {
+                    input: { $objectToArray: { $ifNull: ['$variantValues', {}] } },
+                    as: 'kv',
+                    in: '$$kv.v',
+                  },
+                },
+              },
+            },
+          },
+        },
+      ]),
+      // Poseídas por set: slots distintos, valor de la colección y duplicadas.
+      this.entries.aggregate<{ _id: Types.ObjectId; ownedSlots: number; value: number; duplicates: number }>([
+        { $match: { user: uid, quantity: { $gt: 0 } } },
+        { $lookup: { from: 'card_models', localField: 'cardModel', foreignField: '_id', as: 'c' } },
+        { $unwind: '$c' },
+        {
+          $group: {
+            _id: '$c.set',
+            slots: { $addToSet: { $concat: [{ $toString: '$cardModel' }, '|', '$variant'] } },
+            value: {
+              $sum: {
+                $multiply: [
+                  '$quantity',
+                  {
+                    $let: {
+                      vars: {
+                        m: {
+                          $first: {
+                            $filter: {
+                              input: { $objectToArray: { $ifNull: ['$c.variantValues', {}] } },
+                              as: 'kv',
+                              cond: { $eq: ['$$kv.k', '$variant'] },
+                            },
+                          },
+                        },
+                      },
+                      in: { $toDouble: { $ifNull: ['$$m.v', 0] } },
+                    },
+                  },
+                ],
+              },
+            },
+            duplicates: { $sum: { $max: [{ $subtract: ['$quantity', 1] }, 0] } },
+          },
+        },
+        { $project: { ownedSlots: { $size: '$slots' }, value: 1, duplicates: 1 } },
+      ]),
     ]);
 
-    const cardById = new Map(cards.map((c) => [c.id, c]));
-    // Slots totales y valor por set (una copia de cada variante = set completo).
-    const bySet = new Map<
-      string,
-      { totalSlots: number; setValue: number; cardIds: Set<string> }
-    >();
-    for (const c of cards) {
-      const sid = c.set.toString();
-      const agg = bySet.get(sid) ?? { totalSlots: 0, setValue: 0, cardIds: new Set() };
-      const variants = c.variants ?? ['Normal'];
-      agg.totalSlots += variants.length;
-      agg.setValue += variants.reduce((s, v) => s + (c.variantValues?.[v] ?? 0), 0);
-      agg.cardIds.add(c.id);
-      bySet.set(sid, agg);
-    }
-
-    // Slots poseídos (en cualquier idioma), valor y duplicadas por set.
-    const ownedSlotKeys = new Map<string, Set<string>>(); // setId -> "cardId|variant"
-    const ownedValue = new Map<string, number>();
-    const dupes = new Map<string, number>();
-    for (const e of owned) {
-      const card = cardById.get(e.cardModel.toString());
-      if (!card || e.quantity <= 0) continue;
-      const sid = card.set.toString();
-      const slots = ownedSlotKeys.get(sid) ?? new Set();
-      slots.add(`${card.id}|${e.variant}`);
-      ownedSlotKeys.set(sid, slots);
-      const val = (card.variantValues?.[e.variant] ?? 0) * e.quantity;
-      ownedValue.set(sid, (ownedValue.get(sid) ?? 0) + val);
-      dupes.set(sid, (dupes.get(sid) ?? 0) + Math.max(e.quantity - 1, 0));
-    }
+    const totalsBySet = new Map(totals.map((t) => [t._id.toString(), t]));
+    const ownedBySet = new Map(owned.map((o) => [o._id.toString(), o]));
+    const round = (n: number) => Math.round(n * 100) / 100;
 
     return sets.map((set) => {
-      const agg = bySet.get(set.id) ?? { totalSlots: 0, setValue: 0, cardIds: new Set() };
-      const ownedSlots = ownedSlotKeys.get(set.id)?.size ?? 0;
+      const t = totalsBySet.get(set.id);
+      const o = ownedBySet.get(set.id);
+      const totalSlots = t?.totalSlots ?? 0;
+      const ownedSlots = o?.ownedSlots ?? 0;
       return {
         ...set.toJSON(),
         collection: {
-          totalSlots: agg.totalSlots,
+          totalSlots,
           ownedSlots,
-          missingSlots: Math.max(agg.totalSlots - ownedSlots, 0),
-          completionPercent: agg.totalSlots
-            ? Math.round((ownedSlots / agg.totalSlots) * 1000) / 10
+          missingSlots: Math.max(totalSlots - ownedSlots, 0),
+          completionPercent: totalSlots
+            ? Math.round((ownedSlots / totalSlots) * 1000) / 10
             : 0,
-          setValue: Math.round(agg.setValue * 100) / 100,
-          collectionValue: Math.round((ownedValue.get(set.id) ?? 0) * 100) / 100,
-          duplicates: dupes.get(set.id) ?? 0,
+          setValue: round(t?.setValue ?? 0),
+          collectionValue: round(o?.value ?? 0),
+          duplicates: o?.duplicates ?? 0,
         },
       };
     });
