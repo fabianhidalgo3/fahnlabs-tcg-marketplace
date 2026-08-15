@@ -155,7 +155,7 @@ async function run() {
 
   // --- Almacenamiento (álbumes / cajas) de ejemplo ----------------------
   const [album151, cajaDupes] = await storage.create([
-    { user: cliente._id, name: 'Álbum 151', type: StorageType.ALBUM, color: '#e11d48', notes: 'Binder principal del set 151' },
+    { user: cliente._id, name: 'Álbum 151', type: StorageType.ALBUM, color: '#e11d48', notes: 'Binder principal del set 151', set: set151?.setId ?? null },
     { user: cliente._id, name: 'Caja de repetidas', type: StorageType.BOX, color: '#f59e0b' },
   ]);
   await Promise.all(
