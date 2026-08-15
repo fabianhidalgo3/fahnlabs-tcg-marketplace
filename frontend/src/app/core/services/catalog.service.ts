@@ -19,6 +19,7 @@ export interface CardQuery {
   cardType?: string;
   type?: string;
   inStock?: boolean;
+  forSale?: boolean;
   page?: number;
   limit?: number;
 }

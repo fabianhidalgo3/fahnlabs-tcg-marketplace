@@ -1,14 +1,9 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatCardModule } from '@angular/material/card';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TuiButton, TuiTextfield, TuiInput, TuiCheckbox } from '@taiga-ui/core';
+import { TuiTabs } from '@taiga-ui/kit';
+import { TuiTable } from '@taiga-ui/addon-table';
 import { CatalogService } from '../core/services/catalog.service';
 import { AdminService } from '../core/services/admin.service';
 import { I18nService } from '../core/services/i18n.service';
@@ -20,174 +15,306 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
 @Component({
   standalone: true,
   imports: [
-    CommonModule, FormsModule, MatTabsModule, MatCardModule, MatFormFieldModule, MatInputModule,
-    MatSelectModule, MatButtonModule, MatIconModule, MatCheckboxModule,
+    CommonModule, FormsModule, TuiButton, TuiTextfield, TuiInput, TuiCheckbox, TuiTabs, TuiTable,
   ],
   template: `
-    <h1>{{ es ? 'Administración' : 'Administration' }}</h1>
-    <p class="muted">{{ es ? 'Gestiona juegos, sets, cartas e inventario.' : 'Manage games, sets, cards and inventory.' }}</p>
+    <header class="page-head">
+      <h1>{{ es ? 'Administración' : 'Administration' }}</h1>
+      <p class="muted">{{ es ? 'Gestiona juegos, sets, cartas e inventario.' : 'Manage games, sets, cards and inventory.' }}</p>
+    </header>
 
-    @if (msg()) { <p class="ok">{{ msg() }}</p> }
-    @if (err()) { <p class="err">{{ err() }}</p> }
+    @if (msg()) { <div class="msg ok"><span class="mi">check_circle</span>{{ msg() }}</div> }
+    @if (err()) { <div class="msg err"><span class="mi">error</span>{{ err() }}</div> }
 
-    <mat-tab-group class="tabs" animationDuration="150ms">
-      <!-- JUEGOS -->
-      <mat-tab [label]="es ? 'Juegos' : 'Games'">
-        <mat-card class="form" appearance="outlined">
-          <mat-form-field appearance="fill"><mat-label>code</mat-label><input matInput [(ngModel)]="gForm.code" /></mat-form-field>
-          <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="gForm.name" /></mat-form-field>
-          <mat-form-field appearance="fill"><mat-label>iconUrl</mat-label><input matInput [(ngModel)]="gForm.iconUrl" /></mat-form-field>
-          <button mat-flat-button [disabled]="!gForm.code || !gForm.name" (click)="createGame()"><mat-icon>add</mat-icon>{{ es ? 'Crear' : 'Create' }}</button>
-        </mat-card>
-        <div class="list">
-          @for (g of games(); track g.id) {
-            <mat-card class="row" appearance="outlined">
-              <span class="nm">{{ g.name }}</span><span class="muted">{{ g.code }}</span>
-              <button mat-icon-button class="del" (click)="deleteGame(g)"><mat-icon>delete</mat-icon></button>
-            </mat-card>
-          }
+    <tui-tabs class="tabs" [activeItemIndex]="tab()" (activeItemIndexChange)="tab.set($event)">
+      <button tuiTab type="button">{{ es ? 'Juegos' : 'Games' }}</button>
+      <button tuiTab type="button">Sets</button>
+      <button tuiTab type="button">{{ es ? 'Cartas' : 'Cards' }}</button>
+      <button tuiTab type="button">{{ es ? 'Inventario' : 'Inventory' }}</button>
+    </tui-tabs>
+
+    <!-- ===================== JUEGOS ===================== -->
+    @if (tab() === 0) {
+      <section class="block card-surface">
+        <div class="block-head">
+          <h3>{{ es ? 'Nuevo juego' : 'New game' }}</h3>
+          <p class="muted">{{ es ? 'Crea un juego para agrupar sets y cartas.' : 'Create a game to group sets and cards.' }}</p>
         </div>
-      </mat-tab>
-
-      <!-- SETS -->
-      <mat-tab label="Sets">
-        <mat-form-field appearance="fill" class="picker">
-          <mat-label>{{ es ? 'Juego' : 'Game' }}</mat-label>
-          <mat-select [(ngModel)]="setGameId" (ngModelChange)="loadSets()">
-            @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
-          </mat-select>
-        </mat-form-field>
-        @if (setGameId) {
-          <mat-card class="form" appearance="outlined">
-            <mat-form-field appearance="fill"><mat-label>code</mat-label><input matInput [(ngModel)]="sForm.code" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="sForm.name" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Serie' : 'Series' }}</mat-label><input matInput [(ngModel)]="sForm.series" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nº cartas' : 'Total' }}</mat-label><input matInput type="number" [(ngModel)]="sForm.totalCards" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Lanzamiento' : 'Release' }}</mat-label><input matInput type="date" [(ngModel)]="sForm.releaseDate" /></mat-form-field>
-            <button mat-flat-button [disabled]="!sForm.code || !sForm.name" (click)="createSet()"><mat-icon>add</mat-icon>{{ es ? 'Crear' : 'Create' }}</button>
-          </mat-card>
-          <div class="list">
-            @for (s of sets(); track s.id) {
-              <mat-card class="row" appearance="outlined">
-                <span class="nm">{{ s.name }}</span><span class="muted">{{ s.code }} · {{ s.totalCards }}</span>
-                <button mat-icon-button class="del" (click)="deleteSet(s)"><mat-icon>delete</mat-icon></button>
-              </mat-card>
-            } @empty { <p class="muted">{{ es ? 'Sin sets.' : 'No sets.' }}</p> }
-          </div>
-        }
-      </mat-tab>
-
-      <!-- CARTAS -->
-      <mat-tab [label]="es ? 'Cartas' : 'Cards'">
-        <div class="pickers">
-          <mat-form-field appearance="fill">
-            <mat-label>{{ es ? 'Juego' : 'Game' }}</mat-label>
-            <mat-select [(ngModel)]="cardGameId" (ngModelChange)="onCardGame()">
-              @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
-            </mat-select>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Set</mat-label>
-            <mat-select [(ngModel)]="cardSetId" (ngModelChange)="loadCards()">
-              @for (s of cardSets(); track s.id) { <mat-option [value]="s.id">{{ s.name }}</mat-option> }
-            </mat-select>
-          </mat-form-field>
+        <div class="form-grid">
+          <tui-textfield><label tuiLabel>code</label><input tuiInput [(ngModel)]="gForm.code" /></tui-textfield>
+          <tui-textfield><label tuiLabel>{{ es ? 'Nombre' : 'Name' }}</label><input tuiInput [(ngModel)]="gForm.name" /></tui-textfield>
+          <tui-textfield><label tuiLabel>iconUrl</label><input tuiInput [(ngModel)]="gForm.iconUrl" /></tui-textfield>
         </div>
-        @if (cardSetId) {
-          <mat-card class="form" appearance="outlined">
-            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Nombre' : 'Name' }}</mat-label><input matInput [(ngModel)]="cForm.name" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>Nº</mat-label><input matInput [(ngModel)]="cForm.number" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Rareza' : 'Rarity' }}</mat-label><input matInput [(ngModel)]="cForm.rarity" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>cardType</mat-label><input matInput [(ngModel)]="cForm.cardType" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>imageUrl</mat-label><input matInput [(ngModel)]="cForm.imageUrl" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>{{ es ? 'Variantes' : 'Variants' }}</mat-label><input matInput [(ngModel)]="cForm.variantsCsv" /></mat-form-field>
-            <button mat-flat-button [disabled]="!cForm.name || !cForm.number" (click)="createCard()"><mat-icon>add</mat-icon>{{ es ? 'Crear' : 'Create' }}</button>
-          </mat-card>
-          <div class="list">
-            @for (c of cards(); track c.id) {
-              <mat-card class="row" appearance="outlined">
-                <span class="mono muted">{{ c.number }}</span><span class="nm">{{ c.name }}</span><span class="muted">{{ c.rarity }}</span>
-                <button mat-icon-button class="del" (click)="deleteCard(c)"><mat-icon>delete</mat-icon></button>
-              </mat-card>
-            } @empty { <p class="muted">{{ es ? 'Sin cartas.' : 'No cards.' }}</p> }
-          </div>
-        }
-      </mat-tab>
+        <div class="form-actions">
+          <button tuiButton type="button" appearance="primary" size="m" [disabled]="!gForm.code || !gForm.name" (click)="createGame()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
+        </div>
+      </section>
 
-      <!-- INVENTARIO -->
-      <mat-tab [label]="es ? 'Inventario' : 'Inventory'">
-        <mat-form-field appearance="fill" class="picker">
-          <mat-icon matPrefix>search</mat-icon>
-          <mat-label>{{ i18n.t('admin.search') }}</mat-label>
-          <input matInput [(ngModel)]="q" (ngModelChange)="search()" />
-        </mat-form-field>
+      <section class="block card-surface tablecard">
+        <table tuiTable class="dtable">
+          <thead>
+            <tr>
+              <th tuiTh>{{ es ? 'Nombre' : 'Name' }}</th>
+              <th tuiTh>{{ es ? 'Código' : 'Code' }}</th>
+              <th tuiTh class="acol"></th>
+            </tr>
+          </thead>
+          <tbody tuiTbody>
+            @for (g of games(); track g.id) {
+              <tr>
+                <td tuiTd><b>{{ g.name }}</b></td>
+                <td tuiTd class="muted mono">{{ g.code }}</td>
+                <td tuiTd class="acol"><button class="icon-btn sm" (click)="deleteGame(g)"><span class="mi">delete</span></button></td>
+              </tr>
+            } @empty { <tr><td tuiTd colspan="3" class="empty">{{ es ? 'Aún no hay juegos.' : 'No games yet.' }}</td></tr> }
+          </tbody>
+        </table>
+      </section>
+    }
+
+    <!-- ===================== SETS ===================== -->
+    @if (tab() === 1) {
+      <div class="picker-row">
+        <div class="ui-field">
+          <span class="lbl">{{ es ? 'Juego' : 'Game' }}</span>
+          <select class="ui-select" [(ngModel)]="setGameId" (ngModelChange)="loadSets()">
+            <option value="">{{ es ? '— Selecciona un juego —' : '— Select a game —' }}</option>
+            @for (g of games(); track g.id) { <option [value]="g.id">{{ g.name }}</option> }
+          </select>
+        </div>
+      </div>
+
+      @if (setGameId) {
+        <section class="block card-surface">
+          <div class="block-head">
+            <h3>{{ es ? 'Nuevo set' : 'New set' }}</h3>
+          </div>
+          <div class="form-grid">
+            <tui-textfield><label tuiLabel>code</label><input tuiInput [(ngModel)]="sForm.code" /></tui-textfield>
+            <tui-textfield><label tuiLabel>{{ es ? 'Nombre' : 'Name' }}</label><input tuiInput [(ngModel)]="sForm.name" /></tui-textfield>
+            <tui-textfield><label tuiLabel>{{ es ? 'Serie' : 'Series' }}</label><input tuiInput [(ngModel)]="sForm.series" /></tui-textfield>
+            <tui-textfield><label tuiLabel>{{ es ? 'Nº cartas' : 'Total' }}</label><input tuiInput type="number" [(ngModel)]="sForm.totalCards" /></tui-textfield>
+            <tui-textfield><label tuiLabel>{{ es ? 'Lanzamiento' : 'Release' }}</label><input tuiInput type="date" [(ngModel)]="sForm.releaseDate" /></tui-textfield>
+          </div>
+          <div class="form-actions">
+            <button tuiButton type="button" appearance="primary" size="m" [disabled]="!sForm.code || !sForm.name" (click)="createSet()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
+          </div>
+        </section>
+
+        <section class="block card-surface tablecard">
+          <table tuiTable class="dtable">
+            <thead>
+              <tr>
+                <th tuiTh>{{ es ? 'Nombre' : 'Name' }}</th>
+                <th tuiTh>{{ es ? 'Código' : 'Code' }}</th>
+                <th tuiTh class="r">{{ es ? 'Nº cartas' : 'Total' }}</th>
+                <th tuiTh class="acol"></th>
+              </tr>
+            </thead>
+            <tbody tuiTbody>
+              @for (s of sets(); track s.id) {
+                <tr>
+                  <td tuiTd><b>{{ s.name }}</b></td>
+                  <td tuiTd class="muted mono">{{ s.code }}</td>
+                  <td tuiTd class="r">{{ s.totalCards }}</td>
+                  <td tuiTd class="acol"><button class="icon-btn sm" (click)="deleteSet(s)"><span class="mi">delete</span></button></td>
+                </tr>
+              } @empty { <tr><td tuiTd colspan="4" class="empty">{{ es ? 'Sin sets.' : 'No sets.' }}</td></tr> }
+            </tbody>
+          </table>
+        </section>
+      }
+    }
+
+    <!-- ===================== CARTAS ===================== -->
+    @if (tab() === 2) {
+      <div class="picker-row two">
+        <div class="ui-field">
+          <span class="lbl">{{ es ? 'Juego' : 'Game' }}</span>
+          <select class="ui-select" [(ngModel)]="cardGameId" (ngModelChange)="onCardGame()">
+            <option value="">{{ es ? '— Selecciona —' : '— Select —' }}</option>
+            @for (g of games(); track g.id) { <option [value]="g.id">{{ g.name }}</option> }
+          </select>
+        </div>
+        <div class="ui-field">
+          <span class="lbl">Set</span>
+          <select class="ui-select" [(ngModel)]="cardSetId" (ngModelChange)="loadCards()" [disabled]="!cardGameId">
+            <option value="">{{ es ? '— Selecciona —' : '— Select —' }}</option>
+            @for (s of cardSets(); track s.id) { <option [value]="s.id">{{ s.name }}</option> }
+          </select>
+        </div>
+      </div>
+
+      @if (cardSetId) {
+        <section class="block card-surface">
+          <div class="block-head"><h3>{{ es ? 'Nueva carta' : 'New card' }}</h3></div>
+          <div class="form-grid">
+            <tui-textfield><label tuiLabel>{{ es ? 'Nombre' : 'Name' }}</label><input tuiInput [(ngModel)]="cForm.name" /></tui-textfield>
+            <tui-textfield><label tuiLabel>Nº</label><input tuiInput [(ngModel)]="cForm.number" /></tui-textfield>
+            <tui-textfield><label tuiLabel>{{ es ? 'Rareza' : 'Rarity' }}</label><input tuiInput [(ngModel)]="cForm.rarity" /></tui-textfield>
+            <tui-textfield><label tuiLabel>cardType</label><input tuiInput [(ngModel)]="cForm.cardType" /></tui-textfield>
+            <tui-textfield><label tuiLabel>imageUrl</label><input tuiInput [(ngModel)]="cForm.imageUrl" /></tui-textfield>
+            <tui-textfield><label tuiLabel>{{ es ? 'Variantes' : 'Variants' }}</label><input tuiInput [(ngModel)]="cForm.variantsCsv" /></tui-textfield>
+          </div>
+          <div class="form-actions">
+            <button tuiButton type="button" appearance="primary" size="m" [disabled]="!cForm.name || !cForm.number" (click)="createCard()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
+          </div>
+        </section>
+
+        <section class="block card-surface tablecard">
+          <table tuiTable class="dtable">
+            <thead>
+              <tr>
+                <th tuiTh class="ncol">Nº</th>
+                <th tuiTh>{{ es ? 'Nombre' : 'Name' }}</th>
+                <th tuiTh>{{ es ? 'Rareza' : 'Rarity' }}</th>
+                <th tuiTh class="acol"></th>
+              </tr>
+            </thead>
+            <tbody tuiTbody>
+              @for (c of cards(); track c.id) {
+                <tr>
+                  <td tuiTd class="mono muted">{{ c.number }}</td>
+                  <td tuiTd><b>{{ c.name }}</b></td>
+                  <td tuiTd class="muted">{{ c.rarity }}</td>
+                  <td tuiTd class="acol"><button class="icon-btn sm" (click)="deleteCard(c)"><span class="mi">delete</span></button></td>
+                </tr>
+              } @empty { <tr><td tuiTd colspan="4" class="empty">{{ es ? 'Sin cartas.' : 'No cards.' }}</td></tr> }
+            </tbody>
+          </table>
+        </section>
+      }
+    }
+
+    <!-- ===================== INVENTARIO ===================== -->
+    @if (tab() === 3) {
+      <section class="block card-surface">
+        <div class="block-head"><h3>{{ es ? 'Buscar carta' : 'Find card' }}</h3></div>
+        <tui-textfield class="searchfield" iconStart="@tui.search">
+          <label tuiLabel>{{ i18n.t('admin.search') }}</label>
+          <input tuiInput [(ngModel)]="q" (ngModelChange)="search()" />
+        </tui-textfield>
         @if (results().length) {
           <div class="results">
             @for (c of results(); track c.id) {
-              <button mat-stroked-button class="res" [class.sel]="selected()?.id === c.id" (click)="select(c)">
-                {{ c.name }} <span class="muted">· {{ c.game?.name }} · {{ c.number }}</span>
+              <button class="res" [class.sel]="selected()?.id === c.id" (click)="select(c)">
+                <span class="rname">{{ c.name }}</span>
+                <span class="muted">{{ c.game?.name }} · {{ c.number }}</span>
               </button>
             }
           </div>
         }
-        @if (selected(); as c) {
-          <mat-card class="manage" appearance="outlined">
-            <h3>{{ c.name }} <span class="muted">{{ c.number }}</span></h3>
-            <div class="inv">
+      </section>
+
+      @if (selected(); as c) {
+        <section class="block card-surface tablecard">
+          <div class="block-head manage-head">
+            <h3>{{ c.name }} <span class="muted mono">{{ c.number }}</span></h3>
+          </div>
+          <table tuiTable class="dtable">
+            <thead>
+              <tr>
+                <th tuiTh>{{ es ? 'Condición' : 'Condition' }}</th>
+                <th tuiTh>{{ es ? 'Idioma' : 'Language' }}</th>
+                <th tuiTh class="r">{{ i18n.t('admin.price') }}</th>
+                <th tuiTh class="c">Stock</th>
+                <th tuiTh class="acol"></th>
+              </tr>
+            </thead>
+            <tbody tuiTbody>
               @for (it of inventory(); track it.id) {
-                <div class="irow">
-                  <span class="cond">{{ it.condition }}@if (it.isFoil) { · FOIL }</span>
-                  <span class="muted">{{ it.language }}</span>
-                  <span class="price">{{ cur.format(it.price) }}</span>
-                  <span class="stock">stock: <b>{{ it.quantity }}</b></span>
-                  <span class="acts">
-                    <button mat-icon-button (click)="adjustInv(it, -1)"><mat-icon>remove</mat-icon></button>
-                    <button mat-icon-button (click)="adjustInv(it, 1)"><mat-icon>add</mat-icon></button>
-                    <button mat-icon-button (click)="removeInv(it)"><mat-icon>delete</mat-icon></button>
-                  </span>
-                </div>
-              } @empty { <p class="muted">{{ i18n.t('admin.noInv') }}</p> }
+                <tr>
+                  <td tuiTd><b>{{ it.condition }}</b>@if (it.isFoil) { <span class="foiltag">FOIL</span> }</td>
+                  <td tuiTd class="muted">{{ it.language }}</td>
+                  <td tuiTd class="r price">{{ cur.format(it.price) }}</td>
+                  <td tuiTd class="c"><b>{{ it.quantity }}</b></td>
+                  <td tuiTd class="acol">
+                    <div class="rowacts">
+                      <button class="icon-btn sm" (click)="adjustInv(it, -1)"><span class="mi">remove</span></button>
+                      <button class="icon-btn sm" (click)="adjustInv(it, 1)"><span class="mi">add</span></button>
+                      <button class="icon-btn sm" (click)="removeInv(it)"><span class="mi">delete</span></button>
+                    </div>
+                  </td>
+                </tr>
+              } @empty { <tr><td tuiTd colspan="5" class="empty">{{ i18n.t('admin.noInv') }}</td></tr> }
+            </tbody>
+          </table>
+
+          <div class="addunit">
+            <h4>{{ es ? 'Añadir unidad' : 'Add unit' }}</h4>
+            <div class="form-grid inv-grid">
+              <div class="ui-field">
+                <span class="lbl">{{ es ? 'Condición' : 'Condition' }}</span>
+                <select class="ui-select" [(ngModel)]="invForm.condition">
+                  @for (cd of conditions; track cd) { <option [value]="cd">{{ cd }}</option> }
+                </select>
+              </div>
+              <tui-textfield><label tuiLabel>{{ i18n.t('admin.language') }}</label><input tuiInput [(ngModel)]="invForm.language" /></tui-textfield>
+              <tui-textfield><label tuiLabel>{{ i18n.t('admin.price') }}</label><input tuiInput type="number" [(ngModel)]="invForm.price" /></tui-textfield>
+              <tui-textfield><label tuiLabel>{{ i18n.t('admin.qty') }}</label><input tuiInput type="number" [(ngModel)]="invForm.quantity" /></tui-textfield>
+              <label class="cb-row foilbox"><input tuiCheckbox type="checkbox" [(ngModel)]="invForm.isFoil" /> Foil</label>
             </div>
-            <div class="form nopad">
-              <mat-form-field appearance="fill"><mat-label>{{ es ? 'Condición' : 'Condition' }}</mat-label>
-                <mat-select [(ngModel)]="invForm.condition">@for (cd of conditions; track cd) { <mat-option [value]="cd">{{ cd }}</mat-option> }</mat-select>
-              </mat-form-field>
-              <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.language') }}</mat-label><input matInput [(ngModel)]="invForm.language" /></mat-form-field>
-              <mat-checkbox [(ngModel)]="invForm.isFoil">Foil</mat-checkbox>
-              <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.price') }}</mat-label><input matInput type="number" [(ngModel)]="invForm.price" /></mat-form-field>
-              <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.qty') }}</mat-label><input matInput type="number" [(ngModel)]="invForm.quantity" /></mat-form-field>
-              <button mat-flat-button (click)="createInv(c)"><mat-icon>add</mat-icon>{{ i18n.t('admin.add') }}</button>
+            <div class="form-actions">
+              <button tuiButton type="button" appearance="primary" size="m" (click)="createInv(c)"><span class="mi">add</span>{{ i18n.t('admin.add') }}</button>
             </div>
-          </mat-card>
-        }
-      </mat-tab>
-    </mat-tab-group>
+          </div>
+        </section>
+      }
+    }
   `,
   styles: [
     `
-      h1 { margin-bottom: 2px; }
-      .tabs { margin-top: 16px; }
-      .form { display: flex; flex-wrap: wrap; gap: 12px; padding: 16px; margin: 18px 0; align-items: center; }
-      .form.nopad { box-shadow: none; border: none; padding: 8px 0 0; }
-      .form mat-form-field { width: 160px; --mat-form-field-container-vertical-padding: 6px; }
-      .picker { width: 280px; margin: 16px 0; }
-      .pickers { display: flex; gap: 12px; margin: 16px 0; }
-      .pickers mat-form-field { width: 240px; }
-      .list { display: flex; flex-direction: column; gap: 8px; }
-      .row { display: flex; align-items: center; gap: 14px; padding: 10px 16px; }
-      .row .nm { font-weight: 700; }
-      .row .mono { font-variant-numeric: tabular-nums; min-width: 80px; }
-      .row .del { margin-left: auto; }
-      .results { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-      .res { justify-content: flex-start; text-align: left; }
-      .res.sel { border-color: var(--primary); }
-      .manage { padding: 20px; }
-      .inv { display: flex; flex-direction: column; gap: 4px; margin: 12px 0 12px; }
-      .irow { display: grid; grid-template-columns: 100px 60px 100px 1fr auto; align-items: center; gap: 12px; padding: 4px; }
-      .cond { font-weight: 700; } .price { color: var(--accent); font-weight: 700; }
-      .acts { display: flex; gap: 2px; }
-      .ok { color: var(--success); } .err { color: var(--danger); }
-      @media (max-width: 720px) { .irow { grid-template-columns: 1fr 1fr; } }
+      .page-head { margin-bottom: 8px; }
+      .page-head h1 { margin-bottom: 2px; }
+      .msg { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; font-weight: 600; font-size: 14px; margin: 12px 0; }
+      .msg .mi { font-size: 20px; }
+      .msg.ok { background: color-mix(in srgb, var(--success) 14%, transparent); color: var(--success); }
+      .msg.err { background: color-mix(in srgb, var(--danger) 14%, transparent); color: var(--danger); }
+      .tabs { margin: 18px 0 22px; }
+      .block { padding: 22px; margin-bottom: 18px; }
+      .block-head { margin-bottom: 18px; }
+      .block-head h3 { font-size: 17px; margin: 0 0 3px; }
+      .block-head p { margin: 0; font-size: 13px; }
+      .form-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+      @media (max-width: 900px) { .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (max-width: 560px) { .form-grid { grid-template-columns: 1fr; } }
+      .form-actions { display: flex; justify-content: flex-end; margin-top: 18px; }
+      .picker-row { display: flex; gap: 16px; margin-bottom: 18px; }
+      .picker-row .ui-field { width: 320px; max-width: 100%; }
+      .picker-row.two .ui-field { flex: 1; width: auto; }
+      @media (max-width: 560px) { .picker-row, .picker-row.two { flex-direction: column; } .picker-row .ui-field { width: 100%; } }
+
+      .tablecard { padding: 8px 8px; }
+      .dtable { width: 100%; }
+      .dtable th.r, .dtable td.r { text-align: right; }
+      .dtable th.c, .dtable td.c { text-align: center; }
+      .dtable .acol { width: 1%; white-space: nowrap; text-align: right; }
+      .dtable .ncol { width: 80px; }
+      .dtable .mono { font-variant-numeric: tabular-nums; }
+      .dtable .price { color: var(--accent); font-weight: 700; }
+      .dtable .empty { text-align: center; color: var(--muted); padding: 24px; }
+      .rowacts { display: inline-flex; gap: 2px; justify-content: flex-end; }
+      .foiltag { font-size: 10px; font-weight: 700; background: linear-gradient(90deg,#ffd54a,#ff6b6b); color: #000; padding: 1px 6px; border-radius: 5px; margin-left: 8px; }
+
+      .searchfield { max-width: 460px; }
+      .results { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
+      .res {
+        display: flex; justify-content: space-between; align-items: center; gap: 12px;
+        text-align: left; padding: 11px 14px; border-radius: 12px;
+        border: 1px solid var(--border); background: var(--bg-soft); color: var(--text);
+        cursor: pointer; transition: border-color 0.12s ease, background 0.12s ease;
+      }
+      .res:hover { border-color: color-mix(in srgb, var(--primary) 50%, var(--border)); }
+      .res.sel { border-color: var(--primary); box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 22%, transparent); }
+      .rname { font-weight: 700; }
+
+      .manage-head h3 { display: flex; align-items: baseline; gap: 8px; }
+      .addunit { padding: 18px 12px 6px; }
+      .addunit h4 { margin: 0 0 14px; font-size: 15px; }
+      .inv-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      @media (max-width: 900px) { .inv-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (max-width: 560px) { .inv-grid { grid-template-columns: 1fr; } }
+      .foilbox { align-self: center; padding-top: 18px; }
     `,
   ],
 })
@@ -198,6 +325,7 @@ export class AdminPage {
   cur = inject(CurrencyService);
   get es() { return this.i18n.isES(); }
 
+  tab = signal(0);
   games = signal<Game[]>([]);
   msg = signal(''); err = signal('');
   conditions = CONDITIONS;

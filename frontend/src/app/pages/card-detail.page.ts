@@ -2,14 +2,8 @@ import { Component, effect, inject, input, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatChipsModule } from '@angular/material/chips';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TuiButton, TuiTextfield, TuiInput, TuiCheckbox } from '@taiga-ui/core';
+import { TuiBadge } from '@taiga-ui/kit';
 import { CatalogService } from '../core/services/catalog.service';
 import { CartService } from '../core/services/cart.service';
 import { AuthService } from '../core/services/auth.service';
@@ -25,17 +19,16 @@ const CONDITION_LABEL: Record<string, string> = {
 @Component({
   standalone: true,
   imports: [
-    CommonModule, RouterLink, FormsModule, MatCardModule, MatButtonModule, MatIconModule,
-    MatChipsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatCheckboxModule,
+    CommonModule, RouterLink, FormsModule, TuiButton, TuiTextfield, TuiInput, TuiCheckbox, TuiBadge,
   ],
   template: `
     @if (card(); as c) {
-      <a mat-button routerLink="/catalogo" class="back"><mat-icon>arrow_back</mat-icon>{{ i18n.t('card.back') }}</a>
+      <a tuiButton appearance="flat" size="s" routerLink="/catalogo" class="back"><span class="mi">arrow_back</span>{{ i18n.t('card.back') }}</a>
       <div class="layout">
-        <mat-card class="art" appearance="outlined">
+        <div class="art card-surface">
           @if (c.imageUrl) { <img [src]="c.imageUrl" [alt]="c.name" /> }
           @else { <div class="noimg">{{ i18n.isES() ? 'Sin imagen' : 'No image' }}</div> }
-        </mat-card>
+        </div>
 
         <div class="info">
           <div class="crumbs muted">
@@ -44,20 +37,20 @@ const CONDITION_LABEL: Record<string, string> = {
             · {{ c.number }}
           </div>
           <h1>{{ c.name }}</h1>
-          <mat-chip-set class="badges">
-            @if (c.cardType) { <mat-chip>{{ c.cardType }}</mat-chip> }
-            @if (c.rarity) { <mat-chip>{{ c.rarity }}</mat-chip> }
-          </mat-chip-set>
+          <div class="badge-set badges">
+            @if (c.cardType) { <span tuiBadge appearance="neutral">{{ c.cardType }}</span> }
+            @if (c.rarity) { <span tuiBadge appearance="neutral">{{ c.rarity }}</span> }
+          </div>
 
           @if (attrRows(c).length) {
-            <mat-card class="attrs" appearance="outlined">
+            <div class="attrs card-surface">
               <h3>{{ i18n.t('card.attributes') }}</h3>
               <div class="attr-grid">
                 @for (row of attrRows(c); track row.key) {
                   <div class="attr"><span class="k muted">{{ row.key }}</span><span class="v">{{ row.value }}</span></div>
                 }
               </div>
-            </mat-card>
+            </div>
           }
 
           <h3 class="inv-title">{{ i18n.t('card.availability') }}</h3>
@@ -66,7 +59,7 @@ const CONDITION_LABEL: Record<string, string> = {
           } @else {
             <div class="inv">
               @for (it of inventory(); track it.id) {
-                <mat-card class="row" appearance="outlined">
+                <div class="row card-surface">
                   <div>
                     <div class="cond">{{ label(it.condition) }}@if (it.isFoil) { <span class="foil">FOIL</span> }</div>
                     <div class="muted sku">{{ it.language }} · {{ it.sku }}</div>
@@ -75,17 +68,17 @@ const CONDITION_LABEL: Record<string, string> = {
                     <div class="price">{{ cur.format(it.price) }}</div>
                     <div class="muted">{{ it.quantity }} {{ i18n.t('card.available') }}</div>
                   </div>
-                  <button mat-flat-button [disabled]="it.quantity === 0" (click)="addToCart(it, c)">
-                    <mat-icon>add_shopping_cart</mat-icon>{{ i18n.t('card.add') }}
+                  <button tuiButton type="button" appearance="primary" size="s" [disabled]="it.quantity === 0" (click)="addToCart(it, c)">
+                    <span class="mi">add_shopping_cart</span>{{ i18n.t('card.add') }}
                   </button>
-                </mat-card>
+                </div>
               }
             </div>
           }
 
           @if (auth.isAdmin()) {
-            <mat-card class="edit" appearance="outlined">
-              <h3><mat-icon>edit</mat-icon> {{ i18n.isES() ? 'Editar inventario' : 'Edit inventory' }}</h3>
+            <div class="edit card-surface">
+              <h3><span class="mi">edit</span> {{ i18n.isES() ? 'Editar inventario' : 'Edit inventory' }}</h3>
               @for (it of inventory(); track it.id) {
                 <div class="erow">
                   <span class="ec">{{ it.condition }}@if (it.isFoil) { · FOIL }</span>
@@ -93,27 +86,27 @@ const CONDITION_LABEL: Record<string, string> = {
                   <span class="ep">{{ cur.format(it.price) }}</span>
                   <span class="es">stock: <b>{{ it.quantity }}</b></span>
                   <span class="eacts">
-                    <button mat-icon-button (click)="adjustStock(it, -1)"><mat-icon>remove</mat-icon></button>
-                    <button mat-icon-button (click)="adjustStock(it, 1)"><mat-icon>add</mat-icon></button>
-                    <button mat-icon-button (click)="removeUnit(it)"><mat-icon>delete</mat-icon></button>
+                    <button class="icon-btn sm" (click)="adjustStock(it, -1)"><span class="mi">remove</span></button>
+                    <button class="icon-btn sm" (click)="adjustStock(it, 1)"><span class="mi">add</span></button>
+                    <button class="icon-btn sm" (click)="removeUnit(it)"><span class="mi">delete</span></button>
                   </span>
                 </div>
               }
               <div class="eform">
-                <mat-form-field appearance="fill">
-                  <mat-label>{{ i18n.isES() ? 'Condición' : 'Condition' }}</mat-label>
-                  <mat-select [(ngModel)]="form.condition">
-                    @for (c2 of conditions; track c2) { <mat-option [value]="c2">{{ c2 }}</mat-option> }
-                  </mat-select>
-                </mat-form-field>
-                <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.language') }}</mat-label><input matInput [(ngModel)]="form.language" /></mat-form-field>
-                <mat-checkbox [(ngModel)]="form.isFoil">Foil</mat-checkbox>
-                <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.price') }}</mat-label><input matInput type="number" [(ngModel)]="form.price" /></mat-form-field>
-                <mat-form-field appearance="fill"><mat-label>{{ i18n.t('admin.qty') }}</mat-label><input matInput type="number" [(ngModel)]="form.quantity" /></mat-form-field>
-                <button mat-flat-button (click)="addUnit()"><mat-icon>add</mat-icon>{{ i18n.t('admin.add') }}</button>
+                <div class="ui-field f">
+                  <span class="lbl">{{ i18n.isES() ? 'Condición' : 'Condition' }}</span>
+                  <select class="ui-select" [(ngModel)]="form.condition">
+                    @for (c2 of conditions; track c2) { <option [value]="c2">{{ c2 }}</option> }
+                  </select>
+                </div>
+                <tui-textfield class="f"><label tuiLabel>{{ i18n.t('admin.language') }}</label><input tuiInput [(ngModel)]="form.language" /></tui-textfield>
+                <label class="cb-row"><input tuiCheckbox type="checkbox" [(ngModel)]="form.isFoil" /> Foil</label>
+                <tui-textfield class="f"><label tuiLabel>{{ i18n.t('admin.price') }}</label><input tuiInput type="number" [(ngModel)]="form.price" /></tui-textfield>
+                <tui-textfield class="f"><label tuiLabel>{{ i18n.t('admin.qty') }}</label><input tuiInput type="number" [(ngModel)]="form.quantity" /></tui-textfield>
+                <button tuiButton type="button" appearance="primary" size="s" (click)="addUnit()"><span class="mi">add</span>{{ i18n.t('admin.add') }}</button>
               </div>
               @if (editError()) { <p class="err">{{ editError() }}</p> }
-            </mat-card>
+            </div>
           }
         </div>
       </div>
@@ -149,8 +142,8 @@ const CONDITION_LABEL: Record<string, string> = {
       .erow { display: grid; grid-template-columns: 90px 50px 90px 1fr auto; align-items: center; gap: 10px; padding: 6px 4px; }
       .ec { font-weight: 700; } .ep { color: var(--accent); font-weight: 700; }
       .eacts { display: flex; gap: 2px; }
-      .eform { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 12px; }
-      .eform mat-form-field { width: 130px; --mat-form-field-container-vertical-padding: 6px; }
+      .eform { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin-top: 12px; }
+      .eform .f { width: 130px; }
       .err { color: var(--danger); margin-top: 10px; }
       @media (max-width: 760px) { .layout { grid-template-columns: 1fr; } }
     `,

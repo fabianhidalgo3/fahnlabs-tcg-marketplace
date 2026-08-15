@@ -1,10 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { TuiButton } from '@taiga-ui/core';
+import { TuiProgress } from '@taiga-ui/kit';
 import { CollectionService } from '../core/services/collection.service';
 import { I18nService } from '../core/services/i18n.service';
 import { CurrencyService } from '../core/services/currency.service';
@@ -12,22 +10,22 @@ import { MyCollectionSet } from '../core/models/models';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterLink, MatCardModule, MatButtonModule, MatIconModule, MatProgressBarModule],
+  imports: [CommonModule, RouterLink, TuiButton, TuiProgress],
   template: `
     <div class="head">
       <div>
         <h1>{{ i18n.t('collection.title') }}</h1>
         <p class="muted">{{ i18n.t('collection.subtitle') }}</p>
       </div>
-      <a mat-stroked-button routerLink="/almacenamiento">
-        <mat-icon>inventory_2</mat-icon>{{ i18n.isES() ? 'Álbumes y cajas' : 'Albums & boxes' }}
+      <a tuiButton appearance="secondary" size="m" routerLink="/almacenamiento">
+        <span class="mi">inventory_2</span>{{ i18n.isES() ? 'Álbumes y cajas' : 'Albums & boxes' }}
       </a>
     </div>
 
     <div class="grid">
       @for (s of sets(); track s.id) {
         @if (s.collection.totalSlots > 0) {
-          <mat-card class="set" appearance="outlined" [routerLink]="['/coleccion', s.id]">
+          <div class="set card-surface" [routerLink]="['/coleccion', s.id]">
             <div class="top">
               <div>
                 <div class="name">{{ s.name }}</div>
@@ -35,13 +33,13 @@ import { MyCollectionSet } from '../core/models/models';
               </div>
               <div class="pct">{{ s.collection.completionPercent }}%</div>
             </div>
-            <mat-progress-bar mode="determinate" [value]="s.collection.completionPercent"></mat-progress-bar>
+            <progress tuiProgressBar max="100" [value]="s.collection.completionPercent"></progress>
             <div class="stats">
               <div><span class="muted">{{ i18n.t('collection.owned') }}</span><b>{{ s.collection.ownedSlots }}/{{ s.collection.totalSlots }}</b></div>
               <div><span class="muted">{{ i18n.t('collection.value') }}</span><b class="val">{{ cur.format(s.collection.collectionValue) }}</b></div>
               <div><span class="muted">{{ i18n.t('collection.duplicates') }}</span><b>{{ s.collection.duplicates }}</b></div>
             </div>
-          </mat-card>
+          </div>
         }
       }
     </div>
@@ -57,7 +55,7 @@ import { MyCollectionSet } from '../core/models/models';
       .name { font-weight: 800; font-size: 18px; }
       .code { font-size: 12px; margin-top: 2px; }
       .pct { font-weight: 800; font-size: 24px; color: var(--primary); }
-      mat-progress-bar { margin: 14px 0 12px; border-radius: 999px; }
+      progress[tuiProgressBar] { margin: 14px 0 12px; display: block; inline-size: 100%; }
       .stats { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; }
       .stats > div { display: flex; flex-direction: column; gap: 2px; }
       .stats b { font-size: 15px; }

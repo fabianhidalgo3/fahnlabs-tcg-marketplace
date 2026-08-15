@@ -13,9 +13,12 @@ import { SetDetail } from '../core/models/models';
       <a routerLink="/sets" class="back muted">← {{ i18n.t('setd.allSets') }}</a>
 
       <div class="header panel">
-        <div>
-          <h1>{{ s.name }}</h1>
-          <p class="muted">{{ s.series }} · {{ s.code }} · {{ i18n.t('common.released') }} {{ s.releaseDate }}</p>
+        <div class="ident">
+          @if (s.symbolUrl) { <img class="symbol" [src]="s.symbolUrl" [alt]="s.name" /> }
+          <div>
+            <h1>{{ s.name }}</h1>
+            <p class="muted">{{ s.series }} · {{ s.code }} · {{ i18n.t('common.released') }} {{ s.releaseDate }}</p>
+          </div>
         </div>
         <div class="summary">
           <div class="ring" [style.--p]="s.stats?.completionPercent ?? 0">
@@ -74,6 +77,8 @@ import { SetDetail } from '../core/models/models';
     `
       .back { display: inline-block; margin-bottom: 16px; font-weight: 600; }
       .header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px; margin-bottom: 20px; flex-wrap: wrap; }
+      .ident { display: flex; align-items: center; gap: 16px; }
+      .symbol { width: 56px; height: 56px; object-fit: contain; flex: 0 0 56px; }
       h1 { font-size: 28px; }
       .summary { display: flex; align-items: center; gap: 22px; }
       .ring {

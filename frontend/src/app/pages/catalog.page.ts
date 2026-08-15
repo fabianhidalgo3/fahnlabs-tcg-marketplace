@@ -2,14 +2,8 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatChipsModule } from '@angular/material/chips';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+import { TuiTextfield, TuiInput } from '@taiga-ui/core';
+import { TuiBadge, TuiSwitch } from '@taiga-ui/kit';
 import { CatalogService } from '../core/services/catalog.service';
 import { I18nService } from '../core/services/i18n.service';
 import { CurrencyService } from '../core/services/currency.service';
@@ -18,44 +12,42 @@ import { CardModel, CardSet, Game } from '../core/models/models';
 @Component({
   standalone: true,
   imports: [
-    CommonModule, FormsModule, RouterLink, MatCardModule, MatFormFieldModule, MatInputModule,
-    MatSelectModule, MatSlideToggleModule, MatChipsModule, MatButtonModule, MatIconModule,
+    CommonModule, FormsModule, RouterLink, TuiTextfield, TuiInput, TuiBadge, TuiSwitch,
   ],
   template: `
     <h1>{{ i18n.t('catalog.title') }}</h1>
     <p class="muted">{{ total() }} {{ i18n.t('catalog.subtitle') }}</p>
 
     <div class="filters">
-      <mat-form-field appearance="fill" class="search" subscriptSizing="dynamic">
-        <mat-icon matPrefix>search</mat-icon>
-        <input matInput [placeholder]="i18n.t('catalog.search')" [(ngModel)]="q" (ngModelChange)="debouncedSearch()" />
-        @if (q) { <button matSuffix mat-icon-button (click)="q=''; search()"><mat-icon>close</mat-icon></button> }
-      </mat-form-field>
+      <tui-textfield class="search" iconStart="@tui.search" [tuiTextfieldCleaner]="true">
+        <input tuiInput [placeholder]="i18n.t('catalog.search')" [(ngModel)]="q" (ngModelChange)="debouncedSearch()" />
+      </tui-textfield>
 
       <div class="chips">
-        <mat-form-field appearance="fill" subscriptSizing="dynamic">
-          <mat-label>{{ i18n.t('catalog.allGames') }}</mat-label>
-          <mat-select [(ngModel)]="gameId" (ngModelChange)="onGameChange()">
-            <mat-option value="">{{ i18n.t('catalog.allGames') }}</mat-option>
-            @for (g of games(); track g.id) { <mat-option [value]="g.id">{{ g.name }}</mat-option> }
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field appearance="fill" subscriptSizing="dynamic">
-          <mat-label>{{ i18n.t('catalog.allSets') }}</mat-label>
-          <mat-select [(ngModel)]="setId" (ngModelChange)="search()">
-            <mat-option value="">{{ i18n.t('catalog.allSets') }}</mat-option>
-            @for (s of sets(); track s.id) { <mat-option [value]="s.id">{{ s.name }}</mat-option> }
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field appearance="fill" subscriptSizing="dynamic">
-          <mat-label>{{ i18n.t('catalog.type') }}</mat-label>
-          <input matInput [(ngModel)]="type" (ngModelChange)="debouncedSearch()" />
-        </mat-form-field>
-        <mat-form-field appearance="fill" subscriptSizing="dynamic">
-          <mat-label>{{ i18n.t('catalog.rarity') }}</mat-label>
-          <input matInput [(ngModel)]="rarity" (ngModelChange)="debouncedSearch()" />
-        </mat-form-field>
-        <mat-slide-toggle [(ngModel)]="inStock" (ngModelChange)="search()">{{ i18n.t('catalog.inStock') }}</mat-slide-toggle>
+        <select class="ui-select field" [(ngModel)]="gameId" (ngModelChange)="onGameChange()">
+          <option value="">{{ i18n.t('catalog.allGames') }}</option>
+          @for (g of games(); track g.id) { <option [value]="g.id">{{ g.name }}</option> }
+        </select>
+        <select class="ui-select field" [(ngModel)]="setId" (ngModelChange)="search()">
+          <option value="">{{ i18n.t('catalog.allSets') }}</option>
+          @for (s of sets(); track s.id) { <option [value]="s.id">{{ s.name }}</option> }
+        </select>
+        <tui-textfield class="field">
+          <label tuiLabel>{{ i18n.t('catalog.type') }}</label>
+          <input tuiInput [(ngModel)]="type" (ngModelChange)="debouncedSearch()" />
+        </tui-textfield>
+        <tui-textfield class="field">
+          <label tuiLabel>{{ i18n.t('catalog.rarity') }}</label>
+          <input tuiInput [(ngModel)]="rarity" (ngModelChange)="debouncedSearch()" />
+        </tui-textfield>
+        <label class="switch-row">
+          <input tuiSwitch type="checkbox" [(ngModel)]="inStock" (ngModelChange)="search()" />
+          {{ i18n.t('catalog.inStock') }}
+        </label>
+        <label class="switch-row">
+          <input tuiSwitch type="checkbox" [(ngModel)]="showAll" (ngModelChange)="search()" />
+          {{ i18n.isES() ? 'Ver todo el catálogo' : 'Show full catalog' }}
+        </label>
       </div>
     </div>
 
@@ -66,7 +58,7 @@ import { CardModel, CardSet, Game } from '../core/models/models';
     } @else {
       <div class="grid">
         @for (c of cards(); track c.id) {
-          <mat-card class="card" appearance="outlined" [routerLink]="['/cartas', c.id]">
+          <div class="card card-surface" [routerLink]="['/cartas', c.id]">
             <div class="img">
               @if (c.imageUrl) { <img [src]="c.imageUrl" [alt]="c.name" loading="lazy" /> }
               @else { <div class="noimg">{{ c.name }}</div> }
@@ -76,9 +68,9 @@ import { CardModel, CardSet, Game } from '../core/models/models';
               <div class="name">{{ c.name }}</div>
               <div class="sub muted">{{ c.game?.name }} · {{ c.number }}</div>
               @if (typesOf(c).length) {
-                <mat-chip-set class="tags">
-                  @for (t of typesOf(c); track t) { <mat-chip>{{ t }}</mat-chip> }
-                </mat-chip-set>
+                <div class="badge-set tags">
+                  @for (t of typesOf(c); track t) { <span tuiBadge appearance="neutral">{{ t }}</span> }
+                </div>
               }
               <div class="foot">
                 @if (c.minPrice != null) {
@@ -89,15 +81,15 @@ import { CardModel, CardSet, Game } from '../core/models/models';
                 }
               </div>
             </div>
-          </mat-card>
+          </div>
         }
       </div>
 
       @if (totalPages() > 1) {
         <div class="pager">
-          <button mat-icon-button [disabled]="page() === 1" (click)="go(page() - 1)"><mat-icon>chevron_left</mat-icon></button>
+          <button class="icon-btn" [disabled]="page() === 1" (click)="go(page() - 1)"><span class="mi">chevron_left</span></button>
           <span class="muted">{{ i18n.t('catalog.page') }} {{ page() }} {{ i18n.t('catalog.of') }} {{ totalPages() }}</span>
-          <button mat-icon-button [disabled]="page() === totalPages()" (click)="go(page() + 1)"><mat-icon>chevron_right</mat-icon></button>
+          <button class="icon-btn" [disabled]="page() === totalPages()" (click)="go(page() + 1)"><span class="mi">chevron_right</span></button>
         </div>
       }
     }
@@ -108,8 +100,7 @@ import { CardModel, CardSet, Game } from '../core/models/models';
       .filters { margin: 18px 0 24px; display: flex; flex-direction: column; gap: 14px; }
       .filters .search { width: 100%; max-width: 520px; }
       .chips { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-      .chips mat-form-field { width: 180px; }
-      .chips mat-slide-toggle { margin-left: 4px; }
+      .chips .field { width: 180px; }
       .grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
       @media (max-width: 1300px) { .grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
       @media (max-width: 1080px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
@@ -125,14 +116,12 @@ import { CardModel, CardSet, Game } from '../core/models/models';
       .name { font-weight: 700; font-size: 15px; }
       .sub { font-size: 12px; margin-top: 2px; }
       .tags { margin-top: 8px; }
-      .tags mat-chip { --mat-chip-container-height: 22px; font-size: 11px; }
       .foot { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
       .price { font-weight: 800; font-size: 15px; color: var(--accent); }
       .stock { font-size: 12px; font-weight: 600; }
       .stock.ok { color: var(--success); }
       .stock.no { color: var(--muted); }
       .pager { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 28px; }
-      @media (max-width: 760px) { .filters { grid-template-columns: 1fr 1fr; } }
     `,
   ],
 })
@@ -149,7 +138,7 @@ export class CatalogPage {
   totalPages = signal(1);
   loading = signal(true);
 
-  q = ''; gameId = ''; setId = ''; type = ''; rarity = ''; inStock = false;
+  q = ''; gameId = ''; setId = ''; type = ''; rarity = ''; inStock = false; showAll = false;
   private timer: any;
 
   constructor() {
@@ -166,7 +155,7 @@ export class CatalogPage {
   search(resetPage = true) {
     if (resetPage) this.page.set(1);
     this.loading.set(true);
-    this.catalog.cards({ q: this.q, gameId: this.gameId, setId: this.setId, type: this.type, rarity: this.rarity, inStock: this.inStock, page: this.page() })
+    this.catalog.cards({ q: this.q, gameId: this.gameId, setId: this.setId, type: this.type, rarity: this.rarity, inStock: this.inStock, forSale: !this.showAll, page: this.page() })
       .subscribe((res) => { this.cards.set(res.data); this.total.set(res.total); this.totalPages.set(res.totalPages); this.loading.set(false); });
   }
   typesOf(c: CardModel): string[] {

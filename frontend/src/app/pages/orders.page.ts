@@ -1,10 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { TuiButton } from '@taiga-ui/core';
 import { OrdersService } from '../core/services/orders.service';
 import { AuthService } from '../core/services/auth.service';
 import { I18nService } from '../core/services/i18n.service';
@@ -15,12 +12,12 @@ const STATUSES: OrderStatus[] = ['pending', 'paid', 'shipped', 'delivered', 'can
 
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule, DatePipe, MatCardModule, MatButtonModule, MatSelectModule, MatFormFieldModule],
+  imports: [CommonModule, FormsModule, DatePipe, TuiButton],
   template: `
     <div class="head">
       <h1>{{ auth.isAdmin() && adminView() ? i18n.t('orders.allTitle') : i18n.t('orders.title') }}</h1>
       @if (auth.isAdmin()) {
-        <button mat-stroked-button (click)="toggleView()">
+        <button tuiButton type="button" appearance="secondary" size="m" (click)="toggleView()">
           {{ adminView() ? i18n.t('orders.viewMine') : i18n.t('orders.viewAll') }}
         </button>
       }
@@ -31,7 +28,7 @@ const STATUSES: OrderStatus[] = ['pending', 'paid', 'shipped', 'delivered', 'can
     } @else {
       <div class="list">
         @for (o of orders(); track o.id) {
-          <mat-card class="order" appearance="outlined">
+          <div class="order card-surface">
             <div class="top">
               <div>
                 <span class="id">#{{ o.id.slice(-6) }}</span>
@@ -39,11 +36,9 @@ const STATUSES: OrderStatus[] = ['pending', 'paid', 'shipped', 'delivered', 'can
               </div>
               <div class="right">
                 @if (auth.isAdmin() && adminView()) {
-                  <mat-form-field appearance="fill" class="st" subscriptSizing="dynamic">
-                    <mat-select [ngModel]="o.status" (ngModelChange)="changeStatus(o, $event)">
-                      @for (s of statuses; track s) { <mat-option [value]="s">{{ s }}</mat-option> }
-                    </mat-select>
-                  </mat-form-field>
+                  <select class="ui-select st" [ngModel]="o.status" (ngModelChange)="changeStatus(o, $event)">
+                    @for (s of statuses; track s) { <option [value]="s">{{ s }}</option> }
+                  </select>
                 } @else {
                   <span class="badge status" [attr.data-s]="o.status">{{ o.status }}</span>
                 }
@@ -55,7 +50,7 @@ const STATUSES: OrderStatus[] = ['pending', 'paid', 'shipped', 'delivered', 'can
                 <div class="it"><span>{{ it.quantity }}× {{ it.cardName }}</span><span class="muted">{{ cur.format(it.unitPrice * it.quantity) }}</span></div>
               }
             </div>
-          </mat-card>
+          </div>
         }
       </div>
     }

@@ -1,78 +1,64 @@
-@use '@angular/material' as mat;
+/* ============================================================
+   TCG Marketplace — estilos globales (Taiga UI)
+   Migrado desde Angular Material. Los tokens de la app (--primary,
+   --card, --border, …) ahora son independientes: superficies neutras
+   y naranja SOLO como acento. El dark se sincroniza con
+   :root[data-theme='dark'] (ThemeService) y con body[tuiTheme='dark']
+   (que conduce Taiga vía TUI_DARK_MODE).
+   ============================================================ */
 
-// Tema Material 3 (light/dark automático según color-scheme, que fija ThemeService).
-html {
-  @include mat.theme(
-    (
-      color: (
-        primary: mat.$orange-palette,
-        tertiary: mat.$violet-palette,
-      ),
-      typography: Inter,
-      density: 0,
-    )
-  );
-}
 :root { color-scheme: light; }
 :root[data-theme='dark'] { color-scheme: dark; }
 
-/* Neutraliza las superficies (Material tiñe los neutros con el primario → café).
-   Dejamos gris/blanco limpio y el naranja SOLO como acento. */
+/* Tokens de la app — LIGHT */
 :root {
-  --mat-sys-primary: #e8590c;
-  --mat-sys-on-primary: #ffffff;
-  --mat-sys-surface: #ffffff;
-  --mat-sys-background: #ffffff;
-  --mat-sys-surface-container-low: #f7f7f9;
-  --mat-sys-surface-container: #f1f1f4;
-  --mat-sys-surface-container-high: #ebebef;
-  --mat-sys-surface-container-highest: #e5e5ea;
-  --mat-sys-on-surface: #1b1b1f;
-  --mat-sys-on-surface-variant: #5c5c66;
-  --mat-sys-outline-variant: #dadadf;
-}
-:root[data-theme='dark'] {
-  --mat-sys-primary: #fb923c;
-  --mat-sys-on-primary: #3a1a00;
-  --mat-sys-surface: #121318;
-  --mat-sys-background: #121318;
-  --mat-sys-surface-container-low: #1a1b21;
-  --mat-sys-surface-container: #202128;
-  --mat-sys-surface-container-high: #26272f;
-  --mat-sys-surface-container-highest: #2d2e36;
-  --mat-sys-on-surface: #e7e7ec;
-  --mat-sys-on-surface-variant: #a9a9b4;
-  --mat-sys-outline-variant: #3a3b43;
-}
-
-/* Tokens de la app mapeados a las system-variables de Material (--mat-sys-*),
-   así toda la UI comparte la paleta Material y el dark se sincroniza solo. */
-:root {
-  --primary: var(--mat-sys-primary);
-  --primary-2: var(--mat-sys-primary);
-  --on-primary: var(--mat-sys-on-primary);
+  --primary: #e8590c;
+  --primary-2: #e8590c;
+  --on-primary: #ffffff;
   --accent: #d97706;
-  --text: var(--mat-sys-on-surface);
-  --muted: var(--mat-sys-on-surface-variant);
-  --card: var(--mat-sys-surface-container-low);
-  --card-2: var(--mat-sys-surface-container-high);
-  --border: var(--mat-sys-outline-variant);
-  --bg: var(--mat-sys-surface);
-  --bg-soft: var(--mat-sys-surface-container);
+  --text: #1b1b1f;
+  --muted: #5c5c66;
+  --card: #f7f7f9;
+  --card-2: #ebebef;
+  --border: #dadadf;
+  --bg: #ffffff;
+  --bg-soft: #f1f1f4;
   --success: #1a9e57;
-  --danger: var(--mat-sys-error);
+  --danger: #d92d20;
   --radius: 14px;
   --shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
 }
+
+/* Tokens de la app — DARK */
 :root[data-theme='dark'] {
+  --primary: #fb923c;
+  --on-primary: #3a1a00;
   --accent: #fbbf24;
+  --text: #e7e7ec;
+  --muted: #a9a9b4;
+  --card: #1a1b21;
+  --card-2: #26272f;
+  --border: #3a3b43;
+  --bg: #121318;
+  --bg-soft: #202128;
   --success: #34d399;
+  --danger: #ff6b6b;
   --shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
 }
 
-* {
-  box-sizing: border-box;
+/* Acento naranja para los componentes Taiga (botones/badges/switch/…) */
+:root {
+  --tui-background-accent-1: #e8590c;
+  --tui-background-accent-1-hover: #d24f09;
+  --tui-background-accent-1-pressed: #b8460a;
 }
+[tuiTheme='dark'] {
+  --tui-background-accent-1: #fb923c;
+  --tui-background-accent-1-hover: #f97e1f;
+  --tui-background-accent-1-pressed: #ea7317;
+}
+
+* { box-sizing: border-box; }
 
 html,
 body {
@@ -87,58 +73,92 @@ body {
   color: var(--text);
 }
 
+/* tui-root ocupa toda la pantalla del shell */
+tui-root { min-height: 100vh; }
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
+button { font-family: inherit; }
+
+/* Icono (fuente Material Icons, ya cargada en index.html) */
+.mi {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
 }
+
+/* Botón sólo-icono (custom, con tokens Taiga/app) */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+.icon-btn:hover { background: var(--card-2); }
+.icon-btn:active { transform: translateY(1px); }
+.icon-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.icon-btn.sm { width: 32px; height: 32px; }
+.icon-btn.sm .mi { font-size: 18px; }
+
+/* Select nativo con estética Taiga (los tui-select de v5 atan el valor al
+   objeto; aquí preservamos el ngModel por id string de toda la app) */
+.ui-field { display: flex; flex-direction: column; gap: 6px; }
+.ui-field > .lbl { font-size: 13px; color: var(--muted); font-weight: 600; }
+.ui-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--bg-soft);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238a8a94' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 11px 34px 11px 14px;
+  font: inherit;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.ui-select:hover { border-color: color-mix(in srgb, var(--text) 24%, transparent); }
+.ui-select:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 22%, transparent); }
+.ui-select option { background: var(--bg); color: var(--text); }
+
+/* Superficie de tarjeta (reemplaza mat-card appearance=outlined) */
+.card-surface {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* tui-textfield ocupa el ancho de su contenedor por defecto en formularios */
+tui-textfield { width: 100%; }
 
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.btn {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 16px;
-  font-weight: 600;
-  font-size: 14px;
-  background: var(--primary);
-  color: var(--on-primary, #fff);
-  transition: transform 0.05s ease, filter 0.2s ease, opacity 0.2s;
-}
-.btn:hover { filter: brightness(1.08); }
-.btn:active { transform: translateY(1px); }
-.btn:disabled { opacity: 0.5; cursor: not-allowed; }
-.btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
-.btn.ghost:hover { background: var(--card-2); filter: none; }
-.btn.sm { padding: 6px 10px; font-size: 13px; }
-.btn.block { width: 100%; }
-
-.input,
-.select {
-  background: var(--bg-soft);
-  border: 1px solid var(--border);
-  color: var(--text);
-  border-radius: 10px;
-  padding: 10px 12px;
-  font-size: 14px;
-  width: 100%;
-}
-.input:focus,
-.select:focus { outline: 2px solid var(--primary); border-color: transparent; }
-
-.panel {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
 }
 
 .badge {
@@ -157,22 +177,31 @@ button {
 .muted { color: var(--muted); }
 .right { text-align: right; }
 
+.panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
 h1, h2, h3 { margin: 0 0 8px; }
 
-/* Inputs "fill" minimalistas: fondo muy sutil (no gris pesado), esquinas suaves */
-:root {
-  --mdc-filled-text-field-container-color: color-mix(in srgb, var(--text) 4%, transparent);
-  --mdc-filled-text-field-focus-active-indicator-color: var(--primary);
-  --mdc-filled-text-field-caret-color: var(--primary);
+/* Icono a la izquierda del texto dentro de botones Taiga */
+[tuiButton] .mi { font-size: 18px; margin-right: 6px; }
+
+/* Fila con switch/checkbox Taiga + etiqueta */
+.switch-row,
+.cb-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
 }
-.mat-mdc-form-field .mdc-text-field--filled {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.mat-mdc-form-field .mdc-text-field--filled:hover {
-  background-color: color-mix(in srgb, var(--text) 7%, transparent);
-}
-/* quita el subrayado grueso en reposo, deja solo una hairline */
-.mat-mdc-form-field .mdc-line-ripple::before {
-  border-bottom-color: var(--border);
-}
+
+/* Conjunto de badges (reemplaza mat-chip-set) */
+.badge-set { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+
+/* Barra de progreso Taiga en color de acento */
+progress[tuiProgressBar] { color: var(--primary); }

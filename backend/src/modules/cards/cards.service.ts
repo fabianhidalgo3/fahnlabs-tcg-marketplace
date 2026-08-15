@@ -30,12 +30,16 @@ export class CardsService {
     // Mongo hace match si el array attributes.types contiene el valor.
     if (query.type) filter['attributes.types'] = query.type;
 
-    // Filtrar por "con stock": buscamos primero las cartas que tienen inventario > 0.
+    // "con stock" = inventario con quantity > 0.
     if (query.inStock === 'true') {
       const withStock = await this.inventory.distinct('cardModel', {
         quantity: { $gt: 0 },
       });
       filter._id = { $in: withStock };
+    } else if (query.forSale === 'true') {
+      // "a la venta" = la carta tiene alguna publicación de inventario (con o sin stock).
+      const listed = await this.inventory.distinct('cardModel', {});
+      filter._id = { $in: listed };
     }
 
     // Dentro de un set, ordenar por número de coleccionista (1,2,3…);

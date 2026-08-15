@@ -2,11 +2,8 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+import { TuiButton, TuiTextfield, TuiInput } from '@taiga-ui/core';
+import { TuiTextarea } from '@taiga-ui/kit';
 import { CartService } from '../core/services/cart.service';
 import { OrdersService } from '../core/services/orders.service';
 import { AuthService } from '../core/services/auth.service';
@@ -15,53 +12,53 @@ import { CurrencyService } from '../core/services/currency.service';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, MatCardModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule],
+  imports: [CommonModule, FormsModule, RouterLink, TuiButton, TuiTextfield, TuiInput, TuiTextarea],
   template: `
     <h1>{{ i18n.t('cart.title') }}</h1>
 
     @if (cart.lines().length === 0) {
-      <mat-card class="empty" appearance="outlined">
+      <div class="empty card-surface">
         <p class="muted">{{ i18n.t('cart.empty') }}</p>
-        <a mat-flat-button routerLink="/catalogo">{{ i18n.t('cart.explore') }}</a>
-      </mat-card>
+        <a tuiButton appearance="primary" routerLink="/catalogo">{{ i18n.t('cart.explore') }}</a>
+      </div>
     } @else {
       <div class="layout">
         <div class="items">
           @for (l of cart.lines(); track l.inventoryItemId) {
-            <mat-card class="row" appearance="outlined">
+            <div class="row card-surface">
               <div class="thumb">@if (l.imageUrl) { <img [src]="l.imageUrl" [alt]="l.cardName" /> }</div>
               <div class="info">
                 <div class="nm">{{ l.cardName }}</div>
                 <div class="muted">{{ l.condition }}@if (l.isFoil) { · FOIL } · {{ cur.format(l.price) }} c/u</div>
               </div>
               <div class="qty">
-                <button mat-icon-button (click)="dec(l.inventoryItemId, l.quantity)"><mat-icon>remove</mat-icon></button>
+                <button class="icon-btn sm" (click)="dec(l.inventoryItemId, l.quantity)"><span class="mi">remove</span></button>
                 <span>{{ l.quantity }}</span>
-                <button mat-icon-button [disabled]="l.quantity >= l.maxQuantity" (click)="inc(l.inventoryItemId, l.quantity)"><mat-icon>add</mat-icon></button>
+                <button class="icon-btn sm" [disabled]="l.quantity >= l.maxQuantity" (click)="inc(l.inventoryItemId, l.quantity)"><span class="mi">add</span></button>
               </div>
               <div class="line">{{ cur.format(l.price * l.quantity) }}</div>
-              <button mat-icon-button (click)="cart.remove(l.inventoryItemId)"><mat-icon>close</mat-icon></button>
-            </mat-card>
+              <button class="icon-btn sm" (click)="cart.remove(l.inventoryItemId)"><span class="mi">close</span></button>
+            </div>
           }
         </div>
 
-        <mat-card class="checkout" appearance="outlined">
+        <div class="checkout card-surface">
           <h3>{{ i18n.t('cart.summary') }}</h3>
           <div class="sumline"><span class="muted">{{ i18n.t('cart.items') }}</span><span>{{ cart.count() }}</span></div>
           <div class="sumline total"><span>{{ i18n.t('cart.total') }}</span><span>{{ cur.format(cart.total()) }}</span></div>
 
           @if (auth.isLoggedIn()) {
-            <mat-form-field appearance="fill"><mat-label>{{ i18n.t('cart.shipName') }}</mat-label><input matInput [(ngModel)]="shippingName" /></mat-form-field>
-            <mat-form-field appearance="fill"><mat-label>{{ i18n.t('cart.shipAddr') }}</mat-label><textarea matInput rows="3" [(ngModel)]="shippingAddress"></textarea></mat-form-field>
+            <tui-textfield><label tuiLabel>{{ i18n.t('cart.shipName') }}</label><input tuiInput [(ngModel)]="shippingName" /></tui-textfield>
+            <tui-textfield><label tuiLabel>{{ i18n.t('cart.shipAddr') }}</label><textarea tuiTextarea [(ngModel)]="shippingAddress"></textarea></tui-textfield>
             @if (error()) { <p class="err">{{ error() }}</p> }
-            <button mat-flat-button class="block" [disabled]="submitting()" (click)="checkout()">
+            <button tuiButton type="button" appearance="primary" class="block" [disabled]="submitting()" (click)="checkout()">
               {{ submitting() ? i18n.t('cart.processing') : i18n.t('cart.confirm') }}
             </button>
           } @else {
             <p class="muted">{{ i18n.t('cart.loginToBuy') }}</p>
-            <a mat-flat-button class="block" routerLink="/login">{{ i18n.t('nav.login') }}</a>
+            <a tuiButton appearance="primary" class="block" routerLink="/login">{{ i18n.t('nav.login') }}</a>
           }
-        </mat-card>
+        </div>
       </div>
     }
   `,
@@ -77,8 +74,8 @@ import { CurrencyService } from '../core/services/currency.service';
       .nm { font-weight: 700; }
       .qty { display: flex; align-items: center; gap: 6px; }
       .line { font-weight: 800; color: var(--accent); min-width: 84px; text-align: right; }
-      .checkout { padding: 20px; display: flex; flex-direction: column; gap: 10px; position: sticky; top: 84px; }
-      .checkout mat-form-field { width: 100%; }
+      .checkout { padding: 20px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 84px; }
+      .checkout tui-textfield { width: 100%; }
       .sumline { display: flex; justify-content: space-between; }
       .sumline.total { font-size: 20px; font-weight: 800; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 4px; }
       .block { width: 100%; }

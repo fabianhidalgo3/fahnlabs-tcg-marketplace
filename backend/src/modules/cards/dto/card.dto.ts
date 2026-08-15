@@ -42,6 +42,7 @@ export class QueryCardDto {
   /** Tipo específico del juego (ej. tipo del Pokémon: "Fire"). Filtra attributes.types. */
   @IsOptional() @IsString() type?: string;
   @IsOptional() @IsString() inStock?: string; // "true" para solo con stock
+  @IsOptional() @IsString() forSale?: string; // "true" para solo cartas a la venta (con inventario)
 
   @IsOptional() @Type(() => Number) @IsInt() @Min(1) page?: number = 1;
   @IsOptional() @Type(() => Number) @IsInt() @Min(1) @Max(100) limit?: number = 24;
