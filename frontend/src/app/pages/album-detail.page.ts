@@ -1,6 +1,7 @@
 import { Component, effect, inject, input, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { TuiButton } from '@taiga-ui/core';
 import { TuiProgress } from '@taiga-ui/kit';
 import { StorageLocationService } from '../core/services/storage-location.service';
 import { I18nService } from '../core/services/i18n.service';
@@ -9,7 +10,7 @@ import { StorageDetail, StoredCard } from '../core/models/models';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterLink, TuiProgress],
+  imports: [CommonModule, RouterLink, TuiButton, TuiProgress],
   template: `
     @if (data(); as a) {
       <a routerLink="/almacenamiento" class="back muted"><span class="mi">arrow_back</span>{{ i18n.isES() ? 'Almacenamiento' : 'Storage' }}</a>
@@ -34,6 +35,12 @@ import { StorageDetail, StoredCard } from '../core/models/models';
             </div>
           }
         </div>
+        @if (a.set) {
+          <button tuiButton type="button" appearance="secondary" size="s" class="fill" [disabled]="filling()" (click)="fill()">
+            <span class="mi">library_add</span>
+            {{ filling() ? (i18n.isES() ? 'Agregando…' : 'Adding…') : (i18n.isES() ? 'Agregar las que tengo del set aquí' : 'Add my owned cards of this set') }}
+          </button>
+        }
         @if (a.setProgress; as p) {
           <progress tuiProgressBar max="100" [value]="p.percent"></progress>
           <div class="muted mini">{{ i18n.isES() ? 'faltan' : 'missing' }} {{ p.missing }} {{ i18n.isES() ? 'de este set' : 'of this set' }}</div>
@@ -85,6 +92,7 @@ import { StorageDetail, StoredCard } from '../core/models/models';
       .pct { font-weight: 800; font-size: 24px; color: var(--primary); }
       progress[tuiProgressBar] { margin-top: 14px; display: block; inline-size: 100%; }
       .mini { font-size: 12px; margin-top: 6px; }
+      .fill { margin-top: 14px; }
       .sec { margin: 22px 0 12px; font-size: 16px; }
       .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
       .cell { overflow: hidden; }
@@ -108,11 +116,20 @@ export class AlbumDetailPage {
 
   id = input.required<string>();
   data = signal<StorageDetail | null>(null);
+  filling = signal(false);
 
   constructor() {
     effect(() => {
       const id = this.id();
       if (id) this.storage.get(id).subscribe((d) => this.data.set(d));
+    });
+  }
+
+  fill() {
+    this.filling.set(true);
+    this.storage.fill(this.id()).subscribe({
+      next: () => this.storage.get(this.id()).subscribe((d) => { this.data.set(d); this.filling.set(false); }),
+      error: () => this.filling.set(false),
     });
   }
 }

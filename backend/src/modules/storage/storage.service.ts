@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
 import {
@@ -77,6 +77,51 @@ export class StorageService {
       )
       .exec();
     return { deleted: true };
+  }
+
+  /**
+   * Asigna en bloque a este álbum todas las cartas que el usuario posee del set
+   * vinculado (útil para "llenar" un binder dedicado a un set de una sola vez).
+   */
+  async fillFromSet(userId: string, id: string): Promise<{ assigned: number }> {
+    const uid = new Types.ObjectId(userId);
+    const loc = await this.storage.findOne({ _id: id, user: uid }).exec();
+    if (!loc) throw new NotFoundException('Almacenamiento no encontrado');
+    if (!loc.set) throw new BadRequestException('El álbum no está vinculado a un set');
+    const cardIds = await this.cards.distinct('_id', { set: loc.set });
+    const res = await this.entries
+      .updateMany(
+        { user: uid, cardModel: { $in: cardIds }, quantity: { $gt: 0 } },
+        { $set: { storage: loc._id } },
+      )
+      .exec();
+    return { assigned: res.modifiedCount };
+  }
+
+  /** Asigna varias cartas (carta+variante+idioma) a un álbum de una sola vez. */
+  async assignBulk(
+    userId: string,
+    storageId: string | null,
+    items: { cardModelId: string; variant: string; language: string }[],
+  ): Promise<{ assigned: number }> {
+    const uid = new Types.ObjectId(userId);
+    const target = storageId ? new Types.ObjectId(storageId) : null;
+    let assigned = 0;
+    for (const it of items) {
+      const res = await this.entries
+        .updateOne(
+          {
+            user: uid,
+            cardModel: new Types.ObjectId(it.cardModelId),
+            variant: it.variant,
+            language: it.language,
+          },
+          { $set: { storage: target } },
+        )
+        .exec();
+      assigned += res.modifiedCount;
+    }
+    return { assigned };
   }
 
   /**

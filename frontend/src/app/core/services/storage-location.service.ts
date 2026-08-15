@@ -34,4 +34,9 @@ export class StorageLocationService {
   remove(id: string): Observable<{ deleted: boolean }> {
     return this.http.delete<{ deleted: boolean }>(`${this.api}/storage/${id}`);
   }
+
+  /** Llena el álbum con todas las cartas que tengo de su set vinculado. */
+  fill(id: string): Observable<{ assigned: number }> {
+    return this.http.post<{ assigned: number }>(`${this.api}/storage/${id}/fill`, {});
+  }
 }

@@ -46,4 +46,23 @@ export class StorageController {
   remove(@CurrentUser() user: AuthUser, @Param('id') id: string) {
     return this.storage.remove(user.id, id);
   }
+
+  /** Llena el álbum con todas las cartas que el usuario posee de su set vinculado. */
+  @Post(':id/fill')
+  fill(@CurrentUser() user: AuthUser, @Param('id') id: string) {
+    return this.storage.fillFromSet(user.id, id);
+  }
+
+  /** Asigna varias cartas a un álbum (o las quita si storageId es null). */
+  @Post('assign-bulk')
+  assignBulk(
+    @CurrentUser() user: AuthUser,
+    @Body()
+    body: {
+      storageId: string | null;
+      items: { cardModelId: string; variant: string; language: string }[];
+    },
+  ) {
+    return this.storage.assignBulk(user.id, body.storageId, body.items ?? []);
+  }
 }
