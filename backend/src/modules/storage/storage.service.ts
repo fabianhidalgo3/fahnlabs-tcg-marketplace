@@ -27,7 +27,7 @@ export class StorageService {
   async findAll(userId: string): Promise<any[]> {
     const locations = await this.storage
       .find({ user: new Types.ObjectId(userId) })
-      .populate('set', 'name code totalCards')
+      .populate('set', 'name code totalCards symbolUrl')
       .sort({ createdAt: 1 })
       .exec();
 

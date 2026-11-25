@@ -10,6 +10,10 @@ import {
   InventoryItem,
   InventoryItemDocument,
 } from '../../entities/inventory-item.entity';
+import {
+  CollectionEntry,
+  CollectionEntryDocument,
+} from '../../entities/collection-entry.entity';
 import { CreateOrderDto } from './dto/order.dto';
 
 @Injectable()
@@ -18,7 +22,34 @@ export class OrdersService {
     @InjectModel(Order.name) private readonly orders: Model<OrderDocument>,
     @InjectModel(InventoryItem.name)
     private readonly inventory: Model<InventoryItemDocument>,
+    @InjectModel(CollectionEntry.name)
+    private readonly entries: Model<CollectionEntryDocument>,
   ) {}
+
+  /** SKU de marketplace: MKT-<carta>-<vendedor>-<VARIANTE>-<IDIOMA>. */
+  private static readonly SKU_VARIANT: Record<string, string> = {
+    NORMAL: 'Normal',
+    REVERSEHOLO: 'Reverse Holo',
+    HOLO: 'Holo',
+  };
+
+  /** Si la unidad vendida es una publicación de coleccionista (MKT), descuenta
+   *  las copias vendidas de SU colección (sin bajar de 0). */
+  private async decrementSellerCollection(inv: any, qty: number): Promise<void> {
+    try {
+      if (!inv?.seller || !String(inv.sku ?? '').startsWith('MKT-')) return;
+      const token = String(inv.sku).split('-')[3] ?? '';
+      const variant = OrdersService.SKU_VARIANT[token];
+      if (!variant) return;
+      const cardModel = inv.cardModel?._id ?? inv.cardModel;
+      await this.entries.updateOne(
+        { user: inv.seller, cardModel, variant, language: inv.language },
+        [{ $set: { quantity: { $max: [{ $subtract: ['$quantity', qty] }, 0] } } }],
+      );
+    } catch {
+      // el descuento de colección no debe abortar la venta
+    }
+  }
 
   /**
    * Checkout. Mongo standalone no soporta transacciones multi-documento, así que
@@ -57,6 +88,11 @@ export class OrdersService {
         }
 
         applied.push({ id: inv._id, qty: line.quantity });
+
+        // Marketplace de repetidas: lo vendido sale de la colección del vendedor
+        // (la colección es la fuente de verdad del stock publicado).
+        await this.decrementSellerCollection(inv, line.quantity);
+
         const lineTotal = inv.price * line.quantity;
         total += lineTotal;
         items.push({

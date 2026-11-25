@@ -1,7 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TuiButton } from '@taiga-ui/core';
 import { OrdersService } from '../core/services/orders.service';
 import { AuthService } from '../core/services/auth.service';
 import { I18nService } from '../core/services/i18n.service';
@@ -12,16 +11,18 @@ const STATUSES: OrderStatus[] = ['pending', 'paid', 'shipped', 'delivered', 'can
 
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule, DatePipe, TuiButton],
+  imports: [CommonModule, FormsModule, DatePipe],
   template: `
-    <div class="head">
+    <header class="page-head">
       <h1>{{ auth.isAdmin() && adminView() ? i18n.t('orders.allTitle') : i18n.t('orders.title') }}</h1>
-      @if (auth.isAdmin()) {
-        <button tuiButton type="button" appearance="secondary" size="m" (click)="toggleView()">
-          {{ adminView() ? i18n.t('orders.viewMine') : i18n.t('orders.viewAll') }}
-        </button>
-      }
-    </div>
+      <div class="ph-actions">
+        @if (auth.isAdmin()) {
+          <button class="btn btn-outline" type="button" (click)="toggleView()">
+            {{ adminView() ? i18n.t('orders.viewMine') : i18n.t('orders.viewAll') }}
+          </button>
+        }
+      </div>
+    </header>
 
     @if (orders().length === 0) {
       <p class="muted">{{ i18n.t('orders.none') }}</p>
@@ -57,7 +58,6 @@ const STATUSES: OrderStatus[] = ['pending', 'paid', 'shipped', 'delivered', 'can
   `,
   styles: [
     `
-      .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
       .list { display: flex; flex-direction: column; gap: 14px; }
       .order { padding: 16px 18px; }
       .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 10px; }

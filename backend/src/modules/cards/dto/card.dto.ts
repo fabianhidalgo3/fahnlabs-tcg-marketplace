@@ -43,6 +43,10 @@ export class QueryCardDto {
   @IsOptional() @IsString() type?: string;
   @IsOptional() @IsString() inStock?: string; // "true" para solo con stock
   @IsOptional() @IsString() forSale?: string; // "true" para solo cartas a la venta (con inventario)
+  @IsOptional() @IsString() seller?: string; // id de vendedor: solo SUS publicaciones (ej. "mis repetidas")
+  @IsOptional() @IsString() sortBy?: string; // date (default) | artist | name
+  /** Dirección del orden por fecha del set: 'asc' | 'desc' (default desc = más nuevo primero). */
+  @IsOptional() @IsString() dir?: string;
 
   @IsOptional() @Type(() => Number) @IsInt() @Min(1) page?: number = 1;
   @IsOptional() @Type(() => Number) @IsInt() @Min(1) @Max(100) limit?: number = 24;

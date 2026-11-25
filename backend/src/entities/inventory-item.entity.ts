@@ -38,6 +38,10 @@ export class InventoryItem {
 
   @Prop({ required: true, min: 0, default: 0 })
   quantity: number;
+
+  /** Usuario que publica la unidad (marketplace). null = inventario de la tienda. */
+  @Prop({ type: Types.ObjectId, ref: 'User', default: null, index: true })
+  seller?: Types.ObjectId | null;
 }
 
 export type InventoryItemDocument = HydratedDocument<InventoryItem>;

@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { CatalogService } from '../core/services/catalog.service';
 import { I18nService } from '../core/services/i18n.service';
 import { SetDetail } from '../core/models/models';
+import { setLogoUrl, thumbUrl } from '../core/utils/card-image';
 
 @Component({
   standalone: true,
@@ -14,7 +15,9 @@ import { SetDetail } from '../core/models/models';
 
       <div class="header panel">
         <div class="ident">
-          @if (s.symbolUrl) { <img class="symbol" [src]="s.symbolUrl" [alt]="s.name" /> }
+          @if (logo(s.symbolUrl)) {
+            <img class="setlogo" [src]="logo(s.symbolUrl)" [alt]="s.name" (error)="logoBroken.set(true)" [hidden]="logoBroken()" />
+          } @else if (s.symbolUrl) { <img class="symbol" [src]="s.symbolUrl" [alt]="s.name" /> }
           <div>
             <h1>{{ s.name }}</h1>
             <p class="muted">{{ s.series }} · {{ s.code }} · {{ i18n.t('common.released') }} {{ s.releaseDate }}</p>
@@ -42,8 +45,31 @@ import { SetDetail } from '../core/models/models';
           <input type="checkbox" [checked]="onlyMissing()" (change)="toggleMissing()" />
           {{ i18n.t('setd.onlyMissing') }}
         </label>
+        <div class="seg t-right">
+          <button type="button" [class.on]="layout() === 'grid'" (click)="layout.set('grid')" title="Grid"><span class="mi">grid_view</span></button>
+          <button type="button" [class.on]="layout() === 'list'" (click)="layout.set('list')" title="Tabla"><span class="mi">table_rows</span></button>
+        </div>
       </div>
 
+      @if (layout() === 'list') {
+      <div class="tablewrap card-surface">
+        <table class="ltable">
+          <thead><tr><th></th><th>#</th><th>{{ i18n.isES() ? 'Carta' : 'Card' }}</th><th>{{ i18n.isES() ? 'Rareza' : 'Rarity' }}</th><th class="r">{{ i18n.isES() ? 'Desde' : 'From' }}</th><th class="c">Stock</th></tr></thead>
+          <tbody>
+            @for (c of visibleCards(); track c.id) {
+              <tr [routerLink]="['/cartas', c.id]" [class.dimrow]="!c.inStock">
+                <td>@if (c.imageUrl) { <img class="lthumb" [src]="thumb(c.imageUrl)" [alt]="c.name" loading="lazy" /> }</td>
+                <td class="muted mono">{{ c.number }}</td>
+                <td><b>{{ c.name }}</b></td>
+                <td class="muted">{{ c.rarity }}</td>
+                <td class="r">@if (c.inStock) { <b class="pr">\${{ c.minPrice?.toFixed(2) }}</b> } @else { <span class="muted">—</span> }</td>
+                <td class="c">{{ c.totalStock ?? 0 }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      } @else {
       <div class="grid">
         @for (c of visibleCards(); track c.id) {
           <a
@@ -53,7 +79,7 @@ import { SetDetail } from '../core/models/models';
           >
             <div class="img">
               @if (c.imageUrl) {
-                <img [src]="c.imageUrl" [alt]="c.name" loading="lazy" />
+                <img [src]="thumb(c.imageUrl)" [alt]="c.name" loading="lazy" decoding="async" />
               } @else {
                 <div class="noimg">{{ c.number }}</div>
               }
@@ -69,6 +95,7 @@ import { SetDetail } from '../core/models/models';
           </a>
         }
       </div>
+      }
     } @else {
       <p class="muted">Cargando…</p>
     }
@@ -79,6 +106,7 @@ import { SetDetail } from '../core/models/models';
       .header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px; margin-bottom: 20px; flex-wrap: wrap; }
       .ident { display: flex; align-items: center; gap: 16px; }
       .symbol { width: 56px; height: 56px; object-fit: contain; flex: 0 0 56px; }
+      .setlogo { max-height: 64px; max-width: 230px; object-fit: contain; }
       h1 { font-size: 28px; }
       .summary { display: flex; align-items: center; gap: 22px; }
       .ring {
@@ -98,6 +126,9 @@ import { SetDetail } from '../core/models/models';
       .dot.ok { background: var(--success); }
       .dot.no { background: var(--border); }
       .check { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+      .tablewrap { overflow-x: auto; }
+      .ltable tbody tr { cursor: pointer; }
+      .dimrow td { opacity: 0.55; }
       .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
       .cell { overflow: hidden; transition: transform 0.1s, border-color 0.1s; }
       .cell:hover { transform: translateY(-3px); border-color: var(--primary); }
@@ -116,6 +147,10 @@ import { SetDetail } from '../core/models/models';
   ],
 })
 export class SetDetailPage {
+  layout = signal<'grid' | 'list'>('grid');
+  logo = setLogoUrl;
+  logoBroken = signal(false);
+  thumb = thumbUrl;
   private catalog = inject(CatalogService);
   i18n = inject(I18nService);
 

@@ -2,9 +2,8 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { TuiButton, TuiTextfield, TuiInput } from '@taiga-ui/core';
-import { TuiTextarea } from '@taiga-ui/kit';
 import { CartService } from '../core/services/cart.service';
+import { thumbUrl } from '../core/utils/card-image';
 import { OrdersService } from '../core/services/orders.service';
 import { AuthService } from '../core/services/auth.service';
 import { I18nService } from '../core/services/i18n.service';
@@ -12,21 +11,21 @@ import { CurrencyService } from '../core/services/currency.service';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, TuiButton, TuiTextfield, TuiInput, TuiTextarea],
+  imports: [CommonModule, FormsModule, RouterLink],
   template: `
-    <h1>{{ i18n.t('cart.title') }}</h1>
+    <header class="page-head"><h1>{{ i18n.t('cart.title') }}</h1></header>
 
     @if (cart.lines().length === 0) {
       <div class="empty card-surface">
         <p class="muted">{{ i18n.t('cart.empty') }}</p>
-        <a tuiButton appearance="primary" routerLink="/catalogo">{{ i18n.t('cart.explore') }}</a>
+        <a class="btn btn-primary" routerLink="/catalogo">{{ i18n.t('cart.explore') }}</a>
       </div>
     } @else {
       <div class="layout">
         <div class="items">
           @for (l of cart.lines(); track l.inventoryItemId) {
             <div class="row card-surface">
-              <div class="thumb">@if (l.imageUrl) { <img [src]="l.imageUrl" [alt]="l.cardName" /> }</div>
+              <div class="thumb">@if (l.imageUrl) { <img [src]="thumb(l.imageUrl)" [alt]="l.cardName" loading="lazy" decoding="async" /> }</div>
               <div class="info">
                 <div class="nm">{{ l.cardName }}</div>
                 <div class="muted">{{ l.condition }}@if (l.isFoil) { · FOIL } · {{ cur.format(l.price) }} c/u</div>
@@ -48,15 +47,15 @@ import { CurrencyService } from '../core/services/currency.service';
           <div class="sumline total"><span>{{ i18n.t('cart.total') }}</span><span>{{ cur.format(cart.total()) }}</span></div>
 
           @if (auth.isLoggedIn()) {
-            <tui-textfield><label tuiLabel>{{ i18n.t('cart.shipName') }}</label><input tuiInput [(ngModel)]="shippingName" /></tui-textfield>
-            <tui-textfield><label tuiLabel>{{ i18n.t('cart.shipAddr') }}</label><textarea tuiTextarea [(ngModel)]="shippingAddress"></textarea></tui-textfield>
+            <label class="ui-field"><span class="lbl">{{ i18n.t('cart.shipName') }}</span><input class="ui-input" [(ngModel)]="shippingName" /></label>
+            <label class="ui-field"><span class="lbl">{{ i18n.t('cart.shipAddr') }}</span><textarea class="ui-input ta" rows="3" [(ngModel)]="shippingAddress"></textarea></label>
             @if (error()) { <p class="err">{{ error() }}</p> }
-            <button tuiButton type="button" appearance="primary" class="block" [disabled]="submitting()" (click)="checkout()">
+            <button class="btn btn-primary block" type="button" [disabled]="submitting()" (click)="checkout()">
               {{ submitting() ? i18n.t('cart.processing') : i18n.t('cart.confirm') }}
             </button>
           } @else {
             <p class="muted">{{ i18n.t('cart.loginToBuy') }}</p>
-            <a tuiButton appearance="primary" class="block" routerLink="/login">{{ i18n.t('nav.login') }}</a>
+            <a class="btn btn-primary block" routerLink="/login">{{ i18n.t('nav.login') }}</a>
           }
         </div>
       </div>
@@ -75,7 +74,7 @@ import { CurrencyService } from '../core/services/currency.service';
       .qty { display: flex; align-items: center; gap: 6px; }
       .line { font-weight: 800; color: var(--accent); min-width: 84px; text-align: right; }
       .checkout { padding: 20px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 84px; }
-      .checkout tui-textfield { width: 100%; }
+      .checkout .ui-field { width: 100%; }
       .sumline { display: flex; justify-content: space-between; }
       .sumline.total { font-size: 20px; font-weight: 800; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 4px; }
       .block { width: 100%; }
@@ -85,6 +84,7 @@ import { CurrencyService } from '../core/services/currency.service';
   ],
 })
 export class CartPage {
+  thumb = thumbUrl;
   cart = inject(CartService);
   auth = inject(AuthService);
   i18n = inject(I18nService);

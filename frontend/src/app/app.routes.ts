@@ -2,7 +2,12 @@ import { Routes } from '@angular/router';
 import { authGuard, adminGuard } from './core/guards';
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'catalogo' },
+  {
+    // Inicio del coleccionista (redirige a catálogo/admin según sesión).
+    path: '',
+    pathMatch: 'full',
+    loadComponent: () => import('./pages/home.page').then((m) => m.HomePage),
+  },
   {
     path: 'catalogo',
     loadComponent: () =>
@@ -31,6 +36,25 @@ export const routes: Routes = [
     canActivate: [authGuard],
     loadComponent: () =>
       import('./pages/my-collection.page').then((m) => m.MyCollectionPage),
+  },
+  {
+    path: 'publicaciones',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/listings.page').then((m) => m.ListingsPage),
+  },
+  {
+    path: 'favoritos',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/favorites.page').then((m) => m.FavoritesPage),
+  },
+  {
+    // OJO: antes de 'coleccion/:id' para que "agregar" no se tome como id.
+    path: 'coleccion/agregar',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/collection-add.page').then((m) => m.CollectionAddPage),
   },
   {
     path: 'coleccion/:id',

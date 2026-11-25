@@ -1,37 +1,70 @@
 import { Component, inject, signal } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TuiButton, TuiTextfield, TuiInput, TuiCheckbox } from '@taiga-ui/core';
-import { TuiTabs } from '@taiga-ui/kit';
-import { TuiTable } from '@taiga-ui/addon-table';
 import { CatalogService } from '../core/services/catalog.service';
 import { AdminService } from '../core/services/admin.service';
+import { OrdersService } from '../core/services/orders.service';
 import { I18nService } from '../core/services/i18n.service';
 import { CurrencyService } from '../core/services/currency.service';
 import { CardCondition, CardModel, CardSet, Game, InventoryItem } from '../core/models/models';
 
 const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
 
+interface PriceJob {
+  running: boolean; startedAt: string | null; finishedAt: string | null;
+  totalSets: number; processedSets: number; updatedCards: number; failedSets: string[];
+}
+
 @Component({
   standalone: true,
   imports: [
-    CommonModule, FormsModule, TuiButton, TuiTextfield, TuiInput, TuiCheckbox, TuiTabs, TuiTable,
+    CommonModule, FormsModule,
   ],
   template: `
     <header class="page-head">
-      <h1>{{ es ? 'Administración' : 'Administration' }}</h1>
-      <p class="muted">{{ es ? 'Gestiona juegos, sets, cartas e inventario.' : 'Manage games, sets, cards and inventory.' }}</p>
+      <div>
+        <h1>{{ es ? 'Administración' : 'Administration' }}</h1>
+        <p class="muted">{{ es ? 'Gestiona juegos, sets, cartas e inventario.' : 'Manage games, sets, cards and inventory.' }}</p>
+      </div>
+      <div class="ph-actions">
+        <button class="btn btn-primary btn-s" type="button" [disabled]="priceJob()?.running" (click)="updatePrices()"
+          [title]="es ? 'Refresca los precios de mercado (TCGplayer) de todos los sets y aplica los pisos retail' : 'Refresh market prices for all sets'">
+          <span class="mi">{{ priceJob()?.running ? 'progress_activity' : 'currency_exchange' }}</span>
+          {{ priceJob()?.running
+            ? (priceJob()?.processedSets + '/' + priceJob()?.totalSets + ' sets · ' + priceJob()?.updatedCards + ' precios')
+            : (es ? 'Actualizar precios' : 'Update prices') }}
+        </button>
+        <button class="btn btn-outline btn-s" type="button" (click)="exportStockCsv()" [title]="es ? 'CSV del stock para importar en otras plataformas (ej. TCGmatch)' : 'Stock CSV for other platforms'">
+          <span class="mi">download</span>{{ es ? 'Exportar stock CSV' : 'Export stock CSV' }}
+        </button>
+      </div>
     </header>
+
+    <!-- Banner de estado de la tienda -->
+    <section class="abanner">
+      <div class="ab-txt">
+        <span class="ab-brand">SingleTCG · {{ es ? 'Panel FHAN Labs' : 'FHAN Labs panel' }}</span>
+        <h2>{{ es ? 'Así va la tienda hoy' : 'Store status today' }}</h2>
+      </div>
+      <div class="ab-stats">
+        <div class="ab-stat"><b>{{ stats().cards | number }}</b><span>{{ es ? 'cartas en catálogo' : 'cards in catalog' }}</span></div>
+        <div class="ab-stat"><b>{{ stats().sets }}</b><span>sets</span></div>
+        <div class="ab-stat"><b>{{ stats().listings }}</b><span>{{ es ? 'publicaciones activas' : 'active listings' }}</span></div>
+        <div class="ab-stat" [class.warn]="stats().pending > 0"><b>{{ stats().pending }}</b><span>{{ es ? 'pedidos pendientes' : 'pending orders' }}</span></div>
+      </div>
+    </section>
 
     @if (msg()) { <div class="msg ok"><span class="mi">check_circle</span>{{ msg() }}</div> }
     @if (err()) { <div class="msg err"><span class="mi">error</span>{{ err() }}</div> }
 
-    <tui-tabs class="tabs" [activeItemIndex]="tab()" (activeItemIndexChange)="tab.set($event)">
-      <button tuiTab type="button">{{ es ? 'Juegos' : 'Games' }}</button>
-      <button tuiTab type="button">Sets</button>
-      <button tuiTab type="button">{{ es ? 'Cartas' : 'Cards' }}</button>
-      <button tuiTab type="button">{{ es ? 'Inventario' : 'Inventory' }}</button>
-    </tui-tabs>
+    <div class="tabbar tabs">
+      <button class="tab" type="button" [class.on]="tab() === 0" (click)="tab.set(0)">{{ es ? 'Juegos' : 'Games' }}</button>
+      <button class="tab" type="button" [class.on]="tab() === 1" (click)="tab.set(1)">Sets</button>
+      <button class="tab" type="button" [class.on]="tab() === 2" (click)="tab.set(2)">{{ es ? 'Cartas' : 'Cards' }}</button>
+      <button class="tab" type="button" [class.on]="tab() === 3" (click)="tab.set(3)">{{ es ? 'Inventario' : 'Inventory' }}</button>
+    </div>
 
     <!-- ===================== JUEGOS ===================== -->
     @if (tab() === 0) {
@@ -41,32 +74,32 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
           <p class="muted">{{ es ? 'Crea un juego para agrupar sets y cartas.' : 'Create a game to group sets and cards.' }}</p>
         </div>
         <div class="form-grid">
-          <tui-textfield><label tuiLabel>code</label><input tuiInput [(ngModel)]="gForm.code" /></tui-textfield>
-          <tui-textfield><label tuiLabel>{{ es ? 'Nombre' : 'Name' }}</label><input tuiInput [(ngModel)]="gForm.name" /></tui-textfield>
-          <tui-textfield><label tuiLabel>iconUrl</label><input tuiInput [(ngModel)]="gForm.iconUrl" /></tui-textfield>
+          <label class="ui-field"><span class="lbl">{{ es ? 'Código' : 'Code' }}</span><input class="ui-input" placeholder="pokemon" [(ngModel)]="gForm.code" /></label>
+          <label class="ui-field"><span class="lbl">{{ es ? 'Nombre' : 'Name' }}</span><input class="ui-input" placeholder="Pokémon TCG" [(ngModel)]="gForm.name" /></label>
+          <label class="ui-field"><span class="lbl">{{ es ? 'Ícono (URL)' : 'Icon (URL)' }}</span><input class="ui-input" placeholder="https://…" [(ngModel)]="gForm.iconUrl" /></label>
         </div>
         <div class="form-actions">
-          <button tuiButton type="button" appearance="primary" size="m" [disabled]="!gForm.code || !gForm.name" (click)="createGame()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
+          <button class="btn btn-primary" type="button" [disabled]="!gForm.code || !gForm.name" (click)="createGame()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
         </div>
       </section>
 
       <section class="block card-surface tablecard">
-        <table tuiTable class="dtable">
+        <table class="dtable">
           <thead>
             <tr>
-              <th tuiTh>{{ es ? 'Nombre' : 'Name' }}</th>
-              <th tuiTh>{{ es ? 'Código' : 'Code' }}</th>
-              <th tuiTh class="acol"></th>
+              <th>{{ es ? 'Nombre' : 'Name' }}</th>
+              <th>{{ es ? 'Código' : 'Code' }}</th>
+              <th class="acol"></th>
             </tr>
           </thead>
-          <tbody tuiTbody>
+          <tbody>
             @for (g of games(); track g.id) {
               <tr>
-                <td tuiTd><b>{{ g.name }}</b></td>
-                <td tuiTd class="muted mono">{{ g.code }}</td>
-                <td tuiTd class="acol"><button class="icon-btn sm" (click)="deleteGame(g)"><span class="mi">delete</span></button></td>
+                <td><b>{{ g.name }}</b></td>
+                <td class="muted mono">{{ g.code }}</td>
+                <td class="acol"><button class="icon-btn sm del" (click)="deleteGame(g)"><span class="mi">delete</span></button></td>
               </tr>
-            } @empty { <tr><td tuiTd colspan="3" class="empty">{{ es ? 'Aún no hay juegos.' : 'No games yet.' }}</td></tr> }
+            } @empty { <tr><td colspan="3" class="empty">{{ es ? 'Aún no hay juegos.' : 'No games yet.' }}</td></tr> }
           </tbody>
         </table>
       </section>
@@ -78,7 +111,7 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
         <div class="ui-field">
           <span class="lbl">{{ es ? 'Juego' : 'Game' }}</span>
           <select class="ui-select" [(ngModel)]="setGameId" (ngModelChange)="loadSets()">
-            <option value="">{{ es ? '— Selecciona un juego —' : '— Select a game —' }}</option>
+            <option value="">{{ es ? '— Selecciona juego —' : '— Select game —' }}</option>
             @for (g of games(); track g.id) { <option [value]="g.id">{{ g.name }}</option> }
           </select>
         </div>
@@ -90,36 +123,36 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
             <h3>{{ es ? 'Nuevo set' : 'New set' }}</h3>
           </div>
           <div class="form-grid">
-            <tui-textfield><label tuiLabel>code</label><input tuiInput [(ngModel)]="sForm.code" /></tui-textfield>
-            <tui-textfield><label tuiLabel>{{ es ? 'Nombre' : 'Name' }}</label><input tuiInput [(ngModel)]="sForm.name" /></tui-textfield>
-            <tui-textfield><label tuiLabel>{{ es ? 'Serie' : 'Series' }}</label><input tuiInput [(ngModel)]="sForm.series" /></tui-textfield>
-            <tui-textfield><label tuiLabel>{{ es ? 'Nº cartas' : 'Total' }}</label><input tuiInput type="number" [(ngModel)]="sForm.totalCards" /></tui-textfield>
-            <tui-textfield><label tuiLabel>{{ es ? 'Lanzamiento' : 'Release' }}</label><input tuiInput type="date" [(ngModel)]="sForm.releaseDate" /></tui-textfield>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Código' : 'Code' }}</span><input class="ui-input" placeholder="sv3pt5" [(ngModel)]="sForm.code" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Nombre' : 'Name' }}</span><input class="ui-input" placeholder="151" [(ngModel)]="sForm.name" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Serie' : 'Series' }}</span><input class="ui-input" placeholder="Scarlet & Violet" [(ngModel)]="sForm.series" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Nº cartas' : 'Total cards' }}</span><input class="ui-input" type="number" placeholder="165" [(ngModel)]="sForm.totalCards" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Lanzamiento' : 'Release' }}</span><input class="ui-input" type="date" [(ngModel)]="sForm.releaseDate" /></label>
           </div>
           <div class="form-actions">
-            <button tuiButton type="button" appearance="primary" size="m" [disabled]="!sForm.code || !sForm.name" (click)="createSet()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
+            <button class="btn btn-primary" type="button" [disabled]="!sForm.code || !sForm.name" (click)="createSet()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
           </div>
         </section>
 
         <section class="block card-surface tablecard">
-          <table tuiTable class="dtable">
+          <table class="dtable">
             <thead>
               <tr>
-                <th tuiTh>{{ es ? 'Nombre' : 'Name' }}</th>
-                <th tuiTh>{{ es ? 'Código' : 'Code' }}</th>
-                <th tuiTh class="r">{{ es ? 'Nº cartas' : 'Total' }}</th>
-                <th tuiTh class="acol"></th>
+                <th>{{ es ? 'Nombre' : 'Name' }}</th>
+                <th>{{ es ? 'Código' : 'Code' }}</th>
+                <th class="r">{{ es ? 'Nº cartas' : 'Total' }}</th>
+                <th class="acol"></th>
               </tr>
             </thead>
-            <tbody tuiTbody>
+            <tbody>
               @for (s of sets(); track s.id) {
                 <tr>
-                  <td tuiTd><b>{{ s.name }}</b></td>
-                  <td tuiTd class="muted mono">{{ s.code }}</td>
-                  <td tuiTd class="r">{{ s.totalCards }}</td>
-                  <td tuiTd class="acol"><button class="icon-btn sm" (click)="deleteSet(s)"><span class="mi">delete</span></button></td>
+                  <td><b>{{ s.name }}</b></td>
+                  <td class="muted mono">{{ s.code }}</td>
+                  <td class="r">{{ s.totalCards }}</td>
+                  <td class="acol"><button class="icon-btn sm del" (click)="deleteSet(s)"><span class="mi">delete</span></button></td>
                 </tr>
-              } @empty { <tr><td tuiTd colspan="4" class="empty">{{ es ? 'Sin sets.' : 'No sets.' }}</td></tr> }
+              } @empty { <tr><td colspan="4" class="empty">{{ es ? 'Sin sets.' : 'No sets.' }}</td></tr> }
             </tbody>
           </table>
         </section>
@@ -132,14 +165,14 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
         <div class="ui-field">
           <span class="lbl">{{ es ? 'Juego' : 'Game' }}</span>
           <select class="ui-select" [(ngModel)]="cardGameId" (ngModelChange)="onCardGame()">
-            <option value="">{{ es ? '— Selecciona —' : '— Select —' }}</option>
+            <option value="">{{ es ? '— Selecciona juego —' : '— Select game —' }}</option>
             @for (g of games(); track g.id) { <option [value]="g.id">{{ g.name }}</option> }
           </select>
         </div>
         <div class="ui-field">
           <span class="lbl">Set</span>
           <select class="ui-select" [(ngModel)]="cardSetId" (ngModelChange)="loadCards()" [disabled]="!cardGameId">
-            <option value="">{{ es ? '— Selecciona —' : '— Select —' }}</option>
+            <option value="">{{ es ? '— Selecciona set —' : '— Select set —' }}</option>
             @for (s of cardSets(); track s.id) { <option [value]="s.id">{{ s.name }}</option> }
           </select>
         </div>
@@ -149,37 +182,37 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
         <section class="block card-surface">
           <div class="block-head"><h3>{{ es ? 'Nueva carta' : 'New card' }}</h3></div>
           <div class="form-grid">
-            <tui-textfield><label tuiLabel>{{ es ? 'Nombre' : 'Name' }}</label><input tuiInput [(ngModel)]="cForm.name" /></tui-textfield>
-            <tui-textfield><label tuiLabel>Nº</label><input tuiInput [(ngModel)]="cForm.number" /></tui-textfield>
-            <tui-textfield><label tuiLabel>{{ es ? 'Rareza' : 'Rarity' }}</label><input tuiInput [(ngModel)]="cForm.rarity" /></tui-textfield>
-            <tui-textfield><label tuiLabel>cardType</label><input tuiInput [(ngModel)]="cForm.cardType" /></tui-textfield>
-            <tui-textfield><label tuiLabel>imageUrl</label><input tuiInput [(ngModel)]="cForm.imageUrl" /></tui-textfield>
-            <tui-textfield><label tuiLabel>{{ es ? 'Variantes' : 'Variants' }}</label><input tuiInput [(ngModel)]="cForm.variantsCsv" /></tui-textfield>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Nombre' : 'Name' }}</span><input class="ui-input" placeholder="Pikachu" [(ngModel)]="cForm.name" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Número' : 'Number' }}</span><input class="ui-input" placeholder="025/165" [(ngModel)]="cForm.number" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Rareza' : 'Rarity' }}</span><input class="ui-input" placeholder="Common" [(ngModel)]="cForm.rarity" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Tipo de carta' : 'Card type' }}</span><input class="ui-input" placeholder="Pokémon" [(ngModel)]="cForm.cardType" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Imagen (URL)' : 'Image (URL)' }}</span><input class="ui-input" placeholder="https://…" [(ngModel)]="cForm.imageUrl" /></label>
+            <label class="ui-field"><span class="lbl">{{ es ? 'Variantes (coma)' : 'Variants (comma)' }}</span><input class="ui-input" placeholder="Normal, Reverse Holo" [(ngModel)]="cForm.variantsCsv" /></label>
           </div>
           <div class="form-actions">
-            <button tuiButton type="button" appearance="primary" size="m" [disabled]="!cForm.name || !cForm.number" (click)="createCard()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
+            <button class="btn btn-primary" type="button" [disabled]="!cForm.name || !cForm.number" (click)="createCard()"><span class="mi">add</span>{{ es ? 'Crear' : 'Create' }}</button>
           </div>
         </section>
 
         <section class="block card-surface tablecard">
-          <table tuiTable class="dtable">
+          <table class="dtable">
             <thead>
               <tr>
-                <th tuiTh class="ncol">Nº</th>
-                <th tuiTh>{{ es ? 'Nombre' : 'Name' }}</th>
-                <th tuiTh>{{ es ? 'Rareza' : 'Rarity' }}</th>
-                <th tuiTh class="acol"></th>
+                <th class="ncol">Nº</th>
+                <th>{{ es ? 'Nombre' : 'Name' }}</th>
+                <th>{{ es ? 'Rareza' : 'Rarity' }}</th>
+                <th class="acol"></th>
               </tr>
             </thead>
-            <tbody tuiTbody>
+            <tbody>
               @for (c of cards(); track c.id) {
                 <tr>
-                  <td tuiTd class="mono muted">{{ c.number }}</td>
-                  <td tuiTd><b>{{ c.name }}</b></td>
-                  <td tuiTd class="muted">{{ c.rarity }}</td>
-                  <td tuiTd class="acol"><button class="icon-btn sm" (click)="deleteCard(c)"><span class="mi">delete</span></button></td>
+                  <td class="mono muted">{{ c.number }}</td>
+                  <td><b>{{ c.name }}</b></td>
+                  <td class="muted">{{ c.rarity }}</td>
+                  <td class="acol"><button class="icon-btn sm del" (click)="deleteCard(c)"><span class="mi">delete</span></button></td>
                 </tr>
-              } @empty { <tr><td tuiTd colspan="4" class="empty">{{ es ? 'Sin cartas.' : 'No cards.' }}</td></tr> }
+              } @empty { <tr><td colspan="4" class="empty">{{ es ? 'Sin cartas.' : 'No cards.' }}</td></tr> }
             </tbody>
           </table>
         </section>
@@ -190,10 +223,10 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
     @if (tab() === 3) {
       <section class="block card-surface">
         <div class="block-head"><h3>{{ es ? 'Buscar carta' : 'Find card' }}</h3></div>
-        <tui-textfield class="searchfield" iconStart="@tui.search">
-          <label tuiLabel>{{ i18n.t('admin.search') }}</label>
-          <input tuiInput [(ngModel)]="q" (ngModelChange)="search()" />
-        </tui-textfield>
+        <div class="searchbox searchfield">
+          <span class="mi">search</span>
+          <input class="ui-input" [placeholder]="i18n.t('admin.search')" [(ngModel)]="q" (ngModelChange)="search()" />
+        </div>
         @if (results().length) {
           <div class="results">
             @for (c of results(); track c.id) {
@@ -211,32 +244,32 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
           <div class="block-head manage-head">
             <h3>{{ c.name }} <span class="muted mono">{{ c.number }}</span></h3>
           </div>
-          <table tuiTable class="dtable">
+          <table class="dtable">
             <thead>
               <tr>
-                <th tuiTh>{{ es ? 'Condición' : 'Condition' }}</th>
-                <th tuiTh>{{ es ? 'Idioma' : 'Language' }}</th>
-                <th tuiTh class="r">{{ i18n.t('admin.price') }}</th>
-                <th tuiTh class="c">Stock</th>
-                <th tuiTh class="acol"></th>
+                <th>{{ es ? 'Condición' : 'Condition' }}</th>
+                <th>{{ es ? 'Idioma' : 'Language' }}</th>
+                <th class="r">{{ i18n.t('admin.price') }}</th>
+                <th class="c">Stock</th>
+                <th class="acol"></th>
               </tr>
             </thead>
-            <tbody tuiTbody>
+            <tbody>
               @for (it of inventory(); track it.id) {
                 <tr>
-                  <td tuiTd><b>{{ it.condition }}</b>@if (it.isFoil) { <span class="foiltag">FOIL</span> }</td>
-                  <td tuiTd class="muted">{{ it.language }}</td>
-                  <td tuiTd class="r price">{{ cur.format(it.price) }}</td>
-                  <td tuiTd class="c"><b>{{ it.quantity }}</b></td>
-                  <td tuiTd class="acol">
+                  <td><b>{{ it.condition }}</b>@if (it.isFoil) { <span class="foiltag">FOIL</span> }</td>
+                  <td class="muted">{{ it.language }}</td>
+                  <td class="r price">{{ cur.format(it.price) }}</td>
+                  <td class="c"><b>{{ it.quantity }}</b></td>
+                  <td class="acol">
                     <div class="rowacts">
                       <button class="icon-btn sm" (click)="adjustInv(it, -1)"><span class="mi">remove</span></button>
                       <button class="icon-btn sm" (click)="adjustInv(it, 1)"><span class="mi">add</span></button>
-                      <button class="icon-btn sm" (click)="removeInv(it)"><span class="mi">delete</span></button>
+                      <button class="icon-btn sm del" (click)="removeInv(it)"><span class="mi">delete</span></button>
                     </div>
                   </td>
                 </tr>
-              } @empty { <tr><td tuiTd colspan="5" class="empty">{{ i18n.t('admin.noInv') }}</td></tr> }
+              } @empty { <tr><td colspan="5" class="empty">{{ i18n.t('admin.noInv') }}</td></tr> }
             </tbody>
           </table>
 
@@ -249,13 +282,13 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
                   @for (cd of conditions; track cd) { <option [value]="cd">{{ cd }}</option> }
                 </select>
               </div>
-              <tui-textfield><label tuiLabel>{{ i18n.t('admin.language') }}</label><input tuiInput [(ngModel)]="invForm.language" /></tui-textfield>
-              <tui-textfield><label tuiLabel>{{ i18n.t('admin.price') }}</label><input tuiInput type="number" [(ngModel)]="invForm.price" /></tui-textfield>
-              <tui-textfield><label tuiLabel>{{ i18n.t('admin.qty') }}</label><input tuiInput type="number" [(ngModel)]="invForm.quantity" /></tui-textfield>
-              <label class="cb-row foilbox"><input tuiCheckbox type="checkbox" [(ngModel)]="invForm.isFoil" /> Foil</label>
+              <label class="ui-field"><span class="lbl">{{ i18n.t('admin.language') }}</span><input class="ui-input" placeholder="EN" [(ngModel)]="invForm.language" /></label>
+              <label class="ui-field"><span class="lbl">{{ i18n.t('admin.price') }} (USD)</span><input class="ui-input" type="number" placeholder="0.00" [(ngModel)]="invForm.price" /></label>
+              <label class="ui-field"><span class="lbl">{{ i18n.t('admin.qty') }}</span><input class="ui-input" type="number" placeholder="1" [(ngModel)]="invForm.quantity" /></label>
+              <label class="cb-row foilbox"><input class="ui-check" type="checkbox" [(ngModel)]="invForm.isFoil" /> Foil</label>
             </div>
             <div class="form-actions">
-              <button tuiButton type="button" appearance="primary" size="m" (click)="createInv(c)"><span class="mi">add</span>{{ i18n.t('admin.add') }}</button>
+              <button class="btn btn-primary" type="button" (click)="createInv(c)"><span class="mi">add</span>{{ i18n.t('admin.add') }}</button>
             </div>
           </div>
         </section>
@@ -264,7 +297,20 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
   `,
   styles: [
     `
-      .page-head { margin-bottom: 8px; }
+      .abanner {
+        display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+        border-radius: 14px; padding: 20px 24px; margin: 14px 0 18px;
+        background: linear-gradient(118deg, #10241c 0%, #0d1b2e 55%, #101433 100%);
+        border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+      }
+      .ab-txt .ab-brand { font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); }
+      .ab-txt h2 { margin-top: 2px; font-size: 20px; }
+      .ab-stats { display: flex; gap: 26px; flex-wrap: wrap; }
+      .ab-stat { display: flex; flex-direction: column; gap: 1px; }
+      .ab-stat b { font-size: 22px; color: var(--primary); }
+      .ab-stat.warn b { color: var(--accent); }
+      .ab-stat span { font-size: 12px; color: var(--muted); }
+      .page-head { margin-bottom: 8px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
       .page-head h1 { margin-bottom: 2px; }
       .msg { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; font-weight: 600; font-size: 14px; margin: 12px 0; }
       .msg .mi { font-size: 20px; }
@@ -284,8 +330,13 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
       .picker-row.two .ui-field { flex: 1; width: auto; }
       @media (max-width: 560px) { .picker-row, .picker-row.two { flex-direction: column; } .picker-row .ui-field { width: 100%; } }
 
-      .tablecard { padding: 8px 8px; }
-      .dtable { width: 100%; }
+      .tablecard { padding: 8px 8px; overflow-x: auto; }
+      .dtable { width: 100%; border-collapse: collapse; }
+      .dtable th { text-align: left; font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; padding: 12px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+      .dtable td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; font-size: 14px; }
+      .dtable tbody tr { transition: background 0.12s ease; }
+      .dtable tbody tr:hover { background: color-mix(in srgb, var(--text) 4%, transparent); }
+      .dtable tbody tr:last-child td { border-bottom: none; }
       .dtable th.r, .dtable td.r { text-align: right; }
       .dtable th.c, .dtable td.c { text-align: center; }
       .dtable .acol { width: 1%; white-space: nowrap; text-align: right; }
@@ -319,7 +370,61 @@ const CONDITIONS: CardCondition[] = ['M', 'NM', 'LP', 'MP', 'HP', 'DMG'];
   ],
 })
 export class AdminPage {
+  private http = inject(HttpClient);
+
+  /** Métricas del banner. */
+  stats = signal({ cards: 0, sets: 0, listings: 0, pending: 0 });
+
+  private loadStats() {
+    this.catalog.cards({ limit: 1 }).subscribe((r) => this.stats.update((s) => ({ ...s, cards: r.total })));
+    this.catalog.sets().subscribe((r) => this.stats.update((s) => ({ ...s, sets: r.length })));
+    this.orders.all().subscribe((o) => this.stats.update((s) => ({ ...s, pending: o.filter((x) => x.status === 'pending').length })));
+    this.catalog.recentListings(24).subscribe((l) => this.stats.update((s) => ({ ...s, listings: l.length })));
+  }
+
+  /** Actualizador de precios: job del backend con progreso. */
+  priceJob = signal<PriceJob | null>(null);
+  private pollTimer: any;
+
+  updatePrices() {
+    this.http.post<{ started: boolean }>(environment.apiUrl + '/cards/update-prices', {}).subscribe((r) => {
+      if (!r.started) { this.err.set(this.es ? 'Ya hay una actualización corriendo.' : 'An update is already running.'); return; }
+      this.pollPriceJob();
+    });
+  }
+
+  private pollPriceJob() {
+    clearInterval(this.pollTimer);
+    const tick = () => this.http.get<PriceJob>(environment.apiUrl + '/cards/update-prices/status').subscribe((j) => {
+      this.priceJob.set(j);
+      if (!j.running && j.finishedAt) {
+        clearInterval(this.pollTimer);
+        const fails = j.failedSets?.length ?? 0;
+        this.msg.set((this.es
+          ? `Precios actualizados: ${j.updatedCards} cartas · ${j.processedSets}/${j.totalSets} sets`
+          : `Prices updated: ${j.updatedCards} cards · ${j.processedSets}/${j.totalSets} sets`)
+          + (fails ? (this.es ? ` · ${fails} sets con error (reintenta más tarde)` : ` · ${fails} sets failed`) : ''));
+        setTimeout(() => this.msg.set(''), 12000);
+      }
+    });
+    tick();
+    this.pollTimer = setInterval(tick, 2500);
+  }
+
   private catalog = inject(CatalogService);
+  private orders = inject(OrdersService);
+
+  /** Descarga el CSV del stock (para importar en otras plataformas). */
+  exportStockCsv() {
+    this.http.get(environment.apiUrl + '/inventory/export.csv', { responseType: 'blob' }).subscribe((b) => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(b);
+      a.download = 'stock-singletcg.csv';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+  }
+
   private admin = inject(AdminService);
   i18n = inject(I18nService);
   cur = inject(CurrencyService);
@@ -339,7 +444,14 @@ export class AdminPage {
   invForm = { condition: 'NM' as CardCondition, language: 'EN', isFoil: false, price: 0, quantity: 1 };
   private timer: any;
 
-  constructor() { this.loadGames(); }
+  constructor() {
+    this.loadStats();
+    // Si hay una actualización de precios corriendo, retomar el progreso.
+    this.http.get<PriceJob>(environment.apiUrl + '/cards/update-prices/status').subscribe((j) => {
+      if (j?.running) this.pollPriceJob();
+      else if (j?.startedAt) this.priceJob.set(j);
+    });
+ this.loadGames(); }
   private flash(ok: string) { this.msg.set(ok); this.err.set(''); setTimeout(() => this.msg.set(''), 2500); }
   private fail(e: any) { this.err.set(e?.error?.message ?? 'Error'); }
   loadGames() { this.catalog.games().subscribe((g) => this.games.set(g)); }

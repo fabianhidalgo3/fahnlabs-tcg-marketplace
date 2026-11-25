@@ -44,6 +44,10 @@ export class CardModel {
   @Prop()
   imageUrl?: string;
 
+  /** releaseDate del set, denormalizado para ordenar "más reciente primero". */
+  @Prop({ index: true })
+  setReleaseDate?: string;
+
   @Prop()
   description?: string;
 

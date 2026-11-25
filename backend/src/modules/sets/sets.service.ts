@@ -26,10 +26,31 @@ export class SetsService {
     private readonly inventory: Model<InventoryItemDocument>,
   ) {}
 
+  /** Asocia una carta promocional al set (idempotente). */
+  async addPromo(setId: string, cardId: string): Promise<{ promoCards: string[] }> {
+    if (!Types.ObjectId.isValid(cardId)) throw new NotFoundException('Carta inválida');
+    const card = await this.cards.findById(cardId).select('_id').exec();
+    if (!card) throw new NotFoundException('Carta no encontrada');
+    const set = await this.sets
+      .findByIdAndUpdate(setId, { $addToSet: { promoCards: card._id } }, { new: true })
+      .exec();
+    if (!set) throw new NotFoundException('Set no encontrado');
+    return { promoCards: (set.promoCards ?? []).map((c) => c.toString()) };
+  }
+
+  /** Quita una promo asociada del set. */
+  async removePromo(setId: string, cardId: string): Promise<{ promoCards: string[] }> {
+    const set = await this.sets
+      .findByIdAndUpdate(setId, { $pull: { promoCards: new Types.ObjectId(cardId) } }, { new: true })
+      .exec();
+    if (!set) throw new NotFoundException('Set no encontrado');
+    return { promoCards: (set.promoCards ?? []).map((c) => c.toString()) };
+  }
+
   /** Lista de sets (opcionalmente por juego) con estadísticas de completitud. */
-  async findAll(gameId?: string): Promise<any[]> {
+  async findAll(gameId?: string, dir?: string): Promise<any[]> {
     const filter = gameId ? { game: new Types.ObjectId(gameId) } : {};
-    const sets = await this.sets.find(filter).sort({ releaseDate: -1, name: 1 }).exec();
+    const sets = await this.sets.find(filter).sort({ releaseDate: dir === 'asc' ? 1 : -1, name: 1 }).exec();
     if (sets.length === 0) return [];
 
     // Un solo aggregation calcula, por set: nº de cartas registradas y

@@ -41,6 +41,8 @@ export interface CardModel {
   totalStock?: number;
   minPrice?: number | null;
   inventoryItems?: InventoryItem[];
+  /** Ids de vendedores con stock de esta carta (marketplace). */
+  sellerIds?: string[];
 }
 
 /** Vista de carta dentro del detalle de un set (incluye disponibilidad). */
@@ -72,6 +74,24 @@ export interface InventoryItem {
   isFoil: boolean;
   price: number;
   quantity: number;
+  /** Vendedor del marketplace (null/ausente = inventario de la tienda). */
+  seller?: { id: string; name: string } | null;
+}
+
+/** Punto del historial de precio de una carta (USD por variante). */
+export interface PricePoint {
+  date: string;
+  values: Record<string, number>;
+}
+
+/** Venta reciente de una carta (desde las órdenes). */
+export interface CardSale {
+  date: string;
+  condition: string | null;
+  language: string | null;
+  isFoil: boolean;
+  quantity: number;
+  unitPrice: number;
 }
 
 export interface Paginated<T> {
@@ -80,6 +100,30 @@ export interface Paginated<T> {
   page: number;
   limit: number;
   totalPages: number;
+}
+
+/** Fila de "toda mi colección" plana: UN slot por (carta, variante). */
+export interface OwnedCard {
+  id: string;
+  /** Variante de este slot (Normal / Reverse Holo / Holo…). */
+  variant: string;
+  name: string;
+  number: string;
+  rarity?: string;
+  cardType?: string;
+  imageUrl?: string;
+  attributes?: Record<string, any>;
+  set?: { id: string; name: string; code: string; symbolUrl?: string } | null;
+  quantity: number;
+  value: number;
+  languages: string[];
+  /** Álbumes/cajas donde hay copias (puede ser más de uno). */
+  albums?: { id: string; name: string; color?: string }[];
+}
+
+/** Paginado de "mis cartas" con total de copias además de cartas distintas. */
+export interface OwnedCardsPage extends Paginated<OwnedCard> {
+  totalCopies: number;
 }
 
 export type OrderStatus =
@@ -137,7 +181,7 @@ export interface StorageLocation {
   color: string;
   notes?: string;
   cardCount?: number;
-  set?: { id: string; name: string; code: string; totalCards: number } | null;
+  set?: { id: string; name: string; code: string; totalCards: number; symbolUrl?: string } | null;
 }
 
 export interface StoredCard {
@@ -199,8 +243,11 @@ export interface ChecklistStats {
   collectionValue: { all: number; EN: number; ES: number };
 }
 
-export interface ChecklistSet extends Omit<CardSet, 'stats'> {
+export interface ChecklistSet extends Omit<CardSet, "stats"> {
   cards: ChecklistCard[];
+  /** Promocionales asociadas al set (curadas por el admin). */
+  promos?: ChecklistCard[];
+  game?: string;
   stats: ChecklistStats;
 }
 

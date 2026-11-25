@@ -8,10 +8,11 @@ export class ThemeService {
   readonly theme = signal<Theme>(this.restore());
 
   constructor() {
-    // Refleja el tema en <html data-theme> y lo persiste.
+    // Refleja el tema en <html data-theme> + clase `dark` (Tailwind) y lo persiste.
     effect(() => {
       const t = this.theme();
       document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.toggle('dark', t === 'dark');
       localStorage.setItem(THEME_KEY, t);
     });
   }

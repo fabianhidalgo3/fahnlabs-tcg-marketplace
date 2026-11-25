@@ -20,10 +20,10 @@ import { UserRole } from '../../entities/user.entity';
 export class SetsController {
   constructor(private readonly sets: SetsService) {}
 
-  /** Lista de sets con completitud. ?gameId= para filtrar por juego. */
+  /** Lista de sets con completitud. ?gameId= filtra; ?dir=asc invierte el orden por fecha. */
   @Get()
-  findAll(@Query('gameId') gameId?: string) {
-    return this.sets.findAll(gameId);
+  findAll(@Query('gameId') gameId?: string, @Query('dir') dir?: string) {
+    return this.sets.findAll(gameId, dir);
   }
 
   /** Set completo: todas sus cartas + resumen de completitud. */
@@ -37,6 +37,22 @@ export class SetsController {
   @Roles(UserRole.ADMIN)
   create(@Body() dto: CreateSetDto) {
     return this.sets.create(dto);
+  }
+
+  /** Asocia una carta promocional a este set (curado por el admin). */
+  @Post(':id/promos')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN)
+  addPromo(@Param('id') id: string, @Body() body: { cardId: string }) {
+    return this.sets.addPromo(id, body.cardId);
+  }
+
+  /** Quita una promo asociada. */
+  @Delete(':id/promos/:cardId')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN)
+  removePromo(@Param('id') id: string, @Param('cardId') cardId: string) {
+    return this.sets.removePromo(id, cardId);
   }
 
   @Patch(':id')

@@ -1048,7 +1048,7 @@
       "label": "StorageType",
       "file_type": "code",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast"
     },
     {
@@ -1056,7 +1056,7 @@
       "label": "StorageLocation",
       "file_type": "code",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast"
     },
     {
@@ -1080,7 +1080,7 @@
       "label": "StorageLocationDocument",
       "file_type": "code",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L36",
+      "source_location": "L41",
       "_origin": "ast"
     },
     {
@@ -1088,7 +1088,7 @@
       "label": "StorageLocationSchema",
       "file_type": "code",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L37",
+      "source_location": "L42",
       "_origin": "ast"
     },
     {
@@ -3480,7 +3480,7 @@
       "label": "UpdateStorageDto",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast"
     },
     {
@@ -3524,6 +3524,14 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_modules_storage_storage_controller_ts_param",
+      "label": "Param",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_modules_storage_storage_controller_ts_post",
       "label": "Post",
       "file_type": "code",
@@ -3542,14 +3550,6 @@
     {
       "id": "backend_src_modules_storage_storage_controller_ts_patch",
       "label": "Patch",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast"
-    },
-    {
-      "id": "backend_src_modules_storage_storage_controller_ts_param",
-      "label": "Param",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
@@ -3580,11 +3580,19 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_modules_storage_storage_controller_storagecontroller_findone",
+      "label": ".findOne()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/storage/storage.controller.ts",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_modules_storage_storage_controller_storagecontroller_create",
       "label": ".create()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L27",
+      "source_location": "L32",
       "_origin": "ast"
     },
     {
@@ -3592,7 +3600,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L32",
+      "source_location": "L37",
       "_origin": "ast"
     },
     {
@@ -3600,7 +3608,7 @@
       "label": ".remove()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L41",
+      "source_location": "L46",
       "_origin": "ast"
     },
     {
@@ -3616,7 +3624,7 @@
       "label": "StorageModule",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "_origin": "ast"
     },
     {
@@ -3640,7 +3648,7 @@
       "label": "StorageService",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast"
     },
     {
@@ -3664,7 +3672,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast"
     },
     {
@@ -3672,7 +3680,7 @@
       "label": ".findAll()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L24",
+      "source_location": "L27",
       "_origin": "ast"
     },
     {
@@ -3680,7 +3688,7 @@
       "label": ".create()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L45",
+      "source_location": "L49",
       "_origin": "ast"
     },
     {
@@ -3688,7 +3696,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L49",
+      "source_location": "L58",
       "_origin": "ast"
     },
     {
@@ -3696,7 +3704,15 @@
       "label": ".remove()",
       "file_type": "code",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L61",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_modules_storage_storage_service_storageservice_findone",
+      "label": ".findOne()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/storage/storage.service.ts",
+      "source_location": "L87",
       "_origin": "ast"
     },
     {
@@ -4712,7 +4728,7 @@
       "label": "AppComponent",
       "file_type": "code",
       "source_file": "frontend/src/app/app.component.ts",
-      "source_location": "L147",
+      "source_location": "L149",
       "_origin": "ast"
     },
     {
@@ -4728,7 +4744,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "frontend/src/app/app.component.ts",
-      "source_location": "L162",
+      "source_location": "L164",
       "_origin": "ast"
     },
     {
@@ -4736,7 +4752,7 @@
       "label": ".onNav()",
       "file_type": "code",
       "source_file": "frontend/src/app/app.component.ts",
-      "source_location": "L169",
+      "source_location": "L171",
       "_origin": "ast"
     },
     {
@@ -4956,11 +4972,27 @@
       "_origin": "ast"
     },
     {
+      "id": "frontend_src_app_core_models_models_storedcard",
+      "label": "StoredCard",
+      "file_type": "code",
+      "source_file": "frontend/src/app/core/models/models.ts",
+      "source_location": "L143",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_core_models_models_storagedetail",
+      "label": "StorageDetail",
+      "file_type": "code",
+      "source_file": "frontend/src/app/core/models/models.ts",
+      "source_location": "L158",
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_src_app_core_models_models_storageref",
       "label": "StorageRef",
       "file_type": "code",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L142",
+      "source_location": "L166",
       "_origin": "ast"
     },
     {
@@ -4968,7 +5000,7 @@
       "label": "VariantView",
       "file_type": "code",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L149",
+      "source_location": "L173",
       "_origin": "ast"
     },
     {
@@ -4976,7 +5008,7 @@
       "label": "ChecklistCard",
       "file_type": "code",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L157",
+      "source_location": "L181",
       "_origin": "ast"
     },
     {
@@ -4984,7 +5016,7 @@
       "label": "ChecklistStats",
       "file_type": "code",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L168",
+      "source_location": "L192",
       "_origin": "ast"
     },
     {
@@ -4992,7 +5024,7 @@
       "label": "ChecklistSet",
       "file_type": "code",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L178",
+      "source_location": "L202",
       "_origin": "ast"
     },
     {
@@ -5000,7 +5032,7 @@
       "label": "CollectionSetSummary",
       "file_type": "code",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L183",
+      "source_location": "L207",
       "_origin": "ast"
     },
     {
@@ -5008,7 +5040,7 @@
       "label": "MyCollectionSet",
       "file_type": "code",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L193",
+      "source_location": "L217",
       "_origin": "ast"
     },
     {
@@ -5676,11 +5708,27 @@
       "_origin": "ast"
     },
     {
+      "id": "frontend_src_app_core_services_storage_location_service_storagelocationservice_get",
+      "label": ".get()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/core/services/storage-location.service.ts",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_src_app_core_services_storage_location_service_storagelocationservice_create",
       "label": ".create()",
       "file_type": "code",
       "source_file": "frontend/src/app/core/services/storage-location.service.ts",
-      "source_location": "L16",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_core_services_storage_location_service_storagelocationservice_update",
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/core/services/storage-location.service.ts",
+      "source_location": "L30",
       "_origin": "ast"
     },
     {
@@ -5688,7 +5736,7 @@
       "label": ".remove()",
       "file_type": "code",
       "source_file": "frontend/src/app/core/services/storage-location.service.ts",
-      "source_location": "L25",
+      "source_location": "L34",
       "_origin": "ast"
     },
     {
@@ -5937,6 +5985,38 @@
       "file_type": "code",
       "source_file": "frontend/src/app/pages/admin.page.ts",
       "source_location": "L368",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_pages_album_detail_page",
+      "label": "album-detail.page.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_pages_album_detail_page_albumdetailpage",
+      "label": "AlbumDetailPage",
+      "file_type": "code",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L104",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_pages_album_detail_page_ts_component",
+      "label": "Component",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_pages_album_detail_page_albumdetailpage_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L112",
       "_origin": "ast"
     },
     {
@@ -6544,7 +6624,7 @@
       "label": "TYPES",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L9",
+      "source_location": "L11",
       "_origin": "ast"
     },
     {
@@ -6552,7 +6632,7 @@
       "label": "StoragePage",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L71",
+      "source_location": "L99",
       "_origin": "ast"
     },
     {
@@ -6568,7 +6648,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L81",
+      "source_location": "L114",
       "_origin": "ast"
     },
     {
@@ -6576,7 +6656,15 @@
       "label": ".load()",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L82",
+      "source_location": "L118",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_pages_storage_page_storagepage_ongame",
+      "label": ".onGame()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/pages/storage.page.ts",
+      "source_location": "L119",
       "_origin": "ast"
     },
     {
@@ -6584,7 +6672,7 @@
       "label": ".create()",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L83",
+      "source_location": "L124",
       "_origin": "ast"
     },
     {
@@ -6592,7 +6680,7 @@
       "label": ".remove()",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L86",
+      "source_location": "L129",
       "_origin": "ast"
     },
     {
@@ -6600,7 +6688,7 @@
       "label": ".icon()",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L87",
+      "source_location": "L130",
       "_origin": "ast"
     },
     {
@@ -6608,7 +6696,7 @@
       "label": ".label()",
       "file_type": "code",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L88",
+      "source_location": "L131",
       "_origin": "ast"
     },
     {
@@ -9142,11 +9230,33 @@
     },
     {
       "source": "backend_src_entities_storage_location_entity",
+      "target": "backend_src_entities_card_set_entity",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/entities/storage-location.entity.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_entities_storage_location_entity",
+      "target": "backend_src_entities_card_set_entity_cardset",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/entities/storage-location.entity.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_entities_storage_location_entity",
       "target": "backend_src_entities_storage_location_entity_storagetype",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9156,7 +9266,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9166,7 +9276,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -9177,7 +9287,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -9188,7 +9298,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L36",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9198,7 +9308,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L37",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9209,7 +9319,7 @@
       "context": "argument",
       "confidence": "INFERRED",
       "source_file": "backend/src/entities/storage-location.entity.ts",
-      "source_location": "L38",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16573,35 +16683,13 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "backend_src_modules_storage_dto_storage_dto_updatestoragedto",
       "target": "backend_src_modules_storage_dto_storage_dto_ts_isoptional",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "context": "decorator",
-      "_origin": "ast"
-    },
-    {
-      "source": "backend_src_modules_storage_dto_storage_dto_updatestoragedto",
-      "target": "backend_src_modules_storage_dto_storage_dto_ts_isstring",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "context": "decorator",
-      "_origin": "ast"
-    },
-    {
-      "source": "backend_src_modules_storage_dto_storage_dto_updatestoragedto",
-      "target": "backend_src_modules_storage_dto_storage_dto_ts_isenum",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
@@ -16612,11 +16700,33 @@
     },
     {
       "source": "backend_src_modules_storage_dto_storage_dto_updatestoragedto",
-      "target": "ishexcolor",
+      "target": "backend_src_modules_storage_dto_storage_dto_ts_isstring",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_dto_storage_dto_updatestoragedto",
+      "target": "backend_src_modules_storage_dto_storage_dto_ts_isenum",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
       "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_dto_storage_dto_updatestoragedto",
+      "target": "ishexcolor",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
+      "source_location": "L15",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16797,8 +16907,8 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
-      "target": "backend_src_modules_storage_storage_controller_ts_post",
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_findone",
+      "target": "backend_src_modules_storage_storage_controller_ts_get",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
@@ -16808,7 +16918,7 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_findone",
       "target": "backend_src_common_current_user_decorator_currentuser",
       "relation": "references",
       "confidence": "EXTRACTED",
@@ -16819,12 +16929,45 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_findone",
+      "target": "backend_src_modules_storage_storage_controller_ts_param",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.controller.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
+      "target": "backend_src_modules_storage_storage_controller_ts_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.controller.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
+      "target": "backend_src_common_current_user_decorator_currentuser",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.controller.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
       "target": "backend_src_modules_storage_storage_controller_ts_body",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L27",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16835,7 +16978,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L31",
+      "source_location": "L36",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16846,7 +16989,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L33",
+      "source_location": "L38",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16857,7 +17000,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L34",
+      "source_location": "L39",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16868,7 +17011,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L35",
+      "source_location": "L40",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16879,7 +17022,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L40",
+      "source_location": "L45",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16890,7 +17033,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16901,7 +17044,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -16928,7 +17071,7 @@
     },
     {
       "source": "backend_src_modules_storage_storage_controller_storagecontroller",
-      "target": "backend_src_modules_storage_storage_controller_storagecontroller_create",
+      "target": "backend_src_modules_storage_storage_controller_storagecontroller_findone",
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
@@ -16938,7 +17081,7 @@
     },
     {
       "source": "backend_src_modules_storage_storage_controller_storagecontroller",
-      "target": "backend_src_modules_storage_storage_controller_storagecontroller_update",
+      "target": "backend_src_modules_storage_storage_controller_storagecontroller_create",
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
@@ -16948,11 +17091,21 @@
     },
     {
       "source": "backend_src_modules_storage_storage_controller_storagecontroller",
+      "target": "backend_src_modules_storage_storage_controller_storagecontroller_update",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.controller.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller",
       "target": "backend_src_modules_storage_storage_controller_storagecontroller_remove",
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17046,12 +17199,45 @@
     },
     {
       "source": "backend_src_modules_storage_storage_module",
-      "target": "backend_src_modules_storage_storage_service",
+      "target": "backend_src_entities_card_model_entity",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.module.ts",
       "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_module",
+      "target": "backend_src_entities_card_model_entity_cardmodel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.module.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_module",
+      "target": "backend_src_entities_card_model_entity_cardmodelschema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.module.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_module",
+      "target": "backend_src_modules_storage_storage_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.module.ts",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17062,7 +17248,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17073,7 +17259,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17084,7 +17270,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17094,7 +17280,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17104,7 +17290,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -17210,7 +17396,7 @@
     },
     {
       "source": "backend_src_modules_storage_storage_service",
-      "target": "backend_src_modules_storage_dto_storage_dto",
+      "target": "backend_src_entities_card_model_entity",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -17221,12 +17407,45 @@
     },
     {
       "source": "backend_src_modules_storage_storage_service",
-      "target": "backend_src_modules_storage_dto_storage_dto_createstoragedto",
+      "target": "backend_src_entities_card_model_entity_cardmodel",
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
       "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_service",
+      "target": "backend_src_entities_card_model_entity_cardmodeldocument",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.service.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_service",
+      "target": "backend_src_modules_storage_dto_storage_dto",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.service.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_service",
+      "target": "backend_src_modules_storage_dto_storage_dto_createstoragedto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.service.ts",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17237,7 +17456,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17247,7 +17466,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17257,7 +17476,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -17268,7 +17487,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -17279,7 +17498,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17289,7 +17508,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L24",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17299,7 +17518,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L45",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17309,7 +17528,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L49",
+      "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -17319,7 +17538,17 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L61",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_service_storageservice",
+      "target": "backend_src_modules_storage_storage_service_storageservice_findone",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.service.ts",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19082,7 +19311,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/app.component.ts",
-      "source_location": "L147",
+      "source_location": "L149",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19103,7 +19332,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/app.component.ts",
-      "source_location": "L162",
+      "source_location": "L164",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19113,7 +19342,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/app.component.ts",
-      "source_location": "L169",
+      "source_location": "L171",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19537,11 +19766,31 @@
     },
     {
       "source": "frontend_src_app_core_models_models",
+      "target": "frontend_src_app_core_models_models_storedcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/models/models.ts",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_models_models",
+      "target": "frontend_src_app_core_models_models_storagedetail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/models/models.ts",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_models_models",
       "target": "frontend_src_app_core_models_models_storageref",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L142",
+      "source_location": "L166",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19551,7 +19800,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L149",
+      "source_location": "L173",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19561,7 +19810,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L157",
+      "source_location": "L181",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19571,7 +19820,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L168",
+      "source_location": "L192",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19581,7 +19830,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L178",
+      "source_location": "L202",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19591,7 +19840,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L183",
+      "source_location": "L207",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -19601,7 +19850,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L193",
+      "source_location": "L217",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21062,6 +21311,17 @@
     },
     {
       "source": "frontend_src_app_core_services_storage_location_service",
+      "target": "frontend_src_app_core_models_models_storagedetail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/services/storage-location.service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_services_storage_location_service",
       "target": "frontend_src_app_core_models_models_storagekind",
       "relation": "imports",
       "context": "import",
@@ -21115,7 +21375,7 @@
     },
     {
       "source": "frontend_src_app_core_services_storage_location_service_storagelocationservice",
-      "target": "frontend_src_app_core_services_storage_location_service_storagelocationservice_create",
+      "target": "frontend_src_app_core_services_storage_location_service_storagelocationservice_get",
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/services/storage-location.service.ts",
@@ -21125,11 +21385,31 @@
     },
     {
       "source": "frontend_src_app_core_services_storage_location_service_storagelocationservice",
+      "target": "frontend_src_app_core_services_storage_location_service_storagelocationservice_create",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/services/storage-location.service.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_services_storage_location_service_storagelocationservice",
+      "target": "frontend_src_app_core_services_storage_location_service_storagelocationservice_update",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/services/storage-location.service.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_services_storage_location_service_storagelocationservice",
       "target": "frontend_src_app_core_services_storage_location_service_storagelocationservice_remove",
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/services/storage-location.service.ts",
-      "source_location": "L25",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21840,6 +22120,180 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/admin.page.ts",
       "source_location": "L368",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "ref_angular_core",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "ref_angular_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "ref_angular_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "ref_taiga_ui_kit",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_services_storage_location_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_services_storage_location_service_storagelocationservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_services_i18n_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_services_i18n_service_i18nservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_services_currency_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_services_currency_service_currencyservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_models_models",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_models_models_storagedetail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_core_models_models_storedcard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page",
+      "target": "frontend_src_app_pages_album_detail_page_albumdetailpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page_albumdetailpage",
+      "target": "frontend_src_app_pages_album_detail_page_ts_component",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_album_detail_page_albumdetailpage",
+      "target": "frontend_src_app_pages_album_detail_page_albumdetailpage_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/album-detail.page.ts",
+      "source_location": "L112",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24233,7 +24687,7 @@
     },
     {
       "source": "frontend_src_app_pages_storage_page",
-      "target": "ref_taiga_ui_core",
+      "target": "ref_angular_router",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -24244,12 +24698,23 @@
     },
     {
       "source": "frontend_src_app_pages_storage_page",
-      "target": "frontend_src_app_core_services_storage_location_service",
+      "target": "ref_taiga_ui_core",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_storage_page",
+      "target": "frontend_src_app_core_services_storage_location_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/storage.page.ts",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24260,7 +24725,29 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L5",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_storage_page",
+      "target": "frontend_src_app_core_services_catalog_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/storage.page.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_storage_page",
+      "target": "frontend_src_app_core_services_catalog_service_catalogservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/storage.page.ts",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24271,7 +24758,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24282,7 +24769,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24293,7 +24780,29 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L7",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_storage_page",
+      "target": "frontend_src_app_core_models_models_cardset",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/storage.page.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_storage_page",
+      "target": "frontend_src_app_core_models_models_game",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/storage.page.ts",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24304,7 +24813,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L7",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24315,7 +24824,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L7",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24325,7 +24834,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L9",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24335,7 +24844,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L71",
+      "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24345,7 +24854,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L16",
+      "source_location": "L18",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -24356,7 +24865,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L81",
+      "source_location": "L114",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24366,7 +24875,17 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L82",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_pages_storage_page_storagepage",
+      "target": "frontend_src_app_pages_storage_page_storagepage_ongame",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/pages/storage.page.ts",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24376,7 +24895,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L83",
+      "source_location": "L124",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24386,7 +24905,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L86",
+      "source_location": "L129",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24396,7 +24915,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L87",
+      "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24406,7 +24925,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L88",
+      "source_location": "L131",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24417,7 +24936,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L81",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24428,7 +24947,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L84",
+      "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -24439,7 +24958,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L86",
+      "source_location": "L129",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25755,7 +26274,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/dto/storage.dto.ts",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25782,13 +26301,24 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_findone",
       "target": "backend_src_common_current_user_decorator_authuser",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
       "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
+      "target": "backend_src_common_current_user_decorator_authuser",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.controller.ts",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25799,7 +26329,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L27",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25810,7 +26340,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L32",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25821,7 +26351,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L32",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25832,7 +26362,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25843,7 +26373,7 @@
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25854,7 +26384,18 @@
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L16",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_modules_storage_storage_service_storageservice_constructor",
+      "target": "backend_src_entities_card_model_entity_cardmodeldocument",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/storage/storage.service.ts",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25865,7 +26406,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L45",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25876,7 +26417,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/storage/storage.service.ts",
-      "source_location": "L49",
+      "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -25892,13 +26433,24 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_core_models_models_storagedetail",
+      "target": "frontend_src_app_core_models_models_storagelocation",
+      "relation": "inherits",
+      "context": "type",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/models/models.ts",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_core_models_models_mycollectionset",
       "target": "frontend_src_app_core_models_models_cardset",
       "relation": "inherits",
       "context": "type",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/models/models.ts",
-      "source_location": "L193",
+      "source_location": "L217",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26222,13 +26774,24 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_core_services_storage_location_service_storagelocationservice_get",
+      "target": "frontend_src_app_core_models_models_storagedetail",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/services/storage-location.service.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_core_services_storage_location_service_storagelocationservice_create",
       "target": "frontend_src_app_core_models_models_storagekind",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/services/storage-location.service.ts",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26239,7 +26802,18 @@
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/core/services/storage-location.service.ts",
-      "source_location": "L16",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_core_services_storage_location_service_storagelocationservice_update",
+      "target": "frontend_src_app_core_models_models_storagelocation",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/core/services/storage-location.service.ts",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26525,7 +27099,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L78",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26536,7 +27110,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L86",
+      "source_location": "L129",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26547,7 +27121,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L87",
+      "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26558,7 +27132,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/app/pages/storage.page.ts",
-      "source_location": "L88",
+      "source_location": "L131",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26918,7 +27492,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26930,7 +27504,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/modules/storage/storage.module.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -26978,7 +27552,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "frontend/src/app/app.routes.ts",
-      "source_location": "L55",
+      "source_location": "L61",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -27295,6 +27869,18 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_modules_storage_storage_controller_storagecontroller_findone",
+      "target": "backend_src_modules_storage_storage_service_storageservice_findone",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/modules/storage/storage.controller.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_modules_storage_storage_controller_storagecontroller_create",
       "target": "backend_src_modules_storage_storage_service_storageservice_create",
       "relation": "calls",
@@ -27302,7 +27888,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L28",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -27314,7 +27900,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L37",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -27326,7 +27912,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/modules/storage/storage.controller.ts",
-      "source_location": "L42",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast"
     }

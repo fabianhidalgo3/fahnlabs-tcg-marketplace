@@ -75,6 +75,13 @@ export class AdminService {
   deleteSet(id: string): Observable<{ deleted: boolean }> {
     return this.http.delete<{ deleted: boolean }>(`${this.api}/sets/${id}`);
   }
+  /** Asocia/quita cartas promocionales de un set. */
+  addPromo(setId: string, cardId: string): Observable<{ promoCards: string[] }> {
+    return this.http.post<{ promoCards: string[] }>(`${this.api}/sets/${setId}/promos`, { cardId });
+  }
+  removePromo(setId: string, cardId: string): Observable<{ promoCards: string[] }> {
+    return this.http.delete<{ promoCards: string[] }>(`${this.api}/sets/${setId}/promos/${cardId}`);
+  }
 
   // --- Cartas (modelos) ---
   createCard(p: CreateCardPayload): Observable<CardModel> {

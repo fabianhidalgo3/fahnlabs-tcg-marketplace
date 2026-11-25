@@ -2,7 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { TuiButton, TuiTextfield, TuiInput } from '@taiga-ui/core';
+import { SetChipComponent } from '../shared/set-chip.component';
 import { StorageLocationService } from '../core/services/storage-location.service';
 import { CatalogService } from '../core/services/catalog.service';
 import { I18nService } from '../core/services/i18n.service';
@@ -17,16 +17,17 @@ const TYPES: { value: StorageKind; label: string; icon: string }[] = [
 
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, TuiButton, TuiTextfield, TuiInput],
+  imports: [CommonModule, FormsModule, RouterLink, SetChipComponent],
   template: `
-    <h1>{{ i18n.t('storage.title') }}</h1>
-    <p class="muted">{{ i18n.t('storage.subtitle') }}</p>
+    <header class="page-head">
+      <div>
+        <h1>{{ i18n.t('storage.title') }}</h1>
+        <p class="muted">{{ i18n.t('storage.subtitle') }}</p>
+      </div>
+    </header>
 
     <div class="new card-surface">
-      <tui-textfield class="grow">
-        <label tuiLabel>{{ i18n.t('storage.name') }}</label>
-        <input tuiInput [(ngModel)]="name" />
-      </tui-textfield>
+      <label class="ui-field grow"><span class="lbl">{{ i18n.t('storage.name') }}</span><input class="ui-input" [placeholder]="i18n.isES() ? 'Ej. Álbum 151' : 'E.g. 151 Album'" [(ngModel)]="name" /></label>
       <div class="ui-field type">
         <span class="lbl">{{ i18n.isES() ? 'Tipo' : 'Type' }}</span>
         <select class="ui-select" [(ngModel)]="type">
@@ -36,19 +37,19 @@ const TYPES: { value: StorageKind; label: string; icon: string }[] = [
       <div class="ui-field">
         <span class="lbl">{{ i18n.isES() ? 'Juego (opcional)' : 'Game (optional)' }}</span>
         <select class="ui-select" [(ngModel)]="gameId" (ngModelChange)="onGame()">
-          <option value="">—</option>
+          <option value="">{{ i18n.isES() ? '— Sin juego —' : '— No game —' }}</option>
           @for (g of games(); track g.id) { <option [value]="g.id">{{ g.name }}</option> }
         </select>
       </div>
       <div class="ui-field">
         <span class="lbl">{{ i18n.isES() ? 'Set (opcional)' : 'Set (optional)' }}</span>
         <select class="ui-select" [(ngModel)]="setId" [disabled]="!gameId">
-          <option value="">{{ i18n.isES() ? 'Sin set' : 'No set' }}</option>
+          <option value="">{{ i18n.isES() ? '— Sin set vinculado —' : '— No linked set —' }}</option>
           @for (s of sets(); track s.id) { <option [value]="s.id">{{ s.name }}</option> }
         </select>
       </div>
       <input class="color" type="color" [(ngModel)]="color" />
-      <button tuiButton type="button" appearance="primary" [disabled]="!name.trim()" (click)="create()">
+      <button class="btn btn-primary" type="button" [disabled]="!name.trim()" (click)="create()">
         <span class="mi">add</span>{{ i18n.t('storage.create') }}
       </button>
     </div>
@@ -60,9 +61,9 @@ const TYPES: { value: StorageKind; label: string; icon: string }[] = [
             <span class="mi ic" [style.color]="s.color">{{ icon(s.type) }}</span>
             <div class="info">
               <div class="nm">{{ s.name }}</div>
-              <div class="muted">
+              <div class="muted sub">
                 {{ label(s.type) }} · {{ s.cardCount }} {{ i18n.t('storage.cards') }}
-                @if (s.set) { · <span class="setbadge">{{ i18n.isES() ? 'Set:' : 'Set:' }} {{ s.set.name }}</span> }
+                @if (s.set) { <app-set-chip [set]="s.set" /> }
               </div>
             </div>
             <span class="mi chev">chevron_right</span>
@@ -89,7 +90,7 @@ const TYPES: { value: StorageKind; label: string; icon: string }[] = [
       .ic { font-size: 30px; }
       .info { flex: 1; }
       .nm { font-weight: 800; font-size: 16px; }
-      .setbadge { color: var(--primary); font-weight: 600; }
+      .sub { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
       .chev { color: var(--muted); }
       .del { color: var(--danger); }
       @media (max-width: 620px) { .new { flex-direction: column; align-items: stretch; } .new .type, .new .ui-field { width: 100%; } }

@@ -32,6 +32,14 @@ export class CardSet {
 
   @Prop()
   symbolUrl?: string;
+
+  /**
+   * Cartas promocionales asociadas a este set (curadas por el admin), ej. las
+   * promos SVP con sello "151". Viven en su propio set (svp…) pero se
+   * coleccionan como apartado de este.
+   */
+  @Prop({ type: [Types.ObjectId], ref: 'CardModel', default: [] })
+  promoCards: Types.ObjectId[];
 }
 
 export type CardSetDocument = HydratedDocument<CardSet>;

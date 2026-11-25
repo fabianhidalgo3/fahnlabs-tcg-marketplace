@@ -15,6 +15,7 @@ import {
   CreateInventoryDto,
   UpdateInventoryDto,
 } from './dto/inventory.dto';
+import { FxService } from '../../common/fx.service';
 
 @Injectable()
 export class InventoryService {
@@ -23,13 +24,26 @@ export class InventoryService {
     private readonly items: Model<InventoryItemDocument>,
     @InjectModel(CardModel.name)
     private readonly cards: Model<CardModelDocument>,
+    private readonly fx: FxService,
   ) {}
 
   /** Unidades vendibles de una carta concreta (para la ficha de la carta). */
   findByCard(cardModelId: string) {
     return this.items
       .find({ cardModel: new Types.ObjectId(cardModelId) })
+      .populate('seller', 'name')
       .sort({ price: 1 })
+      .exec();
+  }
+
+  /** Últimos singles publicados con stock (strip "Recién publicados"). */
+  recent(limit = 12) {
+    return this.items
+      .find({ quantity: { $gt: 0 } })
+      .populate({ path: 'cardModel', select: 'name number imageUrl set', populate: { path: 'set', select: 'name symbolUrl' } })
+      .populate('seller', 'name')
+      .sort({ createdAt: -1 })
+      .limit(Math.min(24, limit))
       .exec();
   }
 
@@ -40,6 +54,62 @@ export class InventoryService {
       .sort({ updatedAt: -1 })
       .limit(200)
       .exec();
+  }
+
+  // ==== Publicaciones del usuario (marketplace) ====
+
+  /** Mis publicaciones: unidades donde soy el vendedor. */
+  mine(userId: string) {
+    return this.items
+      .find({ seller: new Types.ObjectId(userId) })
+      .populate({ path: 'cardModel', select: 'name number imageUrl rarity set', populate: { path: 'set', select: 'name symbolUrl' } })
+      .sort({ updatedAt: -1 })
+      .exec();
+  }
+
+  /** Edita precio/stock de UNA publicación propia. */
+  async updateMine(userId: string, id: string, dto: { price?: number; quantity?: number }) {
+    const set: Record<string, number> = {};
+    if (typeof dto.price === 'number' && dto.price >= 0) set.price = dto.price;
+    if (typeof dto.quantity === 'number' && dto.quantity >= 0) set.quantity = Math.floor(dto.quantity);
+    if (!Object.keys(set).length) throw new BadRequestException('Nada que actualizar');
+    const item = await this.items
+      .findOneAndUpdate({ _id: new Types.ObjectId(id), seller: new Types.ObjectId(userId) }, { $set: set }, { new: true })
+      .exec();
+    if (!item) throw new NotFoundException('Publicación no encontrada');
+    return item;
+  }
+
+  /** Retira (elimina) una publicación propia. */
+  async removeMine(userId: string, id: string) {
+    const res = await this.items
+      .deleteOne({ _id: new Types.ObjectId(id), seller: new Types.ObjectId(userId) })
+      .exec();
+    if (!res.deletedCount) throw new NotFoundException('Publicación no encontrada');
+    return { deleted: true };
+  }
+
+  /** CSV de todo el stock (para importar en otras plataformas, ej. TCGmatch). */
+  async exportCsv(): Promise<string> {
+    const items = await this.items
+      .find({ quantity: { $gt: 0 } })
+      .populate({ path: 'cardModel', select: 'name number rarity set', populate: { path: 'set', select: 'name code' } })
+      .sort({ createdAt: -1 })
+      .exec();
+    const esc = (v: any) => {
+      const s = String(v ?? '');
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+    };
+    const rate = (await this.fx.rates()).usdClp;
+    const rows = [
+      ['sku', 'carta', 'set', 'codigo_set', 'numero', 'rareza', 'idioma', 'condicion', 'foil', 'precio_clp', 'precio_usd', 'stock'].join(','),
+      ...items.map((it: any) => [
+        esc(it.sku), esc(it.cardModel?.name), esc(it.cardModel?.set?.name), esc(it.cardModel?.set?.code),
+        esc(it.cardModel?.number), esc(it.cardModel?.rarity), esc(it.language), esc(it.condition),
+        it.isFoil ? 'si' : 'no', Math.round((it.price ?? 0) * rate), it.price ?? 0, it.quantity,
+      ].join(',')),
+    ];
+    return rows.join('\n');
   }
 
   async create(dto: CreateInventoryDto) {

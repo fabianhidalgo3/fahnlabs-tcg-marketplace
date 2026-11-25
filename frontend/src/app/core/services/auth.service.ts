@@ -46,7 +46,12 @@ export class AuthService {
   logout() {
     localStorage.removeItem(TOKEN_KEY);
     localStorage.removeItem(USER_KEY);
+    // El carrito es de la sesión: al salir no deben quedar restos de ella.
+    localStorage.removeItem('tcg_cart');
     this.user.set(null);
+    // Recarga dura: resetea todo el estado en memoria (carrito, favoritos,
+    // colección) para que no quede NADA del usuario anterior.
+    location.assign('/catalogo');
   }
 
   private persist(res: AuthResponse) {
