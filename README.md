@@ -112,3 +112,16 @@ docker compose --profile seed run --rm seed   # poblar la base (una vez)
 ## 🗄️ Ver los datos
 
 - **Mongo Express** (Docker) → http://localhost:8081 · base de datos `tcgdb`.
+
+## 📁 Estructura
+
+| Carpeta | Qué es |
+|---|---|
+| `backend/` | API NestJS + Mongoose, seed de datos de ejemplo |
+| `frontend/` | App Angular 22 (catálogo, sets, carrito, panel admin) |
+| `mobile/` | App móvil |
+| `docker-compose.yml` | MongoDB + backend + frontend (nginx) + seed |
+
+## 👤 Autor
+
+© 2026 Fabián Hidalgo · FAHNLABS. Todos los derechos reservados.
