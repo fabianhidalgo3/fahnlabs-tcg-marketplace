@@ -1,0 +1,3695 @@
+{
+  "game": {
+    "code": "pokemon",
+    "name": "Pokémon TCG"
+  },
+  "set": {
+    "code": "30th",
+    "name": "30th Celebration",
+    "series": "Mega Evolution",
+    "totalCards": 128,
+    "releaseDate": "2026-09-16",
+    "symbolUrl": "https://assets.tcgdex.net/univ/me/30th/symbol.png"
+  },
+  "cards": [
+    {
+      "number": "001/128",
+      "name": "Exeggcute",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/001/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "Nelnal"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "002/128",
+      "name": "Alolan Exeggutor",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/002/high.webp",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fire",
+        "retreat": 4,
+        "illustrator": "Oswaldo KATO"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "003/128",
+      "name": "Volbeat",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/003/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "Yoriyuki Ikegami"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "004/128",
+      "name": "Illumise",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/004/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "Shibuzoh."
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.18
+      }
+    },
+    {
+      "number": "005/128",
+      "name": "Tropius",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/005/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2,
+        "illustrator": "Minahamu"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.15
+      }
+    },
+    {
+      "number": "006/128",
+      "name": "Cherubi",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/006/high.webp",
+      "attributes": {
+        "hp": 40,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "Kurata So"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.16
+      }
+    },
+    {
+      "number": "007/128",
+      "name": "Cherrim",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/007/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "takashi shiraishi"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "008/128",
+      "name": "Vivillon",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/008/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage2",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "Jerky"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "009/128",
+      "name": "Vulpix",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/009/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1,
+        "illustrator": "miki kudo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "010/128",
+      "name": "Ninetales",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/010/high.webp",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Stage1",
+        "weakness": "Water",
+        "retreat": 1,
+        "illustrator": "kodama"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.24
+      }
+    },
+    {
+      "number": "011/128",
+      "name": "Moltres",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/011/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1,
+        "illustrator": "HYOGONOSUKE"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.24
+      }
+    },
+    {
+      "number": "012/128",
+      "name": "Ho-Oh",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/012/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2,
+        "illustrator": "Anesaki Dynamic"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "013/128",
+      "name": "Victini",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/013/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1,
+        "illustrator": "Jiro Sasumo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "014/128",
+      "name": "Reshiram",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/014/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2,
+        "illustrator": "Uta"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "015/128",
+      "name": "Fuecoco ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/015/high.webp",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.37
+      }
+    },
+    {
+      "number": "016/128",
+      "name": "Slowpoke",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/016/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2,
+        "illustrator": "Uninori"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "017/128",
+      "name": "Lapras",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/017/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2,
+        "illustrator": "Masa"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.23
+      }
+    },
+    {
+      "number": "018/128",
+      "name": "Articuno",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/018/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1,
+        "illustrator": "HYOGONOSUKE"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "019/128",
+      "name": "Kyogre",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/019/high.webp",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 4,
+        "illustrator": "Tonji Matsuno"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "020/128",
+      "name": "Palkia",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/020/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2,
+        "illustrator": "kawayoo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "021/128",
+      "name": "Greninja ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/021/high.webp",
+      "attributes": {
+        "hp": 300,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.43
+      }
+    },
+    {
+      "number": "022/128",
+      "name": "Wishiwashi",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/022/high.webp",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1,
+        "illustrator": "Narano"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.15
+      }
+    },
+    {
+      "number": "023/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/023/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Ken Sugimori"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.49
+      }
+    },
+    {
+      "number": "024/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/024/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "danciao"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.46
+      }
+    },
+    {
+      "number": "025/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/025/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "satoma"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.4
+      }
+    },
+    {
+      "number": "026/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/026/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "Takeshi Nakamura"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.51
+      }
+    },
+    {
+      "number": "027/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/027/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 3,
+        "illustrator": "Asako Ito"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.67
+      }
+    },
+    {
+      "number": "028/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/028/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "sowsow"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.54
+      }
+    },
+    {
+      "number": "029/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/029/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "James Turner"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.49
+      }
+    },
+    {
+      "number": "030/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/030/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "DOM"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.45
+      }
+    },
+    {
+      "number": "031/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/031/high.webp",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 0,
+        "illustrator": "Atsushi Furusawa"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.41
+      }
+    },
+    {
+      "number": "032/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/032/high.webp",
+      "attributes": {
+        "hp": 50,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Tomokazu Komiya"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.69
+      }
+    },
+    {
+      "number": "033/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/033/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Narumi Sato"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.46
+      }
+    },
+    {
+      "number": "034/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/034/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "USGMEN"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.66
+      }
+    },
+    {
+      "number": "035/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/035/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Susumu Maeya"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.46
+      }
+    },
+    {
+      "number": "036/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/036/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "OKACHEKE"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.66
+      }
+    },
+    {
+      "number": "037/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/037/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Yuu Nishida"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.43
+      }
+    },
+    {
+      "number": "038/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/038/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Tetsu Kayama"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.47
+      }
+    },
+    {
+      "number": "039/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/039/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Teeziro"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.48
+      }
+    },
+    {
+      "number": "040/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/040/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "Shinji Kanda"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.1
+      }
+    },
+    {
+      "number": "041/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/041/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Rianti Hidayat"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.43
+      }
+    },
+    {
+      "number": "042/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/042/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Akira Komayama"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.51
+      }
+    },
+    {
+      "number": "043/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/043/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "OOYAMA"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.58
+      }
+    },
+    {
+      "number": "044/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/044/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "akagi"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.49
+      }
+    },
+    {
+      "number": "045/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/045/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Naoyo Kimura"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.5
+      }
+    },
+    {
+      "number": "046/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/046/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "svlt"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.47
+      }
+    },
+    {
+      "number": "047/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/047/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Atsuko Nishida"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.43
+      }
+    },
+    {
+      "number": "048/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/048/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "KIYOTAKA OSHIYAMA"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.58
+      }
+    },
+    {
+      "number": "049/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/049/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 3,
+        "illustrator": "Nurikabe"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.41
+      }
+    },
+    {
+      "number": "050/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/050/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 3,
+        "illustrator": "Shimaris Yukichi"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.51
+      }
+    },
+    {
+      "number": "051/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/051/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "nagimiso"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.37
+      }
+    },
+    {
+      "number": "052/128",
+      "name": "Pikachu",
+      "rarity": "Pikachu Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/052/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Kazuki Minami"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.48
+      }
+    },
+    {
+      "number": "053/128",
+      "name": "Pikachu ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/053/high.webp",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.73
+      }
+    },
+    {
+      "number": "054/128",
+      "name": "Pikachu ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/054/high.webp",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "takuyoa"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.71
+      }
+    },
+    {
+      "number": "055/128",
+      "name": "Zapdos",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/055/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "HYOGONOSUKE"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "056/128",
+      "name": "Zekrom",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/056/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "akagi"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "057/128",
+      "name": "Zeraora",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/057/high.webp",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Bun Toujo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "058/128",
+      "name": "Toxel",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/058/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Shimaris Yukichi"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.16
+      }
+    },
+    {
+      "number": "059/128",
+      "name": "Toxtricity",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/059/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "Haru Akasaka"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "060/128",
+      "name": "Toxtricity",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/060/high.webp",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "Yuriko Akase"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "061/128",
+      "name": "Morpeko",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/061/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Naoki Saito"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "062/128",
+      "name": "Miraidon",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/062/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Kazumasa Yasukuni"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "063/128",
+      "name": "Mewtwo",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/063/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 2,
+        "illustrator": "nagimiso"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.26
+      }
+    },
+    {
+      "number": "064/128",
+      "name": "Mewtwo ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/064/high.webp",
+      "attributes": {
+        "hp": 230,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 2,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.56
+      }
+    },
+    {
+      "number": "065/128",
+      "name": "Mew",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/065/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "danciao"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.33
+      }
+    },
+    {
+      "number": "066/128",
+      "name": "Mew ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/066/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 0,
+        "illustrator": "aky CG Works"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.01
+      }
+    },
+    {
+      "number": "067/128",
+      "name": "Marill",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/067/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1,
+        "illustrator": "Saya Tsuruta"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.18
+      }
+    },
+    {
+      "number": "068/128",
+      "name": "Azumarill",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/068/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage1",
+        "weakness": "Metal",
+        "retreat": 2,
+        "illustrator": "Kagemaru Himeno"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "069/128",
+      "name": "Espeon",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/069/high.webp",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage1",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "aspara"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.26
+      }
+    },
+    {
+      "number": "070/128",
+      "name": "Espeon ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/070/high.webp",
+      "attributes": {
+        "hp": 260,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.64
+      }
+    },
+    {
+      "number": "071/128",
+      "name": "Sylveon ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/071/high.webp",
+      "attributes": {
+        "hp": 270,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.6
+      }
+    },
+    {
+      "number": "072/128",
+      "name": "Unown",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/072/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "mingo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "073/128",
+      "name": "Drifloon",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/073/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "Shinya Komatsu"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "074/128",
+      "name": "Cresselia",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/074/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "KEIICHIRO ITO"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "075/128",
+      "name": "Chandelure",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/075/high.webp",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage2",
+        "weakness": "Darkness",
+        "retreat": 2,
+        "illustrator": "Yoshioka"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "076/128",
+      "name": "Xerneas",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/076/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2,
+        "illustrator": "kodama"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.18
+      }
+    },
+    {
+      "number": "077/128",
+      "name": "Comfey",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/077/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1,
+        "illustrator": "sui"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "078/128",
+      "name": "Cosmog",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/078/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "Mina Nakai"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.18
+      }
+    },
+    {
+      "number": "079/128",
+      "name": "Cosmoem",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/079/high.webp",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage1",
+        "weakness": "Darkness",
+        "retreat": 3,
+        "illustrator": "Masako Tomii"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "080/128",
+      "name": "Lunala",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/080/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage2",
+        "weakness": "Darkness",
+        "retreat": 2,
+        "illustrator": "Bun Toujo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "081/128",
+      "name": "Gimmighoul",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/081/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "Fujimoto Gold"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.14
+      }
+    },
+    {
+      "number": "082/128",
+      "name": "Groudon",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/082/high.webp",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 4,
+        "illustrator": "Takumi Wada"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "083/128",
+      "name": "Lucario",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/083/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage1",
+        "weakness": "Psychic",
+        "retreat": 2,
+        "illustrator": "Hideki Ishikawa"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "084/128",
+      "name": "Seismitoad",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/084/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage2",
+        "weakness": "Grass",
+        "retreat": 3,
+        "illustrator": "Kurata So"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.16
+      }
+    },
+    {
+      "number": "085/128",
+      "name": "Lycanroc",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/085/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage1",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "matazo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "086/128",
+      "name": "Koraidon",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/086/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Basic",
+        "weakness": "Psychic",
+        "retreat": 2,
+        "illustrator": "Mitsuhiro Arita"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "087/128",
+      "name": "Nidoran♀",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/087/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Taira Akitsu"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.14
+      }
+    },
+    {
+      "number": "088/128",
+      "name": "Nidorina",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/088/high.webp",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "Miki Tanaka"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.15
+      }
+    },
+    {
+      "number": "089/128",
+      "name": "Alolan Meowth",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/089/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1,
+        "illustrator": "Natsumi Yoshida"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.24
+      }
+    },
+    {
+      "number": "090/128",
+      "name": "Gengar ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/090/high.webp",
+      "attributes": {
+        "hp": 280,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.91
+      }
+    },
+    {
+      "number": "091/128",
+      "name": "Umbreon",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/091/high.webp",
+      "attributes": {
+        "hp": 110,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage1",
+        "weakness": "Grass",
+        "retreat": 1,
+        "illustrator": "Iori Suzuki"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.27
+      }
+    },
+    {
+      "number": "092/128",
+      "name": "Umbreon ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/092/high.webp",
+      "attributes": {
+        "hp": 270,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "Keisuke Azuma"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.69
+      }
+    },
+    {
+      "number": "093/128",
+      "name": "Murkrow",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/093/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1,
+        "illustrator": "Kouki Saitou"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "094/128",
+      "name": "Scraggy",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/094/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "Souichirou Gunjima"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "095/128",
+      "name": "Zorua",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/095/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1,
+        "illustrator": "Atsuya Uki"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "096/128",
+      "name": "Zoroark",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/096/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage1",
+        "weakness": "Grass",
+        "retreat": 1,
+        "illustrator": "Shiburingaru"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "097/128",
+      "name": "Deino",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/097/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "Gapao"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "098/128",
+      "name": "Zweilous",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/098/high.webp",
+      "attributes": {
+        "hp": 100,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage1",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "IKEDA Saki"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.18
+      }
+    },
+    {
+      "number": "099/128",
+      "name": "Hydreigon",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/099/high.webp",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Stage2",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "Ryuta Fuse"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "100/128",
+      "name": "Yveltal",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/100/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1,
+        "illustrator": "hncl"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.2
+      }
+    },
+    {
+      "number": "101/128",
+      "name": "Galarian Meowth",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/101/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "Mékayu"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.18
+      }
+    },
+    {
+      "number": "102/128",
+      "name": "Jirachi ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/102/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.48
+      }
+    },
+    {
+      "number": "103/128",
+      "name": "Dialga",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/103/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2,
+        "illustrator": "toriyufu"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "104/128",
+      "name": "Ferrothorn",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/104/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fire",
+        "retreat": 3,
+        "illustrator": "Po-Suzuki"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.16
+      }
+    },
+    {
+      "number": "105/128",
+      "name": "Solgaleo",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/105/high.webp",
+      "attributes": {
+        "hp": 170,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage2",
+        "weakness": "Fire",
+        "retreat": 2,
+        "illustrator": "Nurikabe"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "106/128",
+      "name": "Zacian",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/106/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2,
+        "illustrator": "AKIRA EGAWA"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.23
+      }
+    },
+    {
+      "number": "107/128",
+      "name": "Zamazenta",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/107/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 2,
+        "illustrator": "Tsuyoshi Nagano"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "108/128",
+      "name": "Gholdengo",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/108/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fire",
+        "retreat": 2,
+        "illustrator": "Sanosuke Sakuma"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.16
+      }
+    },
+    {
+      "number": "109/128",
+      "name": "Salamence ex",
+      "rarity": "Double Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/109/high.webp",
+      "attributes": {
+        "hp": 330,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "retreat": 2,
+        "illustrator": "5ban Graphics"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.41
+      }
+    },
+    {
+      "number": "110/128",
+      "name": "Jangmo-o",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/110/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "retreat": 1,
+        "illustrator": "miki kudo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.14
+      }
+    },
+    {
+      "number": "111/128",
+      "name": "Hakamo-o",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/111/high.webp",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage1",
+        "retreat": 2,
+        "illustrator": "Jiro Sasumo"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "112/128",
+      "name": "Kommo-o",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/112/high.webp",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage2",
+        "retreat": 2,
+        "illustrator": "MARINA Chikazawa"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "113/128",
+      "name": "Meowth",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/113/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "MINAMINAMI Take"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.21
+      }
+    },
+    {
+      "number": "114/128",
+      "name": "Kangaskhan",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/114/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "Pani Kobayashi"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "115/128",
+      "name": "Ditto",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/115/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Toshinao Aoki"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "116/128",
+      "name": "Eevee",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/116/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Wintr Wandr"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "117/128",
+      "name": "Eevee",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/117/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "En Morikura"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.24
+      }
+    },
+    {
+      "number": "118/128",
+      "name": "Eevee",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/118/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Hitoshi Ariga"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.22
+      }
+    },
+    {
+      "number": "119/128",
+      "name": "Snorlax",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/119/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 4,
+        "illustrator": "Aya Kusube"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.25
+      }
+    },
+    {
+      "number": "120/128",
+      "name": "Igglybuff",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/120/high.webp",
+      "attributes": {
+        "hp": 30,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 0,
+        "illustrator": "Kanami Ogata"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.23
+      }
+    },
+    {
+      "number": "121/128",
+      "name": "Lugia",
+      "rarity": "Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/121/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2,
+        "illustrator": "Kazuki Minami"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.26
+      }
+    },
+    {
+      "number": "122/128",
+      "name": "Hisuian Zorua",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/122/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Megumi Mizutani"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.17
+      }
+    },
+    {
+      "number": "123/128",
+      "name": "Hisuian Zoroark",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/123/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Kamome Shirahama"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.19
+      }
+    },
+    {
+      "number": "124/128",
+      "name": "Minior",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/124/high.webp",
+      "attributes": {
+        "hp": 90,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 2,
+        "illustrator": "ryoma uratsuka"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.18
+      }
+    },
+    {
+      "number": "125/128",
+      "name": "Maushold",
+      "rarity": "Common",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/125/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Kariya"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.26
+      }
+    },
+    {
+      "number": "126/128",
+      "name": "Poké Pad",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/126/high.webp",
+      "attributes": {
+        "trainerType": "Item",
+        "illustrator": "Yuka Morii"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.29
+      }
+    },
+    {
+      "number": "127/128",
+      "name": "Switch",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/127/high.webp",
+      "attributes": {
+        "trainerType": "Item",
+        "illustrator": "Yuka Morii"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.23
+      }
+    },
+    {
+      "number": "128/128",
+      "name": "Ultra Ball",
+      "rarity": "Common",
+      "cardType": "Trainer",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/128/high.webp",
+      "attributes": {
+        "trainerType": "Item",
+        "illustrator": "Yuka Morii"
+      },
+      "variants": [
+        "Normal"
+      ],
+      "variantValues": {
+        "Normal": 0.26
+      }
+    },
+    {
+      "number": "129/128",
+      "name": "Alolan Exeggutor",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/129/high.webp",
+      "attributes": {
+        "hp": 150,
+        "types": [
+          "Grass"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fire",
+        "retreat": 4,
+        "illustrator": "AYUMI ODASHIMA"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.93
+      }
+    },
+    {
+      "number": "130/128",
+      "name": "Moltres",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/130/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 1,
+        "illustrator": "mashu"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.7
+      }
+    },
+    {
+      "number": "131/128",
+      "name": "Lapras",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/131/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2,
+        "illustrator": "Amelicart"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.99
+      }
+    },
+    {
+      "number": "132/128",
+      "name": "Articuno",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/132/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 1,
+        "illustrator": "mashu"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.59
+      }
+    },
+    {
+      "number": "133/128",
+      "name": "Zapdos",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/133/high.webp",
+      "attributes": {
+        "hp": 120,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "mashu"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.55
+      }
+    },
+    {
+      "number": "134/128",
+      "name": "Toxtricity",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/134/high.webp",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "Kazumasa Yasukuni"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.13
+      }
+    },
+    {
+      "number": "135/128",
+      "name": "Morpeko",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/135/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "Yoshimi Miyoshi"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.88
+      }
+    },
+    {
+      "number": "136/128",
+      "name": "Drifloon",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/136/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "Whisker"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.61
+      }
+    },
+    {
+      "number": "137/128",
+      "name": "Chandelure",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/137/high.webp",
+      "attributes": {
+        "hp": 140,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Stage2",
+        "weakness": "Darkness",
+        "retreat": 2,
+        "illustrator": "YASHIRO Nanaco"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.87
+      }
+    },
+    {
+      "number": "138/128",
+      "name": "Lycanroc",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/138/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Fighting"
+        ],
+        "stage": "Stage1",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "Raita Kazama"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.92
+      }
+    },
+    {
+      "number": "139/128",
+      "name": "Alolan Meowth",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/139/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 1,
+        "illustrator": "OKUBO"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.76
+      }
+    },
+    {
+      "number": "140/128",
+      "name": "Scraggy",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/140/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Grass",
+        "retreat": 2,
+        "illustrator": "GOSSAN"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.09
+      }
+    },
+    {
+      "number": "141/128",
+      "name": "Galarian Meowth",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/141/high.webp",
+      "attributes": {
+        "hp": 70,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "OKUBO"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.69
+      }
+    },
+    {
+      "number": "142/128",
+      "name": "Gholdengo",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/142/high.webp",
+      "attributes": {
+        "hp": 130,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fire",
+        "retreat": 2,
+        "illustrator": "toriyufu"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 0.81
+      }
+    },
+    {
+      "number": "143/128",
+      "name": "Kommo-o",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/143/high.webp",
+      "attributes": {
+        "hp": 180,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Stage2",
+        "retreat": 2,
+        "illustrator": "Gemi"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 1.04
+      }
+    },
+    {
+      "number": "144/128",
+      "name": "Meowth",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/144/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "OKUBO"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 3.72
+      }
+    },
+    {
+      "number": "145/128",
+      "name": "Hisuian Zorua",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/145/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "0313"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 2.04
+      }
+    },
+    {
+      "number": "146/128",
+      "name": "Maushold",
+      "rarity": "Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/146/high.webp",
+      "attributes": {
+        "hp": 80,
+        "types": [
+          "Colorless"
+        ],
+        "stage": "Stage1",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "osare"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 5.02
+      }
+    },
+    {
+      "number": "147/128",
+      "name": "Fuecoco ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/147/high.webp",
+      "attributes": {
+        "hp": 210,
+        "types": [
+          "Fire"
+        ],
+        "stage": "Basic",
+        "weakness": "Water",
+        "retreat": 2,
+        "illustrator": "Atsushi Furusawa"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 9.99
+      }
+    },
+    {
+      "number": "148/128",
+      "name": "Greninja ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/148/high.webp",
+      "attributes": {
+        "hp": 300,
+        "types": [
+          "Water"
+        ],
+        "stage": "Basic",
+        "weakness": "Lightning",
+        "retreat": 1,
+        "illustrator": "GIDORA"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 12.79
+      }
+    },
+    {
+      "number": "149/128",
+      "name": "Pikachu ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/149/high.webp",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "kantaro"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 34
+      }
+    },
+    {
+      "number": "150/128",
+      "name": "Pikachu ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/150/high.webp",
+      "attributes": {
+        "hp": 190,
+        "types": [
+          "Lightning"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 1,
+        "illustrator": "kantaro"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 37.92
+      }
+    },
+    {
+      "number": "151/128",
+      "name": "Mewtwo ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/151/high.webp",
+      "attributes": {
+        "hp": 230,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 2,
+        "illustrator": "Yano Keiji"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 41.49
+      }
+    },
+    {
+      "number": "152/128",
+      "name": "Mew ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/152/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 0,
+        "illustrator": "Kuroimori"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 78.16
+      }
+    },
+    {
+      "number": "153/128",
+      "name": "Sylveon ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/153/high.webp",
+      "attributes": {
+        "hp": 270,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Metal",
+        "retreat": 2,
+        "illustrator": "You Iribi"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 30.92
+      }
+    },
+    {
+      "number": "154/128",
+      "name": "Gengar ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/154/high.webp",
+      "attributes": {
+        "hp": 280,
+        "types": [
+          "Darkness"
+        ],
+        "stage": "Basic",
+        "weakness": "Fighting",
+        "retreat": 2,
+        "illustrator": "CHORISO"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 63.8
+      }
+    },
+    {
+      "number": "155/128",
+      "name": "Jirachi ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/155/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Metal"
+        ],
+        "stage": "Basic",
+        "weakness": "Fire",
+        "retreat": 1,
+        "illustrator": "AKIRA EGAWA"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 27.97
+      }
+    },
+    {
+      "number": "156/128",
+      "name": "Salamence ex",
+      "rarity": "Special Illustration Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/156/high.webp",
+      "attributes": {
+        "hp": 330,
+        "types": [
+          "Dragon"
+        ],
+        "stage": "Basic",
+        "retreat": 2,
+        "illustrator": "Ryota Murayama"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 9.11
+      }
+    },
+    {
+      "number": "157/128",
+      "name": "Mewtwo ex",
+      "rarity": "Futuristic Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/157/high.webp",
+      "attributes": {
+        "hp": 230,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 2,
+        "illustrator": "YOSHIROTTEN"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 20.41
+      }
+    },
+    {
+      "number": "158/128",
+      "name": "Mew ex",
+      "rarity": "Futuristic Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/158/high.webp",
+      "attributes": {
+        "hp": 160,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 0,
+        "illustrator": "YOSHIROTTEN"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 30.22
+      }
+    },
+    {
+      "number": "B/128",
+      "name": "Mew",
+      "rarity": "RGB Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/B/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "YOSHIROTTEN"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 4276.56
+      }
+    },
+    {
+      "number": "G/128",
+      "name": "Mew",
+      "rarity": "RGB Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/G/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "YOSHIROTTEN"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 3127.49
+      }
+    },
+    {
+      "number": "R/128",
+      "name": "Mew",
+      "rarity": "RGB Rare",
+      "cardType": "Pokémon",
+      "imageUrl": "https://assets.tcgdex.net/en/me/30th/R/high.webp",
+      "attributes": {
+        "hp": 60,
+        "types": [
+          "Psychic"
+        ],
+        "stage": "Basic",
+        "weakness": "Darkness",
+        "retreat": 1,
+        "illustrator": "YOSHIROTTEN"
+      },
+      "variants": [
+        "Holo"
+      ],
+      "variantValues": {
+        "Holo": 4316.56
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { environment } from '../../../environments/environment';
 
 const POKE_CDN = 'https://images.pokemontcg.io/';
+const TCGDEX_CDN = 'https://assets.tcgdex.net/';
 
 /**
  * Miniatura para grillas y listados: pokemontcg.io sirve `X.png` (~30 KB)
@@ -10,6 +11,8 @@ export function thumbUrl(url?: string | null): string {
   if (!url) return '';
   // scrydex: /large (~1 MB) → /small (~55 KB) para grillas.
   if (url.includes('images.scrydex.com')) return url.replace(/\/large$/, '/small');
+  // TCGdex (sets nuevos): /high.webp (~60 KB) → /low.webp (~20 KB).
+  if (url.includes('assets.tcgdex.net')) return proxied(url.replace(/\/high\.webp$/, '/low.webp'));
   return proxied(url.replace('_hires.png', '.png'));
 }
 
@@ -25,6 +28,7 @@ export function fullUrl(url?: string | null): string {
  */
 export function setLogoUrl(symbolUrl?: string | null): string {
   if (!symbolUrl) return '';
+  // También TCGdex: .../univ/<serie>/<set>/symbol.png → .../logo.png
   if (symbolUrl.includes('/symbol.png')) return proxied(symbolUrl.replace('/symbol.png', '/logo.png'));
   // scrydex: .../pokemon/<code>-symbol/symbol → .../pokemon/<code>-logo/logo
   if (symbolUrl.includes('-symbol/symbol')) return symbolUrl.replace('-symbol/symbol', '-logo/logo');
@@ -39,6 +43,9 @@ export function setLogoUrl(symbolUrl?: string | null): string {
 function proxied(url: string): string {
   if (environment.production && url.startsWith(POKE_CDN)) {
     return '/img/' + url.slice(POKE_CDN.length);
+  }
+  if (environment.production && url.startsWith(TCGDEX_CDN)) {
+    return '/tcgdex/' + url.slice(TCGDEX_CDN.length);
   }
   return url;
 }

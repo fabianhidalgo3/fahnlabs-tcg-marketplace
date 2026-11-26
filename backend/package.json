@@ -14,7 +14,9 @@
     "sync-prices": "node src/seed/scripts/sync-prices-to-db.mjs",
     "price-floors": "node src/seed/scripts/apply-price-floors.mjs",
     "snapshot-prices": "node src/seed/scripts/snapshot-prices.mjs",
-    "backfill-artists": "node src/seed/scripts/backfill-artists.mjs"
+    "backfill-artists": "node src/seed/scripts/backfill-artists.mjs",
+    "import-set": "node src/seed/scripts/import-tcgdex-set.mjs",
+    "add-set": "node src/seed/scripts/add-set-to-db.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",
