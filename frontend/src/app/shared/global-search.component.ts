@@ -73,7 +73,11 @@ import { thumbUrl } from '../core/utils/card-image';
       .price { font-weight: 700; font-size: 12px; color: var(--accent); flex: none; }
       .spin { animation: gsspin 1s linear infinite; font-size: 16px; }
       @keyframes gsspin { to { transform: rotate(360deg); } }
-      @media (max-width: 700px) { .gs { width: 200px; } }
+      /* Móvil/tablet (<960px, igual que isMobile del shell): ocupa la fila completa del topbar */
+      @media (max-width: 959.98px) {
+        :host { display: block; width: 100%; }
+        .gs { width: 100%; max-width: none; }
+      }
     `,
   ],
 })

@@ -512,3 +512,25 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
   background: var(--card);
 }
+
+/* ============================================================
+   MÓVIL (≤640px): toolbars de filtros, cabeceras y tablas
+   ============================================================ */
+@media (max-width: 640px) {
+  .page-head h1 { font-size: 21px; }
+  .page-head .ph-actions { width: 100%; }
+
+  /* Buscador a todo el ancho y selects en dos columnas parejas */
+  .toolbar { gap: 8px; margin: 14px 0 12px; }
+  .toolbar .searchbox { flex: 1 0 100%; width: 100%; }
+  .toolbar .fsel { flex: 1 1 calc(50% - 4px); min-width: 0; }
+  .toolbar .t-right { margin-left: 0; flex: 1 0 100%; flex-wrap: wrap; gap: 8px 16px; }
+
+  /* Tablas anchas: se desplazan dentro de su caja, no toda la página */
+  .ltable { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
+
+  /* El zoom de la miniatura al pasar el mouse no aplica en pantallas táctiles */
+  .lthumb:hover { transform: none; box-shadow: none; }
+
+  .card-grid { gap: 12px; }
+}

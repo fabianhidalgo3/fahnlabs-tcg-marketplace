@@ -148,8 +148,10 @@ import { GlobalSearchComponent } from './shared/global-search.component';
           </div>
 
           @if (auth.isLoggedIn()) {
-            <span class="user"><span class="mi">account_circle</span> {{ auth.user()?.name }}</span>
-            <button class="btn btn-outline btn-s" type="button" (click)="auth.logout()">{{ i18n.t('nav.logout') }}</button>
+            <span class="user" [title]="auth.user()?.name ?? ''"><span class="mi">account_circle</span><span class="uname">{{ auth.user()?.name }}</span></span>
+            <button class="btn btn-outline btn-s logout" type="button" (click)="auth.logout()" [attr.aria-label]="i18n.t('nav.logout')">
+              <span class="mi">logout</span><span class="lbl">{{ i18n.t('nav.logout') }}</span>
+            </button>
           } @else {
             <a class="btn btn-primary btn-s" routerLink="/login">{{ i18n.t('nav.login') }}</a>
           }
@@ -268,6 +270,18 @@ import { GlobalSearchComponent } from './shared/global-search.component';
         box-shadow: var(--shadow);
       }
       .shell.mobile.open .side { transform: translateX(0); }
+      .logout .mi { display: none; }
+
+      /* Móvil: la barra superior usa dos filas (acciones arriba, buscador abajo a todo el ancho) */
+      .shell.mobile .topbar { flex-wrap: wrap; row-gap: 8px; padding: 8px 12px; }
+      .shell.mobile .topbar app-global-search { order: 10; flex: 1 0 100%; min-width: 0; }
+      .shell.mobile .tools { margin-right: 0; gap: 2px; }
+      .shell.mobile .user { margin-right: 0; }
+      .shell.mobile .user .uname { display: none; }
+      .shell.mobile .logout { width: 34px; height: 34px; padding: 0; border-radius: 999px; }
+      .shell.mobile .logout .mi { display: inline-block; font-size: 18px; }
+      .shell.mobile .logout .lbl { display: none; }
+      .shell.mobile .content { padding: 18px 14px 96px; } /* margen inferior: el botón flotante del chat no tapa lo último */
     `,
   ],
 })

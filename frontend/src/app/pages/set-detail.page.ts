@@ -143,6 +143,14 @@ import { setLogoUrl, thumbUrl } from '../core/utils/card-image';
       .n { font-size: 11px; color: var(--muted); }
       .nm { font-weight: 700; font-size: 13px; line-height: 1.2; }
       .pr { font-weight: 800; color: var(--accent); font-size: 13px; margin-top: 3px; }
+      @media (max-width: 640px) {
+        .header { padding: 16px; gap: 16px; }
+        .ident { flex-direction: column; align-items: flex-start; gap: 10px; }
+        .setlogo { max-width: 100%; max-height: 56px; }
+        .summary { width: 100%; gap: 16px; }
+        .toolbar { flex-wrap: wrap; gap: 10px; }
+        .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      }
     `,
   ],
 })
